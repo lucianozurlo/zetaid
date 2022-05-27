@@ -1,0 +1,53 @@
+.workInProgress {
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.workInProgress p {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 5px 12px;
+    width: fit-content;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin: 0 auto !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    letter-spacing: .3px;
+}
+
+
+#mouse {
+    position: absolute;
+    bottom: -60px;
+    width: calc(100% - 600px);
+    left: 300px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s 1.1s ease-in-out;
+    z-index: 99999;
+}
+
+#mouse img {
+    width: 24px;
+}
+
+/* 
+#mouse .light {
+    display: none;
+} */
+
+body .loaded #mouse {
+    bottom: 30px;
+    opacity: 0.1;
+    filter: blur(0);
+    transition-delay: 0s;
+}
+
+body.fp-viewing-0 .loaded #mouse {
+    transition-delay: 1.5s;
+    opacity: 0.25;
+}
