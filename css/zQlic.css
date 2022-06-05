@@ -584,3 +584,14 @@ body.fp-viewing-8 #mouse {
     max-width: 230vh;
     height: 100vh;
 }
+
+#qlicProject #section4 .fp-bg iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 80vh;
+    max-height: 100vh;
+}
+
+body.fp-viewing-4 #elementsProject {
+    display: none;
+}

@@ -232,7 +232,7 @@ body.fp-viewing-0 .loaded #introProject {
 /****/
 .layer .homeSection p,
 #introProject p {
-    margin: 25px 0 22px;
+    margin: 25px 0 5px;
     font-size: 26px;
     font-weight: 200;
     text-align: center;
@@ -242,9 +242,4 @@ body.fp-viewing-0 .loaded #introProject {
 .layer .homeSection p.light,
 #introProject p.light {
     color: rgba(100, 100, 100, 0.75);
-}
-
-#sentryProject #introProject p,
-#sentry-home .homeSection p {
-    margin: 3px 0 22px;
 }
