@@ -1,4 +1,5 @@
 const sentryNext = document.querySelector('#sentryNext');
+// const aaqlicZoom = document.querySelector('.kursor');
 
 new fullpage('#zProject', {
     anchors: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
@@ -12,7 +13,6 @@ new fullpage('#zProject', {
             fullpage_api.setAllowScrolling(true);
         }, 1000);
     },
-
 
     parallax: true,
     parallaxOptions: {
@@ -43,6 +43,15 @@ new fullpage('#zProject', {
             }, 1000);
         }
     },
+    // afterLoad: function (origin, destination, direction) {
+    //     var loadedSection = this;
+
+    //     if (isNaN(document.querySelector('body.fp-viewing-4'))) {
+
+    //         qlicZoom.document.body.classList.add('aaa');
+
+    //     }
+    // },
 
     afterRender: () => {
         preloadLoading = () => {

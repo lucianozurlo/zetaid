@@ -18,7 +18,7 @@ function enableImgZoom(e) {
         var t = e.querySelector("img"),
             n = document.createElement("div");
         n.classList.add("magnify"),
-            (n.style.backgroundImage = 'url("' + t.src + '")'),
+            (n.style.backgroundImage = 'url(../../projects/qlic/qlic-04-zoom.jpg)'),
             e.appendChild(n),
             e.addEventListener("mousemove", function (e) {
                 var r = new Image();

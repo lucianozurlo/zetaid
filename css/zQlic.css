@@ -588,10 +588,18 @@ body.fp-viewing-8 #mouse {
 #qlicProject #section4 .fp-bg iframe {
     width: 100%;
     height: 100%;
-    max-width: 80vh;
+    max-width: 300vh;
     max-height: 100vh;
 }
 
 body.fp-viewing-4 #elementsProject {
     display: none;
+}
+
+div[class*='kursor'] {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+body.fp-viewing-4 div[class*='kursor'] {
+    transform: translate(-50%, -50%) scale(0);
 }
