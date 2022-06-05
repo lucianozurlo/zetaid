@@ -6,7 +6,9 @@ new fullpage('#zProject', {
     afterLoad: () => {
         document.querySelectorAll('video').forEach(video => video.currentTime = 0);
         document.querySelectorAll('video').forEach(video => video.pause());
-
+        if (isNaN(document.querySelector("body.fp-viewing-0 #section0 video"))) {
+            document.querySelector("body.fp-viewing-0 #section0 video").play();
+        }
         fullpage_api.setAllowScrolling(false);
         setTimeout(() => {
             fullpage_api.setAllowScrolling(true);

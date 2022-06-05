@@ -26,7 +26,7 @@
 div[class*='kursor'] {
   position: fixed;
   pointer-events: none;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale();
   z-index: 10000;
 }
 

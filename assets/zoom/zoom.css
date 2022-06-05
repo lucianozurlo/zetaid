@@ -54,7 +54,7 @@ html body {
     width: 500px;
     height: 500px;
     transform: scale(1);
-    transition: transform .2s ease-in-out;
+    transition: transform .5s ease-in-out;
     background-repeat: no-repeat;
     border-radius: 100%;
     box-shadow: 0 0 20px 0 rgba(252, 48, 0, .1), inset 0 0 40px 0 rgba(0, 0, 0, 1);
