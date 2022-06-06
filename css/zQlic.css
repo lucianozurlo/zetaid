@@ -596,6 +596,13 @@ body.fp-viewing-4 #elementsProject {
     display: none;
 }
 
+#qlicProject #section4 .fp-bg img {
+    max-height: 100vh;
+    max-width: 230vh;
+    height: 100vh;
+    position: absolute;
+}
+
 div[class*='kursor'] {
     transform: translate(-50%, -50%) scale(1);
 }
