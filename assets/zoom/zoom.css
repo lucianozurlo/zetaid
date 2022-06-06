@@ -57,6 +57,7 @@ html body {
     transition: transform .5s ease-in-out;
     background-repeat: no-repeat;
     border-radius: 100%;
+    border: 1px solid rgba(252, 48, 0, .15);
     box-shadow: 0 0 20px 0 rgba(252, 48, 0, .1), inset 0 0 40px 0 rgba(0, 0, 0, 1);
 }
 
