@@ -1,13 +1,13 @@
 const sentryNext = document.querySelector('#sentryNext');
 
 new fullpage('#zProject', {
-    anchors: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+    anchors: ['Intro', 'AdjustablePower', 'Context', 'Working', 'ExplodedView', 'Pedernal', 'PedernalAction', 'Turntable', 'ZetaID', 'NextProject', 'Sentry'],
 
     afterLoad: () => {
         document.querySelectorAll('video').forEach(video => video.currentTime = 0);
         document.querySelectorAll('video').forEach(video => video.pause());
-        if (isNaN(document.querySelector("body.fp-viewing-0 #section0 video"))) {
-            document.querySelector("body.fp-viewing-0 #section0 video").play();
+        if (isNaN(document.querySelector("body.fp-viewing-Intro #section0 video"))) {
+            document.querySelector("body.fp-viewing-Intro #section0 video").play();
         }
 
         fullpage_api.setAllowScrolling(false);

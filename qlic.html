@@ -55,7 +55,7 @@
 
             <div id="overallContent">
                 <div id="menu">
-                    <div id="sideMenu" onmouseleave="cursorOff(); togglePortfolioOff();" onmouseover="cursorOn()">
+                    <div id="sideMenu" onmouseleave="togglePortfolioOff(), cursorOff()" onmouseover="cursorOn()">
                         <div id="logoMain">
                             <a href="index.html#Zeta-id" class="k-hover">
                                 <img id="headerLogo" src="img/logos/ZETA_ID_iso.svg" />
@@ -130,29 +130,31 @@
                             <img src="img/logos/qlic_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Sección</h2>
+                            <h2>Adjustable Power</h2>
+                            <h2>Context</h2>
+                            <h2>Working</h2>
+                            <h2>Exploded View</h2>
+                            <h2>Pedernal</h2>
+                            <h2>Turntable</h2>
                         </div>
                     </div>
 
-                    <div id="proyectMenu" onmouseleave="cursorOff(); togglePortfolioOff();" onmouseover="cursorOn()">
+                    <div id="proyectMenu" onmouseleave="cursorOff(), togglePortfolioOff()" onmouseover="cursorOn()">
                         <ul>
-                            <li><a href="#0" class="k-hover">
-                                    <p>Home</p><span><span></span></span>
+                            <li><a href="#AdjustablePower" class="k-hover">
+                                    <p>Adjustable Power</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#1" class="k-hover">
-                                    <p>Sección 1</p><span><span></span></span>
+                            <li><a href="#Context" class="k-hover">
+                                    <p>Context</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#2" class="k-hover">
-                                    <p>Sección 2</p><span><span></span></span>
+                            <li><a href="#Working" class="k-hover">
+                                    <p>Working</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#3" class="k-hover">
-                                    <p>Sección 3</p><span><span></span></span>
+                            <li><a href="#Pedernal" class="k-hover">
+                                    <p>Pedernal</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#4" class="k-hover">
-                                    <p>Sección 4</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#5" class="k-hover">
-                                    <p>Sección 5</p><span><span></span></span>
+                            <li><a href="#Turntable" class="k-hover">
+                                    <p>Turntable</p><span><span></span></span>
                                 </a></li>
                         </ul>
                     </div>
@@ -246,7 +248,7 @@
                         </video>
                     </div>
                 </div>
-                <div id="section6" class="section">
+                <div id="section8" class="section">
                     <div class="fp-bg" style="height: 0px;">
                         <div class="logoEndCanvas" style="
                             height: 100vh;
@@ -263,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="section7" class="section fp-auto-height">
+                <div id="section9" class="section fp-auto-height">
                     <div style="height: 350px">
                         <div class="next">
                             <video id="ekoNext" muted="" playsinline="" data-autoplay="">
@@ -273,7 +275,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="section8" class="section fp-last"></div>
+                <div id="section10" class="section fp-last"></div>
             </div>
         </div>
     </div>
@@ -340,14 +342,14 @@
             document.querySelector("#zProject .section.active video").play();
         };
         const cursorOn = () => {
-            document.querySelector("body.fp-viewing-4 div[class*='kursor'].kursor--1").style.transform = "scale(1) translate(-50%, -50%)";
-            document.querySelector("body.fp-viewing-4 div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(1)translate(-50%, -50%)";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(1) translate(-50%, -50%)";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(1)translate(-50%, -50%)";
             document.getElementById('qlicZoom').contentWindow.hideZoom();
 
         };
         const cursorOff = () => {
-            document.querySelector("body.fp-viewing-4 div[class*='kursor'].kursor--1").style.transform = "scale(0)translate(-50%, -50%) ";
-            document.querySelector("body.fp-viewing-4 div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(0) translate(-50%, -50%)";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(0)translate(-50%, -50%) ";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(0) translate(-50%, -50%)";
             document.getElementById("qlicZoom").contentWindow.showZoom();
         };
     </script>

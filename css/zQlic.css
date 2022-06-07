@@ -204,12 +204,12 @@ body#ekoProject .button-plus:hover {
     transition: all 1s ease-in-out;
 }
 
-body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
-body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
-body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"],
-body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"],
-body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
-body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
+body.fp-viewing-AdjustablePower .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-Context .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-Working .elementsCanvas #elementsSection3 [class*="element"],
+body.fp-viewing-ExplodedView .elementsCanvas #elementsSection4 [class*="element"],
+body.fp-viewing-Pedernal .elementsCanvas #elementsSection5 [class*="element"],
+body.fp-viewing-PedernalAction .elementsCanvas #elementsSection6 [class*="element"] {
     opacity: 1;
     filter: blur(0);
     transition: all 1.2s .7s ease-in-out;
@@ -306,14 +306,14 @@ body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
     transition: .5s;
 }
 
-body.fp-viewing-0 .loaded #introProject {
+body.fp-viewing-Intro .loaded #introProject {
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
     transition: all 1.2s 0.5s ease-in-out;
 }
 
-body.fp-viewing-1 .loaded #introProject {
+body.fp-viewing-Intro .loaded #introProject {
     opacity: 0;
     filter: blur(50px);
     transition: all 0.75s ease-in-out;
@@ -337,18 +337,7 @@ body.fp-viewing-1 .loaded #introProject {
     height: 20px;
 }
 
-#sectionProject {
-    margin: 11px 0 0 15px;
-    opacity: .35;
-    font-weight: 300;
-}
-
-#sectionProject h2 {
-    color: #fff;
-    font-size: 20px;
-}
-
-body.fp-viewing-0 #logoMenu {
+body.fp-viewing-Intro #logoMenu {
     opacity: 0;
     filter: blur(25px);
     transition: all 0.5s 0.75s ease-in-out;
@@ -378,38 +367,38 @@ body .loaded #mouse {
     transition-delay: 0s;
 }
 
-body.fp-viewing-0 .loaded #mouse {
+body.fp-viewing-Intro .loaded #mouse {
     transition-delay: 1.5s;
     opacity: 0.25;
 }
 
-body.fp-viewing-7 #section6 .logoEndCanvas,
-body.fp-viewing-8 #section6 .logoEndCanvas {
+body.fp-viewing-ZetaID #section6 .logoEndCanvas,
+body.fp-viewing-NextProject #section6 .logoEndCanvas {
     height: calc(100vh - 350px) !important;
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-7 #section6 #logoEnd,
-body.fp-viewing-8 #section6 #logoEnd {
+body.fp-viewing-ZetaID #section6 #logoEnd,
+body.fp-viewing-NextProject #section6 #logoEnd {
     transform: translate(0px, 350px);
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-6 #section6 .logoEndCanvas {
+body.fp-viewing-Turntable #section6 .logoEndCanvas {
     height: calc(100vh - 0px) !important;
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-6 #section6 #logoEnd {
+body.fp-viewing-Turntable #section6 #logoEnd {
     transform: translate(0px, 0px);
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-6 #mouse {
+body.fp-viewing-Turntable #mouse {
     position: absolute;
     bottom: -60px;
     opacity: 0;
@@ -419,37 +408,34 @@ body.fp-viewing-6 #mouse {
     transition: all 0.5s ease-in-out;
 }
 
-body.fp-viewing-8 #mouse {
+body.fp-viewing-NextProject #mouse {
     bottom: 30px;
     opacity: 0.25;
     filter: blur(0);
     transition-delay: 0s;
 }
 
-body.fp-viewing-8 #mouse {
+body.fp-viewing-NextProject #mouse {
     opacity: 0;
 }
 
-body.fp-viewing-6 #sideMenu,
-body.fp-viewing-7 #sideMenu,
-body.fp-viewing-8 #sideMenu,
-body.fp-viewing-6 #sideMenu #logoMain,
-body.fp-viewing-7 #sideMenu #logoMain,
-body.fp-viewing-8 #sideMenu #logoMain {
+body.fp-viewing-ZetaID #sideMenu,
+body.fp-viewing-NextProject #sideMenu,
+body.fp-viewing-ZetaID #sideMenu #logoMain,
+body.fp-viewing-NextProject #sideMenu #logoMain {
     filter: blur(25px) !important;
     right: -120px !important;
     opacity: 0;
     transition: all 500ms ease-in-out !important;
 }
 
-body.fp-viewing-1 #logoMenu {
+body.fp-viewing-Intro #logoMenu {
     transition-delay: .2s;
 }
 
-body.fp-viewing-0 #logoMenu,
-body.fp-viewing-6 #logoMenu,
-body.fp-viewing-7 #logoMenu,
-body.fp-viewing-8 #logoMenu {
+body.fp-viewing-Intro #logoMenu,
+body.fp-viewing-ZetaID #logoMenu,
+body.fp-viewing-NextProject #logoMenu {
     filter: blur(25px);
     left: -120px;
     opacity: 0;
@@ -490,8 +476,8 @@ body.fp-viewing-8 #logoMenu {
     transition-delay: 0s;
 }
 
-body.fp-viewing-7 #zProject .next video,
-body.fp-viewing-8 #zProject .next video {
+body.fp-viewing-ZetaID #zProject .next video,
+body.fp-viewing-NextProject #zProject .next video {
     top: 2px;
     opacity: 1;
     transform: scale(1);
@@ -500,8 +486,8 @@ body.fp-viewing-8 #zProject .next video {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-7 #zProject .next img,
-body.fp-viewing-8 #zProject .next img {
+body.fp-viewing-ZetaID #zProject .next img,
+body.fp-viewing-NextProject #zProject .next img {
     top: 200px;
     opacity: 1;
     transform: scale(1);
@@ -524,30 +510,30 @@ body.fp-viewing-8 #zProject .next img {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-6 #zProject #logoEnd h3,
-body.fp-viewing-7 #zProject #logoEnd h3,
-body.fp-viewing-8 #zProject #logoEnd h3 {
+body.fp-viewing-Turntable #zProject #logoEnd h3,
+body.fp-viewing-ZetaID #zProject #logoEnd h3,
+body.fp-viewing-NextProject #zProject #logoEnd h3 {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
     transition-delay: 0.1s;
 }
 
-body.fp-viewing-6 #mouse,
-body.fp-viewing-7 #mouse,
-body.fp-viewing-8 #mouse {
+body.fp-viewing-Turntable #mouse,
+body.fp-viewing-ZetaID #mouse,
+body.fp-viewing-NextProject #mouse {
     opacity: .2;
 }
 
-body.fp-viewing-6 #mouse .light,
-body.fp-viewing-7 #mouse .light,
-body.fp-viewing-8 #mouse .light {
+body.fp-viewing-Turntable #mouse .light,
+body.fp-viewing-ZetaID #mouse .light,
+body.fp-viewing-NextProject #mouse .light {
     display: unset;
 }
 
-body.fp-viewing-6 #mouse .dark,
-body.fp-viewing-7 #mouse .dark,
-body.fp-viewing-8 #mouse .dark {
+body.fp-viewing-Turntable #mouse .dark,
+body.fp-viewing-ZetaID #mouse .dark,
+body.fp-viewing-NextProject #mouse .dark {
     display: none;
 }
 
@@ -562,25 +548,25 @@ body.fp-viewing-8 #mouse .dark {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-6 #zProject #logoEnd img,
-body.fp-viewing-7 #zProject #logoEnd img,
-body.fp-viewing-8 #zProject #logoEnd img,
-body.fp-viewing-7 #section6 .fp-tableCell {
+body.fp-viewing-Turntable #zProject #logoEnd img,
+body.fp-viewing-ZetaID #zProject #logoEnd img,
+body.fp-viewing-NextProject #zProject #logoEnd img,
+body.fp-viewing-ZetaID #section6 .fp-tableCell {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
     transition-delay: 0.35s;
 }
 
-body.fp-viewing-7 #zProject #mouse {
+body.fp-viewing-ZetaID #zProject #mouse {
     opacity: 0;
     transition: all 0.5s ease-in-out;
     transition-delay: 0;
 }
 
-body.fp-viewing-8 #logoEnd,
-body.fp-viewing-8 #zProject .next,
-body.fp-viewing-8 #mouse {
+body.fp-viewing-NextProject #logoEnd,
+body.fp-viewing-NextProject #zProject .next,
+body.fp-viewing-NextProject #mouse {
     opacity: 0 !important;
     transition: all 0.5s ease-in-out !important;
 }
@@ -607,7 +593,7 @@ body.fp-viewing-8 #mouse {
     max-height: 100vh;
 }
 
-body.fp-viewing-4 #elementsProject {
+body.fp-viewing-Working #elementsProject {
     display: none;
 }
 
@@ -622,6 +608,18 @@ div[class*='kursor'] {
     transform: translate(-50%, -50%) scale(1);
 }
 
-body.fp-viewing-4 div[class*='kursor'] {
+body.fp-viewing-Working div[class*='kursor'] {
     transform: translate(-50%, -50%) scale(0);
+}
+
+body.fp-viewing-AdjustablePower #sectionProject h2:nth-child(1),
+body.fp-viewing-Context #sectionProject h2:nth-child(2),
+body.fp-viewing-Working #sectionProject h2:nth-child(3),
+body.fp-viewing-ExplodedView #sectionProject h2:nth-child(4),
+body.fp-viewing-Pedernal #sectionProject h2:nth-child(5),
+body.fp-viewing-PedernalAction #sectionProject h2:nth-child(5),
+body.fp-viewing-Turntable #sectionProject h2:nth-child(6) {
+    transform: translateX(0%);
+    clip-path: inset(0 0 0 0%);
+    opacity: 1;
 }

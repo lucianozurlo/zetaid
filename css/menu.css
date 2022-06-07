@@ -580,3 +580,24 @@ body .loaded #mouse.toggleOFF {
   opacity: 0;
   transition: opacity .3s .2s ease-in-out !important;
 }
+
+
+
+/* titulo */
+
+#sectionProject {
+  margin: 11px 0 0 15px;
+  opacity: .35;
+  font-weight: 300;
+}
+
+#sectionProject h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  white-space: pre;
+  transform: translateX(-100%);
+  clip-path: inset(0 0 0 100%);
+  opacity: 0;
+  transition: all .7s ease !important;
+}
