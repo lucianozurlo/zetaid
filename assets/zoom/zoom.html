@@ -3,9 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="zoom.css" rel="stylesheet" media="all">
-    <script src="zoom.js" type="text/javascript"></script>
+    <style>
+        html * {
+            box-sizing: border-box;
+        }
 
+        html body {
+            margin: 0;
+        }
+
+        #zoom {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        #zoom * {
+            box-sizing: border-box;
+        }
+
+        #zoom .zoom-img-zoom {
+            position: relative;
+            cursor: none;
+            display: table;
+            margin: 0;
+            width: 230vh;
+            height: 100vh;
+        }
+
+        #zoom .zoom-img-zoom,
+        #zoom .zoom-img-zoom img,
+        #zoom .zoom-img-zoom .magnify {
+            width: 230vh;
+            height: 100vh;
+            max-width: 230vh;
+            max-height: 100vh;
+        }
+
+        #zoom .zoom-img-zoom img {
+            display: block;
+            width: 230vh;
+            margin: 0;
+        }
+
+        #zoom .zoom-img-zoom .magnify {
+            display: none;
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            transform: scale(1);
+            transition: transform .5s ease-in-out;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            border: 1px solid rgba(252, 48, 0, .15);
+            box-shadow: 0 0 20px 0 rgba(252, 48, 0, .1), inset 0 0 40px 0 rgba(0, 0, 0, 1);
+        }
+
+        #zoom .zoom-img-zoom .show {
+            display: block;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script src="zoom.js" type="text/javascript"></script>
 </head>
 
 <body>

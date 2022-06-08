@@ -14,7 +14,7 @@
     /* transition: opacity 0.5s 0.2s linear; */
 }
 
-body.fp-viewing-0 #menu #sideMenu ul {
+body.fp-viewing-Intro #menu #sideMenu ul {
     opacity: 0.15;
     left: 30px;
     transition: all 0.3s ease-in-out;
@@ -25,8 +25,8 @@ body.fp-viewing-0 #menu #sideMenu ul {
     transition: all 0.3s ease-in-out;
 }
 
-body.fp-viewing-0 #menu #sideMenu:hover ul,
-body.fp-viewing-0 #menu #sideMenu.toggleON ul {
+body.fp-viewing-Intro #menu #sideMenu:hover ul,
+body.fp-viewing-Intro #menu #sideMenu.toggleON ul {
     opacity: 1;
     left: 150px;
 }
@@ -83,12 +83,13 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
     border-color: #fc3000;
 }
 
-body.fp-viewing-0 #menu #proyectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-1 #menu #proyectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-2 #menu #proyectMenu ul li:nth-child(3) a span span,
-body.fp-viewing-3 #menu #proyectMenu ul li:nth-child(4) a span span,
-body.fp-viewing-4 #menu #proyectMenu ul li:nth-child(5) a span span,
-body.fp-viewing-5 #menu #proyectMenu ul li:nth-child(6) a span span {
+body.fp-viewing-AdjustablePower #menu #proyectMenu ul li:nth-child(1) a span span,
+body.fp-viewing-Context #menu #proyectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-Working #menu #proyectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-ExplodedView #menu #proyectMenu ul li:nth-child(4) a span span,
+body.fp-viewing-Pedernal #menu #proyectMenu ul li:nth-child(5) a span span,
+body.fp-viewing-PedernalAction #menu #proyectMenu ul li:nth-child(5) a span span,
+body.fp-viewing-Turntable #menu #proyectMenu ul li:nth-child(6) a span span {
     width: 10px;
     height: 10px;
     background: rgba(250, 46, 0, 0);
@@ -104,12 +105,12 @@ body.fp-viewing-5 #menu #proyectMenu ul li:nth-child(6) a span span {
 }
 
 
-body.fp-viewing-6 #menu #proyectMenu,
-body.fp-viewing-7 #menu #proyectMenu,
-body.fp-viewing-8 #menu #proyectMenu,
-body.fp-viewing-6 #langSwitch,
-body.fp-viewing-7 #langSwitch,
-body.fp-viewing-8 #langSwitch {
+body.fp-viewing-ZetaID #menu #proyectMenu,
+body.fp-viewing-NextProject #menu #proyectMenu,
+body.fp-viewing-NewProject #menu #proyectMenu,
+body.fp-viewing-ZetaID #langSwitch,
+body.fp-viewing-NextProject #langSwitch,
+body.fp-viewing-NewProject #langSwitch {
     opacity: 0;
     transform: translateX(-80px);
     transition: all 0.3s ease-in-out;

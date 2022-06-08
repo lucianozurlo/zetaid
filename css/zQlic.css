@@ -146,133 +146,6 @@ body#ekoProject .button-plus:hover {
     }
 }
 
-/* #ekoVideoBlack,
-#ekoVideoBlack video {
-    background: #000 !important;
-} */
-
-
-/**/
-#elementsProject {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-}
-
-.elementsCanvas {
-    position: absolute;
-    z-index: 222;
-    top: 50%;
-    right: 50%;
-    width: 177.78vh;
-    height: 56.25vw;
-    max-width: 100vw;
-    max-height: 100vh;
-    object-fit: revert;
-    transform: translate(50%, -50%);
-}
-
-#elementsProject .elementsCanvas {
-    opacity: 1;
-    transition: .2s ease-in-out;
-}
-
-.elementsCanvas p {
-    color: #757575;
-    text-align: left;
-    margin: 0 0 7px 0;
-    font-size: 16px;
-}
-
-
-.elementsCanvas #elementsSection1,
-.elementsCanvas #elementsSection2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.elementsCanvas [class*="element"] {
-    position: absolute;
-    z-index: 100;
-    opacity: 0;
-    filter: blur(25px);
-    transition: all 1s ease-in-out;
-}
-
-body.fp-viewing-AdjustablePower .elementsCanvas #elementsSection1 [class*="element"],
-body.fp-viewing-Context .elementsCanvas #elementsSection2 [class*="element"],
-body.fp-viewing-Working .elementsCanvas #elementsSection3 [class*="element"],
-body.fp-viewing-ExplodedView .elementsCanvas #elementsSection4 [class*="element"],
-body.fp-viewing-Pedernal .elementsCanvas #elementsSection5 [class*="element"],
-body.fp-viewing-PedernalAction .elementsCanvas #elementsSection6 [class*="element"] {
-    opacity: 1;
-    filter: blur(0);
-    transition: all 1.2s .7s ease-in-out;
-}
-
-
-
-
-.elementsCanvas p {
-    color: #757575;
-    text-align: left;
-    margin: 0 0 0 0;
-    font-size: 16px;
-}
-
-.elementsCanvas .element0 {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    /* width: 30%; */
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    padding: 25px 35px;
-    border-radius: 5px;
-    color: #fff;
-    text-align: left;
-}
-
-.elementsCanvas .element0 h3 {
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.elementsCanvas #elementsSection1,
-.elementsCanvas #elementsSection5 {
-    display: flex;
-    justify-content: center;
-}
-
-.elementsCanvas #elementsSection1 .element0,
-.elementsCanvas #elementsSection5 .element0 {
-    right: unset;
-    width: fit-content;
-    bottom: 120px;
-}
-
-.elementsCanvas #elementsSection1 .element0 p,
-.elementsCanvas #elementsSection2 .element0 p {
-    margin-bottom: 0;
-}
-
-.elementsCanvas #elementsSection1 .element0 {
-    top: unset;
-    /* width: 25%; */
-    bottom: 46vh;
-    transform: translateX(-21vw);
-    right: unset;
-}
-
 #zProject video {
     top: 50%;
     right: 50%;
@@ -293,7 +166,7 @@ body.fp-viewing-PedernalAction .elementsCanvas #elementsSection6 [class*="elemen
     width: 100vw;
     bottom: 10vh;
     opacity: 1;
-    z-index: 1;
+    z-index: 10;
     opacity: 0;
     filter: blur(25px);
     transition: all 1.2s ease-in-out;
@@ -313,7 +186,7 @@ body.fp-viewing-Intro .loaded #introProject {
     transition: all 1.2s 0.5s ease-in-out;
 }
 
-body.fp-viewing-Intro .loaded #introProject {
+body.fp-viewing-AdjustablePower .loaded #introProject {
     opacity: 0;
     filter: blur(50px);
     transition: all 0.75s ease-in-out;
@@ -367,38 +240,34 @@ body .loaded #mouse {
     transition-delay: 0s;
 }
 
-body.fp-viewing-Intro .loaded #mouse {
+/* XXXXX body.fp-viewing-Intro .loaded #mouse {
     transition-delay: 1.5s;
     opacity: 0.25;
-}
+} */
 
-body.fp-viewing-ZetaID #section6 .logoEndCanvas,
-body.fp-viewing-NextProject #section6 .logoEndCanvas {
+body.fp-viewing-NextProject #section8 .logoEndCanvas,
+body.fp-viewing-NewProject #section8 .logoEndCanvas {
     height: calc(100vh - 350px) !important;
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
+    transition: all .7s ease-in-out;
 }
 
-body.fp-viewing-ZetaID #section6 #logoEnd,
-body.fp-viewing-NextProject #section6 #logoEnd {
+body.fp-viewing-NextProject #section8 #logoEnd,
+body.fp-viewing-NewProject #section8 #logoEnd {
     transform: translate(0px, 350px);
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
+    transition: all .7s ease-in-out;
 }
 
-body.fp-viewing-Turntable #section6 .logoEndCanvas {
+body.fp-viewing-ZetaID #section8 .logoEndCanvas {
     height: calc(100vh - 0px) !important;
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
+    transition: all .7s ease-in-out;
 }
 
-body.fp-viewing-Turntable #section6 #logoEnd {
+body.fp-viewing-ZetaID #section8 #logoEnd {
     transform: translate(0px, 0px);
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
+    transition: all .7s ease-in-out;
 }
 
-body.fp-viewing-Turntable #mouse {
+body.fp-viewing-ZetaID #mouse {
     position: absolute;
     bottom: -60px;
     opacity: 0;
@@ -408,21 +277,23 @@ body.fp-viewing-Turntable #mouse {
     transition: all 0.5s ease-in-out;
 }
 
-body.fp-viewing-NextProject #mouse {
+body.fp-viewing-NewProject #mouse {
     bottom: 30px;
     opacity: 0.25;
     filter: blur(0);
     transition-delay: 0s;
 }
 
-body.fp-viewing-NextProject #mouse {
+body.fp-viewing-NewProject #mouse {
     opacity: 0;
 }
 
 body.fp-viewing-ZetaID #sideMenu,
 body.fp-viewing-NextProject #sideMenu,
+body.fp-viewing-NewProject #sideMenu,
 body.fp-viewing-ZetaID #sideMenu #logoMain,
-body.fp-viewing-NextProject #sideMenu #logoMain {
+body.fp-viewing-NextProject #sideMenu #logoMain,
+body.fp-viewing-NewProject #sideMenu #logoMain {
     filter: blur(25px) !important;
     right: -120px !important;
     opacity: 0;
@@ -433,9 +304,10 @@ body.fp-viewing-Intro #logoMenu {
     transition-delay: .2s;
 }
 
-body.fp-viewing-Intro #logoMenu,
+body.fp-viewing-AdjustablePower #logoMenu,
 body.fp-viewing-ZetaID #logoMenu,
-body.fp-viewing-NextProject #logoMenu {
+body.fp-viewing-NextProject #logoMenu,
+body.fp-viewing-NewProject #logoMenu {
     filter: blur(25px);
     left: -120px;
     opacity: 0;
@@ -459,7 +331,7 @@ body.fp-viewing-NextProject #logoMenu {
     right: unset;
     opacity: 0;
     transform: scale(0.8);
-    box-shadow: 0px 0px 0px #5ae0ff;
+    box-shadow: 0px 0px 0px #9a71ff;
     border-radius: 50%;
     transition: all 1s ease-in-out;
     transition-delay: 0s;
@@ -476,18 +348,18 @@ body.fp-viewing-NextProject #logoMenu {
     transition-delay: 0s;
 }
 
-body.fp-viewing-ZetaID #zProject .next video,
-body.fp-viewing-NextProject #zProject .next video {
+body.fp-viewing-NextProject #zProject .next video,
+body.fp-viewing-NewProject #zProject .next video {
     top: 2px;
     opacity: 1;
     transform: scale(1);
-    box-shadow: 0px 2px 4px #5ae0ff;
+    box-shadow: 0px 2px 4px #9a71ff;
     transition: all 1.5s ease-in-out;
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-ZetaID #zProject .next img,
-body.fp-viewing-NextProject #zProject .next img {
+body.fp-viewing-NextProject #zProject .next img,
+body.fp-viewing-NewProject #zProject .next img {
     top: 200px;
     opacity: 1;
     transform: scale(1);
@@ -510,30 +382,30 @@ body.fp-viewing-NextProject #zProject .next img {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-Turntable #zProject #logoEnd h3,
 body.fp-viewing-ZetaID #zProject #logoEnd h3,
-body.fp-viewing-NextProject #zProject #logoEnd h3 {
+body.fp-viewing-NextProject #zProject #logoEnd h3,
+body.fp-viewing-NewProject #zProject #logoEnd h3 {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
     transition-delay: 0.1s;
 }
 
-body.fp-viewing-Turntable #mouse,
 body.fp-viewing-ZetaID #mouse,
-body.fp-viewing-NextProject #mouse {
+body.fp-viewing-NextProject #mouse,
+body.fp-viewing-NewProject #mouse {
     opacity: .2;
 }
 
-body.fp-viewing-Turntable #mouse .light,
 body.fp-viewing-ZetaID #mouse .light,
-body.fp-viewing-NextProject #mouse .light {
+body.fp-viewing-NextProject #mouse .light,
+body.fp-viewing-NewProject #mouse .light {
     display: unset;
 }
 
-body.fp-viewing-Turntable #mouse .dark,
 body.fp-viewing-ZetaID #mouse .dark,
-body.fp-viewing-NextProject #mouse .dark {
+body.fp-viewing-NextProject #mouse .dark,
+body.fp-viewing-NewProject #mouse .dark {
     display: none;
 }
 
@@ -548,25 +420,25 @@ body.fp-viewing-NextProject #mouse .dark {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-Turntable #zProject #logoEnd img,
 body.fp-viewing-ZetaID #zProject #logoEnd img,
 body.fp-viewing-NextProject #zProject #logoEnd img,
-body.fp-viewing-ZetaID #section6 .fp-tableCell {
+body.fp-viewing-NewProject #zProject #logoEnd img,
+body.fp-viewing-NextProject #section8 .fp-tableCell {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
     transition-delay: 0.35s;
 }
 
-body.fp-viewing-ZetaID #zProject #mouse {
+body.fp-viewing-NextProject #zProject #mouse {
     opacity: 0;
     transition: all 0.5s ease-in-out;
     transition-delay: 0;
 }
 
-body.fp-viewing-NextProject #logoEnd,
-body.fp-viewing-NextProject #zProject .next,
-body.fp-viewing-NextProject #mouse {
+body.fp-viewing-NewProject #logoEnd,
+body.fp-viewing-NewProject #zProject .next,
+body.fp-viewing-NewProject #mouse {
     opacity: 0 !important;
     transition: all 0.5s ease-in-out !important;
 }
@@ -593,10 +465,6 @@ body.fp-viewing-NextProject #mouse {
     max-height: 100vh;
 }
 
-body.fp-viewing-Working #elementsProject {
-    display: none;
-}
-
 #qlicProject #section4 .fp-bg img {
     max-height: 100vh;
     max-width: 230vh;
@@ -604,13 +472,6 @@ body.fp-viewing-Working #elementsProject {
     position: absolute;
 }
 
-div[class*='kursor'] {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-body.fp-viewing-Working div[class*='kursor'] {
-    transform: translate(-50%, -50%) scale(0);
-}
 
 body.fp-viewing-AdjustablePower #sectionProject h2:nth-child(1),
 body.fp-viewing-Context #sectionProject h2:nth-child(2),
@@ -622,4 +483,128 @@ body.fp-viewing-Turntable #sectionProject h2:nth-child(6) {
     transform: translateX(0%);
     clip-path: inset(0 0 0 0%);
     opacity: 1;
+}
+
+
+
+/*** elementsProject **/
+#elementsProject {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.elementsCanvas {
+    position: absolute;
+    z-index: 222;
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    transform: translate(50%, -50%);
+}
+
+.elementsCanvas p {
+    color: #757575;
+    text-align: left;
+    margin: 0 0 7px 0;
+    font-size: 16px;
+}
+
+
+.elementsCanvas #elementsSection1,
+.elementsCanvas #elementsSection5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.elementsCanvas [class*="element"] {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 1s ease-in-out;
+}
+
+body.fp-viewing-AdjustablePower #elementsProject .elementsCanvas,
+body.fp-viewing-Pedernal #elementsProject .elementsCanvas,
+body.fp-viewing-PedernalAction #elementsProject .elementsCanvas {
+    animation: in 2s;
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+        display: revert;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body.fp-viewing-AdjustablePower .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-Pedernal .elementsCanvas #elementsSection5 [class*="element"],
+body.fp-viewing-PedernalAction .elementsCanvas #elementsSection5 [class*="element"] {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s .7s ease-in-out;
+}
+
+.elementsCanvas p {
+    color: #757575;
+    text-align: left;
+    margin: 0 0 0 0;
+    font-size: 16px;
+}
+
+.elementsCanvas div [class*="element"] {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 25px 35px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.elementsCanvas .element0 h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.elementsCanvas #elementsSection1,
+.elementsCanvas #elementsSection5 {
+    display: flex;
+    justify-content: center;
+}
+
+.elementsCanvas p {
+    margin-bottom: 0;
+}
+
+.elementsCanvas #elementsSection1 [class*="element"] {
+    top: unset;
+    bottom: 46vh;
+    transform: translateX(-21vw);
+    right: unset;
+}
+
+.elementsCanvas #elementsSection5 [class*="element"] {
+    right: unset;
+    width: fit-content;
+    bottom: 120px;
 }

@@ -243,3 +243,22 @@ body.fp-viewing-0 .loaded #introProject {
 #introProject p.light {
     color: rgba(100, 100, 100, 0.75);
 }
+
+/*** elementsProject **/
+#elementsProject,
+#elementsProject .elementsCanvas {
+    animation: out 2s;
+    display: none;
+}
+
+@keyframes out {
+    from {
+        display: revert;
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

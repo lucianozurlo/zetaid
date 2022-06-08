@@ -150,6 +150,9 @@
                             <li><a href="#Working" class="k-hover">
                                     <p>Working</p><span><span></span></span>
                                 </a></li>
+                            <li><a href="#ExplodedView" class="k-hover">
+                                    <p>Exploded View</p><span><span></span></span>
+                                </a></li>
                             <li><a href="#Pedernal" class="k-hover">
                                     <p>Pedernal</p><span><span></span></span>
                                 </a></li>
@@ -226,7 +229,8 @@
                 </div>
                 <div id="section4" class="section">
                     <div class="fp-bg">
-                        <iframe src="assets/zoom/zoom.html" frameborder="0" id="qlicZoom"></iframe>
+                        <iframe src="assets/zoom/zoom.html" frameborder="0" id="qlicZoom"
+                            onmouseover="cursorOff()"></iframe>
                     </div>
                 </div>
                 <div id="section5" class="section">
@@ -348,7 +352,7 @@
 
         };
         const cursorOff = () => {
-            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(0)translate(-50%, -50%) ";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(0)translate(-50%, -50%)";
             document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(0) translate(-50%, -50%)";
             document.getElementById("qlicZoom").contentWindow.showZoom();
         };
@@ -358,10 +362,16 @@
     <script>window.onresize = () => location.reload()</script>
     <script>
         function abajo() {
-            window.location.replace('../../qlic.html#5')
+            window.location.replace('../../qlic.html#Pedernal')
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(1) translate(-50%, -50%)";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(1)translate(-50%, -50%)";
+
         }
         function arriba() {
-            window.location.replace('../../qlic.html#3')
+            window.location.replace('../../qlic.html#Working')
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(1) translate(-50%, -50%)";
+            document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(1)translate(-50%, -50%)";
+
         }
     </script>
 </body>
