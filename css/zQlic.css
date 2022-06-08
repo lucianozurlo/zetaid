@@ -519,8 +519,7 @@ body.fp-viewing-Turntable #sectionProject h2:nth-child(6) {
 }
 
 
-.elementsCanvas #elementsSection1,
-.elementsCanvas #elementsSection5 {
+.elementsCanvas [id*="elementsSection"] {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -537,20 +536,9 @@ body.fp-viewing-Turntable #sectionProject h2:nth-child(6) {
 body.fp-viewing-AdjustablePower #elementsProject .elementsCanvas,
 body.fp-viewing-Pedernal #elementsProject .elementsCanvas,
 body.fp-viewing-PedernalAction #elementsProject .elementsCanvas {
-    animation: in 2s;
+    visibility: visible;
 }
 
-@keyframes in {
-    from {
-        opacity: 0;
-        display: revert;
-
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 body.fp-viewing-AdjustablePower .elementsCanvas #elementsSection1 [class*="element"],
 body.fp-viewing-Pedernal .elementsCanvas #elementsSection5 [class*="element"],
@@ -558,6 +546,10 @@ body.fp-viewing-PedernalAction .elementsCanvas #elementsSection5 [class*="elemen
     opacity: 1;
     filter: blur(0);
     transition: all 1.2s .7s ease-in-out;
+}
+
+body.fp-viewing-ExplodedView #elementsProject .elementsCanvas {
+    visibility: hidden;
 }
 
 .elementsCanvas p {
