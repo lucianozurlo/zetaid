@@ -304,7 +304,7 @@ body.fp-viewing-Intro #logoMenu {
     transition-delay: .2s;
 }
 
-body.fp-viewing-AdjustablePower #logoMenu,
+body.fp-viewing-Intro #logoMenu,
 body.fp-viewing-ZetaID #logoMenu,
 body.fp-viewing-NextProject #logoMenu,
 body.fp-viewing-NewProject #logoMenu {
