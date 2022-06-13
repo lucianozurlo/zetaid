@@ -26,14 +26,6 @@ new fullpage('#zProject', {
     onLeave: function (origin, destination) {
         let leavingSection = this;
 
-        /*********** ExplodedView *******/
-        /*  Working >>> ExplodedView <<< Pedernal  */
-        if (origin.index <= 'Working' && destination.index == 'ExplodedView') {
-            // document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(0)translate(-50%, -50%)";
-            // document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(0) translate(-50%, -50%)";
-            console.log('hola')
-        }
-
         /*********** NextProject *******/
         /*  ZetaID >>>  */
         if (origin.index <= 'ZetaID' && destination.index == 'NextProject') {
@@ -49,19 +41,6 @@ new fullpage('#zProject', {
             setTimeout(() => {
                 console.log('1 sec delay')
                 window.location.href = 'flieben.html';
-                mouse.style.opacity = .25;
-                clearInterval(timer);
-            }, 1000);
-        }
-
-        /*********** 10 *******/
-        /*  9 >>>  */
-        if (origin.index <= 9 && destination.index == 10) {
-            fullpage_api.setScrollingSpeed(100000000);
-            fullpage_api.setAllowScrolling(false);
-            setTimeout(() => {
-                console.log('1 sec delay')
-                window.location.href = 'eko.html';
                 mouse.style.opacity = .25;
                 clearInterval(timer);
             }, 1000);

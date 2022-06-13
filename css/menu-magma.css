@@ -53,42 +53,41 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
 }
 
 
-/* proyectMenu */
-/* #menu #proyectMenu {
+/* projectMenu */
+/* #menu #projectMenu {
     background: rgba(255, 171, 141, 0);
 }
 
-#menu #proyectMenu:hover {
+#menu #projectMenu:hover {
     background: rgba(255, 171, 141, 0.05);
 } */
 
-#menu #proyectMenu ul {
+#menu #projectMenu ul {
     opacity: 0.7;
 }
 
-#menu #proyectMenu ul li a {
+#menu #projectMenu ul li a {
     opacity: 1;
 }
 
-#menu #proyectMenu ul li a p {
+#menu #projectMenu ul li a p {
     color: #fff;
 }
 
-#menu #proyectMenu ul li a:hover p {
+#menu #projectMenu ul li a:hover p {
     color: #ffab8d !important;
 }
 
-#menu #proyectMenu ul li a span span {
+#menu #projectMenu ul li a span span {
     background: #ffab8d;
     border-color: #ffab8d;
 }
 
-body.fp-viewing-0 #menu #proyectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-1 #menu #proyectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-2 #menu #proyectMenu ul li:nth-child(3) a span span,
-body.fp-viewing-3 #menu #proyectMenu ul li:nth-child(4) a span span,
-body.fp-viewing-4 #menu #proyectMenu ul li:nth-child(5) a span span,
-body.fp-viewing-5 #menu #proyectMenu ul li:nth-child(6) a span span {
+body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a span span,
+body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-3 #menu #projectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-4 #menu #projectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a span span {
     width: 10px;
     height: 10px;
     background: rgba(255, 171, 141, 0);
@@ -104,9 +103,9 @@ body.fp-viewing-5 #menu #proyectMenu ul li:nth-child(6) a span span {
 }
 
 
-body.fp-viewing-6 #menu #proyectMenu,
-body.fp-viewing-7 #menu #proyectMenu,
-body.fp-viewing-8 #menu #proyectMenu,
+body.fp-viewing-6 #menu #projectMenu,
+body.fp-viewing-7 #menu #projectMenu,
+body.fp-viewing-8 #menu #projectMenu,
 body.fp-viewing-6 #langSwitch,
 body.fp-viewing-7 #langSwitch,
 body.fp-viewing-8 #langSwitch {

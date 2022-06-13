@@ -1,10 +1,10 @@
 function play1() {
     fliebenPlay.style.opacity = 1;
+    fliebenRev.style.opacity = 0;
     fliebenPlay.play();
 
     let timer = setInterval(function () {
         if (fliebenPlay.currentTime >= 2.167) {
-            fliebenRev.style.opacity = 0;
             fliebenPlay.pause();
             fliebenRev.currentTime = 5.933;
             console.log(`fliebenPlay: ${fliebenPlay.currentTime}`);
@@ -16,11 +16,11 @@ function play1() {
 };
 function play2() {
     fliebenPlay.style.opacity = 1;
+    fliebenRev.style.opacity = 0;
     fliebenPlay.play();
 
     let timer = setInterval(function () {
         if (fliebenPlay.currentTime >= 3.165) {
-            fliebenRev.style.opacity = 0;
             fliebenLoopHot.play();
             fliebenPlay.pause();
             fliebenRev.currentTime = 4.933;
@@ -34,14 +34,14 @@ function play2() {
 };
 function play3() {
     fliebenPlay.style.opacity = 1;
+    fliebenRev.style.opacity = 0;
     fliebenPlay.play();
 
     let timer = setInterval(function () {
         if (fliebenPlay.currentTime >= 4.433) {
-            fliebenRev.style.opacity = 0;
             fliebenLoopHot.play();
             fliebenPlay.pause();
-            fliebenLoopHot.style.opacity = 0;
+            fliebenLoopHotRev.style.opacity = 0;
             fliebenLoopHot.style.opacity = 1;
             fliebenRev.currentTime = 3.667;
             console.log(`fliebenPlay: ${fliebenPlay.currentTime}`);
@@ -53,15 +53,17 @@ function play3() {
 };
 function play4() {
     fliebenPlay.style.opacity = 1;
+    fliebenRev.style.opacity = 0;
     fliebenLoopHot.style.opacity = 0;
+    fliebenLoopHotRev.style.opacity = 0;
     fliebenLoopHot.pause();
     fliebenPlay.play();
 
     let timer = setInterval(function () {
         if (fliebenPlay.currentTime >= 6.5) {
-            fliebenRev.style.opacity = 0;
             fliebenLoopCold.play();
             fliebenPlay.pause();
+            fliebenLoopColdRev.style.opacity = 0;
             fliebenLoopCold.style.opacity = 1;
             fliebenRev.currentTime = 1.6;
             console.log(`fliebenPlay: ${fliebenPlay.currentTime}`);
@@ -73,13 +75,14 @@ function play4() {
 };
 function play5() {
     fliebenPlay.style.opacity = 1;
+    fliebenRev.style.opacity = 0;
     fliebenLoopCold.style.opacity = 0;
+    fliebenLoopColdRev.style.opacity = 0;
     fliebenLoopCold.pause();
     fliebenPlay.play();
 
     let timer = setInterval(function () {
         if (fliebenPlay.currentTime >= 8.067) {
-            fliebenRev.style.opacity = 0;
             fliebenPlay.pause();
             fliebenRev.currentTime = 0;
             console.log(`fliebenPlay: ${fliebenPlay.currentTime}`);
@@ -130,8 +133,8 @@ function rev2() {
 };
 function rev3() {
     //fliebenRev.currentTime = 3.667;
-    fliebenLoopHot.style.opacity = 0;
-    fliebenLoopHot.pause();
+    fliebenLoopHotRev.style.opacity = 0;
+    fliebenLoopHotRev.pause();
     fliebenRev.style.opacity = 1;
     fliebenPlay.style.opacity = 0;
     fliebenRev.play();
@@ -149,8 +152,8 @@ function rev3() {
 };
 function rev4() {
     //fliebenRev.currentTime = 1.6;
-    fliebenLoopCold.style.opacity = 0;
-    fliebenLoopCold.pause();
+    fliebenLoopColdRev.style.opacity = 0;
+    fliebenLoopColdRev.pause();
     fliebenRev.style.opacity = 1;
     fliebenPlay.style.opacity = 0;
     fliebenRev.play();
@@ -158,8 +161,8 @@ function rev4() {
     let timer = setInterval(function () {
         if (fliebenRev.currentTime >= 3.667) {
             fliebenRev.pause();
-            fliebenLoopHot.play();
-            fliebenLoopHot.style.opacity = 1;
+            fliebenLoopHotRev.play();
+            fliebenLoopHotRev.style.opacity = 1;
             fliebenPlay.currentTime = 4.433;
             console.log(`fliebenPlay: ${fliebenPlay.currentTime}`);
             console.log(`fliebenRev: ${fliebenRev.currentTime}`);
@@ -181,8 +184,8 @@ function rev5() {
         if (fliebenRev.currentTime >= 1.6) {
             fliebenRev.pause();
             fliebenLoopCold.style.opacity = 0;
-            fliebenLoopCold.play();
-            fliebenLoopCold.style.opacity = 1;
+            fliebenLoopColdRev.play();
+            fliebenLoopColdRev.style.opacity = 1;
             fliebenPlay.currentTime = 6.5;
             console.log(`fliebenPlay: ${fliebenPlay.currentTime}`);
             console.log(`fliebenRev: ${fliebenRev.currentTime}`);

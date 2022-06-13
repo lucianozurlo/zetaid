@@ -2,8 +2,8 @@ const fliebenPlay = document.querySelector('#fliebenPlay');
 const fliebenRev = document.querySelector('#fliebenRev');
 const fliebenLoopHot = document.querySelector('#fliebenLoopHot');
 const fliebenLoopCold = document.querySelector('#fliebenLoopCold');
-// const fliebenLoopHotRev = document.querySelector('#fliebenLoopHotRev');
-// const fliebenLoopColdRev = document.querySelector('#fliebenLoopColdRev');
+const fliebenLoopHotRev = document.querySelector('#fliebenLoopHotRev');
+const fliebenLoopColdRev = document.querySelector('#fliebenLoopColdRev');
 const projectVideos = document.querySelector('#projectVideos');
 const zProject = document.querySelector('#zProject');
 
@@ -43,7 +43,7 @@ new fullpage('#zProject', {
         if (isNaN(document.querySelector('body.fp-viewing-0'))) {
             fliebenPlay.currentTime = 0;
             fliebenRev.currentTime = 8.067;
-            // fliebenRev.style.opacity = 0;
+            //fliebenRev.style.opacity = 0;
             // fliebenLoopCold.style.opacity = 0;
             // fliebenLoopCold.pause();
             // fliebenLoopHot.style.opacity = 0;
@@ -270,78 +270,71 @@ new fullpage('#zProject', {
 
         /*  <<< 5  */
         if (origin.index >= 5 && destination.index == 4) {
-            zProject.style.opacity = 1;
-            fliebenPlay.style.opacity = 1;
-            fliebenRev.style.opacity = 0;
-            fliebenPlay.pause();
-            fliebenLoopCold.style.opacity = 1;
-            fliebenLoopCold.play();
-            projectVideos.style.transform = "translateY(0vh)";
-            projectVideos.style.transitionDuration = "700ms";
+            zProject.style.opacity = 0;
+            fliebenRev.playbackRate = 1;
+            fullpage_api.setScrollingSpeed(2400);
+            mouse.style.opacity = .05;
+            rev5();
+        } else if (origin.index >= 5 && destination.index == 4) {
+            fliebenRev.playbackRate = 1.5;
+            fullpage_api.setScrollingSpeed(2400);
+            mouse.style.opacity = .05;
+            rev5();
+        } else if (origin.index >= 5 && destination.index == 4) {
+            fliebenRev.playbackRate = 2;
+            fullpage_api.setScrollingSpeed(2400);
+            mouse.style.opacity = .05;
+            rev5();
         }
-
-        // /*********** 5 *******/
-        // /*  4 >>>  */
-        // if (origin.index <= 4 && destination.index == 5) {
-        //     elementsProject.style.opacity = 1;
-        //     fliebenPlay.playbackRate = 1;
-        //     fullpage_api.setScrollingSpeed(2400);
-        //     mouse.style.opacity = .05;
-        //     play5();
-        // } else if (origin.index <= 4 && destination.index == 5) {
-        //     elementsProject.style.opacity = 1;
-        //     fliebenPlay.playbackRate = 1.5;
-        //     fullpage_api.setScrollingSpeed(2400);
-        //     mouse.style.opacity = .05;
-        //     play5();
-        // } else if (origin.index <= 4 && destination.index == 5) {
-        //     elementsProject.style.opacity = 1;
-        //     fliebenPlay.playbackRate = 2;
-        //     fullpage_api.setScrollingSpeed(2400);
-        //     mouse.style.opacity = .05;
-        //     play5();
-        // }
-
-        // /*  <<< 6  */
-        // if (origin.index >= 6 && destination.index == 5) {
-        //     fullpage_api.setScrollingSpeed(700);
-        //     elementsProject.style.opacity = 0;
-        //     fliebenRev.style.opacity = 1;
-        //     fliebenRev.currentTime = 0
-        //     fliebenRev.pause();
-        //     fliebenPlay.style.opacity = 0;
-        //     setTimeout(() => {
-        //         projectVideos.style.opacity = 1;
-        //         setTimeout(() => {
-        //             zProject.style.opacity = 0;
-        //         }, 200);
-        //     }, 700);
-
-        // }
 
         /*********** 5 *******/
         /*  4 >>>  */
         if (origin.index <= 4 && destination.index == 5) {
-            fullpage_api.setScrollingSpeed(700);
-            fliebenPlay.style.opacity = 0;
-            fliebenRev.style.opacity = 0;
-            mouse.style.opacity = .25;
-            zProject.style.opacity = 1;
-            projectVideos.style.transform = "translateY(-100vh)";
-            projectVideos.style.transitionDuration = "700ms";
+            elementsProject.style.opacity = 1;
+            fliebenPlay.playbackRate = 1;
+            fullpage_api.setScrollingSpeed(2400);
+            mouse.style.opacity = .05;
+            play5();
+        } else if (origin.index <= 4 && destination.index == 5) {
+            elementsProject.style.opacity = 1;
+            fliebenPlay.playbackRate = 1.5;
+            fullpage_api.setScrollingSpeed(2400);
+            mouse.style.opacity = .05;
+            play5();
+        } else if (origin.index <= 4 && destination.index == 5) {
+            elementsProject.style.opacity = 1;
+            fliebenPlay.playbackRate = 2;
+            fullpage_api.setScrollingSpeed(2400);
+            mouse.style.opacity = .05;
+            play5();
         }
 
         /*  <<< 6  */
         if (origin.index >= 6 && destination.index == 5) {
             fullpage_api.setScrollingSpeed(700);
-            mouse.style.opacity = .25;
+            elementsProject.style.opacity = 0;
+            fliebenRev.style.opacity = 1;
+            fliebenRev.currentTime = 0
+            fliebenRev.pause();
+            fliebenPlay.style.opacity = 0;
+            setTimeout(() => {
+                projectVideos.style.opacity = 1;
+                setTimeout(() => {
+                    zProject.style.opacity = 0;
+                }, 200);
+            }, 700);
+
         }
 
         /*********** 6 *******/
         /*  5 >>>  */
         if (origin.index <= 5 && destination.index == 6) {
             fullpage_api.setScrollingSpeed(700);
+            fliebenPlay.style.opacity = 0;
+            fliebenRev.style.opacity = 0;
             mouse.style.opacity = .25;
+            zProject.style.opacity = 1;
+            projectVideos.style.opacity = 0;
         }
 
         /*  <<< 7  */
@@ -367,23 +360,36 @@ new fullpage('#zProject', {
         /*  7 >>>  */
         if (origin.index <= 7 && destination.index == 8) {
             fullpage_api.setScrollingSpeed(700);
+            mouse.style.opacity = .25;
         }
 
         /*  <<< 9  */
         if (origin.index >= 9 && destination.index == 8) {
             fullpage_api.setScrollingSpeed(700);
+            mouse.style.opacity = .25;
         }
 
         /*********** 9 *******/
         /*  8 >>>  */
         if (origin.index <= 8 && destination.index == 9) {
             fullpage_api.setScrollingSpeed(700);
-            magmaNext.currentTime = 0;
+        }
+
+        /*  <<< 10  */
+        if (origin.index >= 10 && destination.index == 9) {
+            fullpage_api.setScrollingSpeed(700);
         }
 
         /*********** 10 *******/
         /*  9 >>>  */
         if (origin.index <= 9 && destination.index == 10) {
+            fullpage_api.setScrollingSpeed(700);
+            magmaNext.currentTime = 0;
+        }
+
+        /*********** 11 *******/
+        /*  10 >>>  */
+        if (origin.index <= 10 && destination.index == 11) {
             fullpage_api.setScrollingSpeed(100000000);
             fullpage_api.setAllowScrolling(false);
             setTimeout(() => {

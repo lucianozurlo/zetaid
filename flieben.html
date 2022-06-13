@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/menu-flieben.css" />
     <link rel="stylesheet" type="text/css" href="css/zeta-id.css" />
-    <link rel="stylesheet" type="text/css" href="css/proyects.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
     <link rel="stylesheet" type="text/css" href="css/zFlieben.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
@@ -131,44 +131,34 @@
                             <img src="img/logos/flieben_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Sección</h2>
+                            <h2>Portable air conditioner</h2>
+                            <h2>Compact dual system</h2>
+                            <h2>Temperature control</h2>
+                            <h2>Exploded view</h2>
+                            <h2>Removable battery</h2>
+                            <h2>Turntable</h2>
                         </div>
                     </div>
 
-                    <div id="proyectMenu" onmouseleave="togglePortfolioOff()">
+                    <div id="projectMenu" onmouseleave="togglePortfolioOff()">
                         <ul>
-                            <li><a href="#0" class="k-hover">
-                                    <p>Home</p><span><span></span></span>
-                                </a></li>
                             <li><a href="#1" class="k-hover">
-                                    <p>Sección 1</p><span><span></span></span>
+                                    <p>Portable air conditioner</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#2" class="k-hover">
-                                    <p>Sección 2</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#3" class="k-hover">
-                                    <p>Sección 3</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#4" class="k-hover">
-                                    <p>Sección 4</p><span><span></span></span>
+                                    <p>Compact dual system</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#5" class="k-hover">
-                                    <p>Sección 5</p><span><span></span></span>
+                                    <p>Temperature control</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#6" class="k-hover">
-                                    <p>Sección 6</p><span><span></span></span>
+                                    <p>Exploded view</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#7" class="k-hover">
-                                    <p>Sección 7</p><span><span></span></span>
+                                    <p>Removable battery</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#8" class="k-hover">
-                                    <p>Sección 8</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#9" class="k-hover">
-                                    <p>Sección 9</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#10" class="k-hover">
-                                    <p>Sección 10</p><span><span></span></span>
+                                    <p>Turntable</p><span><span></span></span>
                                 </a></li>
                         </ul>
                     </div>
@@ -184,15 +174,15 @@
                     <video id="fliebenLoopCold" loop muted="">
                         <source src="projects/flieben/fliebenLoopCold.mp4" type="video/mp4" />
                     </video>
-                    <video id="fliebenLoopColdRev" loop muted="">
+                    <!-- <video id="fliebenLoopColdRev" loop muted="">
                         <source src="projects/flieben/fliebenLoopColdRev.mp4" type="video/mp4" />
-                    </video>
+                    </video> -->
                     <video id="fliebenLoopHot" loop muted="">
                         <source src="projects/flieben/fliebenLoopHot.mp4" type="video/mp4" />
                     </video>
-                    <video id="fliebenLoopHotRev" loop muted="">
+                    <!-- <video id="fliebenLoopHotRev" loop muted="">
                         <source src="projects/flieben/fliebenLoopHotRev.mp4" type="video/mp4" />
-                    </video>
+                    </video> -->
                 </div>
 
                 <div id="introProject">
@@ -200,8 +190,11 @@
                     <p>Climatizador de ambientes transportable</p>
                 </div>
 
-                <div id="mouse">
-                    <img src="img/scroll-white.gif" />
+                <div id="mouse" onmouseover="cursorOn()" onmouseleave="cursorOff()">
+                    <a id="moveSectionDown" class="k-hover">
+                        <img class="dark" src="img/scroll.gif" />
+                        <img class="light" src="img/scroll-white.gif" />
+                    </a>
                 </div>
 
                 <div id="langSwitch" class="switch r dark k-hover">
@@ -218,7 +211,6 @@
                                     electrica</p>
                             </div>
                         </div>
-
                         <div id="elementsSection2">
                             <div class="element0">
                                 <h3>Compact Dual System</h3>
@@ -246,8 +238,12 @@
                                 <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
                             </div>
                         </div>
-
-                        <div id="elementsSection7">
+                        <div id="elementsSection5">
+                            <div class="element0">
+                                <p>Termostato ajustable</p>
+                            </div>
+                        </div>
+                        <div id="elementsSection6">
                             <div class="element0">
                                 <p>Batería extraible</p>
                             </div>
@@ -258,50 +254,50 @@
             </div>
 
             <div id="zProject">
-                <div class="section" id="section0">
+                <div id="section0" class="section">
                     <div class="fp-bg"></div>
                 </div>
-                <div class="section" id="section1">
+                <div id="section1" class="section">
                     <div class="fp-bg"></div>
                 </div>
-                <div class="section" id="section2">
+                <div id="section2" class="section">
                     <div class="fp-bg"></div>
                 </div>
-                <div class="section" id="section3">
+                <div id="section3" class="section">
                     <div class="fp-bg"></div>
                 </div>
-                <div class="section" id="section4">
+                <div id="section4" class="section">
                     <div class="fp-bg"></div>
                 </div>
-                <div class="section" id="section5">
+                <!-- <div id="section5" class="section">
                     <div class="fp-bg">
                         <video muted="" playsinline="" data-autoplay="">
                             <source src="projects/flieben/fliebenEnd.mp4" type="video/mp4" />
                         </video>
                     </div>
-                </div>
-                <div class="section" id="section6">
+                </div> -->
+                <div id="section5" class="section">
                     <div class="fp-bg bg-black">
                         <video loop muted="" playsinline="" data-autoplay="">
                             <source src="projects/flieben/flieben1.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
-                <div class="section" id="section7">
+                <div id="section6" class="section">
                     <div class="fp-bg bg-black">
                         <video loop muted="" playsinline="" data-autoplay="">
                             <source src="projects/flieben/flieben2.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
-                <div class="section" id="section8">
+                <div id="section7" class="section">
                     <div class="fp-bg bg-black">
                         <video loop muted="" playsinline="" data-autoplay="">
                             <source src="projects/flieben/flieben360.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
-                <div class="section" id="section9">
+                <div id="section8" class="section">
                     <div class="fp-bg bg-black" style="height: 0px; background: #000">
                         <div class="logoEndCanvas" style="
                             height: 100vh;
@@ -318,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="section10" class="section fp-auto-height bg-black">
+                <div id="section9" class="section fp-auto-height bg-black">
                     <div style="height: 350px">
                         <div class="next">
                             <video id="magmaNext" muted="" playsinline="" data-autoplay="">
@@ -328,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <di id="section11" class="section bg-black fp-last">
+                <di id="section10" class="section bg-black fp-last">
             </div>
         </div>
     </div>
@@ -403,7 +399,7 @@
             document.querySelector("#logoMenu").classList.add("toggleOFF");
             document.querySelector("#introProject img").classList.add("toggleOFF");
             document.querySelector("#introProject p").classList.add("toggleOFF");
-            document.querySelector("#proyectMenu").classList.add("toggleOFF");
+            document.querySelector("#projectMenu").classList.add("toggleOFF");
             document.querySelector("#sideMenu").classList.add("toggleON");
             document.querySelector("#portfolio").classList.add("toggleVideos");
             document.querySelectorAll('video').forEach(video => video.pause());
@@ -414,7 +410,7 @@
             document.querySelector("#logoMenu").classList.remove("toggleOFF");
             document.querySelector("#introProject img").classList.remove("toggleOFF");
             document.querySelector("#introProject p").classList.remove("toggleOFF");
-            document.querySelector("#proyectMenu").classList.remove("toggleOFF");
+            document.querySelector("#projectMenu").classList.remove("toggleOFF");
             document.querySelector("#sideMenu").classList.remove("toggleON");
             document.querySelector("#portfolio").classList.remove("toggleVideos");
             document.querySelector("#zProject .section.active video").play();

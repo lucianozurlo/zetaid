@@ -221,7 +221,7 @@ body.fp-viewing-1 .loaded #introProject {
     height: 20px;
 }
 
-#sectionProject {
+/* #sectionProject {
     margin: 11px 0 0 15px;
     opacity: .35;
     font-weight: 300;
@@ -230,7 +230,7 @@ body.fp-viewing-1 .loaded #introProject {
 #sectionProject h2 {
     color: #000;
     font-size: 20px;
-}
+} */
 
 body.fp-viewing-0 #logoMenu {
     opacity: 0;
@@ -460,6 +460,26 @@ body.fp-viewing-16 #mouse {
 }
 
 
+body.fp-viewing-1 #sectionProject h2:nth-child(1),
+body.fp-viewing-2 #sectionProject h2:nth-child(2),
+body.fp-viewing-3 #sectionProject h2:nth-child(3),
+body.fp-viewing-4 #sectionProject h2:nth-child(4),
+body.fp-viewing-5 #sectionProject h2:nth-child(5),
+body.fp-viewing-6 #sectionProject h2:nth-child(6),
+body.fp-viewing-7 #sectionProject h2:nth-child(6),
+body.fp-viewing-8 #sectionProject h2:nth-child(6),
+body.fp-viewing-9 #sectionProject h2:nth-child(6),
+body.fp-viewing-10 #sectionProject h2:nth-child(6),
+body.fp-viewing-11 #sectionProject h2:nth-child(7),
+body.fp-viewing-12 #sectionProject h2:nth-child(8),
+body.fp-viewing-13 #sectionProject h2:nth-child(9) {
+    transform: translateX(0%);
+    clip-path: inset(0 0 0 0%);
+    opacity: 1;
+}
+
+
+
 /*** elementsProject **/
 #elementsProject {
     position: absolute;
@@ -484,15 +504,10 @@ body.fp-viewing-16 #mouse {
     transform: translate(50%, -50%);
 }
 
-/* #elementsProject .elementsCanvas {
-    opacity: 1;
-    transition: .2s ease-in-out;
-} */
-
 .elementsCanvas p {
     color: #757575;
     text-align: left;
-    margin: 0 0 7px 0;
+    margin: 0;
     font-size: 16px;
 }
 
@@ -500,6 +515,8 @@ body.fp-viewing-16 #mouse {
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .elementsCanvas [class*="element"] {
@@ -510,45 +527,64 @@ body.fp-viewing-16 #mouse {
     transition: all 1s ease-in-out;
 }
 
+body.fp-viewing-1 #elementsProject .elementsCanvas,
+body.fp-viewing-2 #elementsProject .elementsCanvas,
+body.fp-viewing-3 #elementsProject .elementsCanvas,
+body.fp-viewing-4 #elementsProject .elementsCanvas {
+    visibility: visible;
+}
+
 body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
 body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
 body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"],
-body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"],
-body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
-body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
+body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"] {
     opacity: 1;
     filter: blur(0);
     transition: all 1.2s .7s ease-in-out;
 }
 
-.elementsCanvas .element0 {
+.elementsCanvas div [class*="element"] {
     position: absolute;
-    right: 10%;
-    bottom: 10%;
-    width: 30%;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(0, 0, 0, 0.075);
     backdrop-filter: blur(5px);
-    padding: 25px 35px 18px;
+    padding: 25px 35px;
     border-radius: 5px;
     text-align: left;
 }
 
-.elementsCanvas .element0 h3 {
+.elementsCanvas div [class*="element"] h3 {
     font-size: 22px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.elementsCanvas #elementsSection1 .element0 {
+.elementsCanvas #elementsSection1 [class*="element"] {
     left: 10%;
+    bottom: 10%;
+    width: 30%;
 }
 
-.elementsCanvas #elementsSection2 .element0,
-.elementsCanvas #elementsSection3 .element0 {
+.elementsCanvas #elementsSection2 [class*="element"],
+.elementsCanvas #elementsSection3 [class*="element"] {
+    right: 10%;
     top: 30%;
     width: 25%;
     bottom: unset;
+}
+
+.elementsCanvas #elementsSection4 [class*="element"] {
+    right: 10%;
+    bottom: 10%;
+    width: 30%;
+}
+
+#logoMenu img {
+    margin-top: 14px;
+}
+
+#sectionProject h2 {
+    color: #000
 }

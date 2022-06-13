@@ -282,17 +282,17 @@ window.fp_parallaxExtension = function () {
                 Y && e.addEventListener("onContinuosHorizontal", me),
                 e.addEventListener("onEndResetSliders", ve),
                 s ||
-                    (v(N).length ||
-                        ((n = function (e) {
-                            var t = document.createElement("div");
-                            (t.className = M), (t.style.background = getComputedStyle(e).background), p.prependTo(e, t), e.style.setProperty("background", "none", "important");
-                        }),
+                (v(N).length ||
+                    ((n = function (e) {
+                        var t = document.createElement("div");
+                        (t.className = M), (t.style.background = getComputedStyle(e).background), p.prependTo(e, t), e.style.setProperty("background", "none", "important");
+                    }),
                         v(b).forEach(function (e) {
                             var t = v(w, e);
                             t.length
                                 ? t.forEach(function (e) {
-                                      n(e);
-                                  })
+                                    n(e);
+                                })
                                 : n(e);
                         })),
                     Ne(
@@ -310,17 +310,17 @@ window.fp_parallaxExtension = function () {
             var e = v(x)[0];
             e &&
                 (e.removeEventListener("setAutoScrolling", se),
-                e.removeEventListener("destroy", fe),
-                e.removeEventListener("onScroll", xe),
-                e.removeEventListener("afterResponsive", ue),
-                e.removeEventListener("onGrab", de),
-                e.removeEventListener("onContinuousVertical", ge),
-                e.removeEventListener("onResize", Se),
-                e.removeEventListener("afterRender", ce),
-                e.removeEventListener("afterRebuild", ce),
-                e.removeEventListener("onResetSliders", pe),
-                Y && e.removeEventListener("onContinuosHorizontal", me),
-                e.removeEventListener("onEndResetSliders", ve));
+                    e.removeEventListener("destroy", fe),
+                    e.removeEventListener("onScroll", xe),
+                    e.removeEventListener("afterResponsive", ue),
+                    e.removeEventListener("onGrab", de),
+                    e.removeEventListener("onContinuousVertical", ge),
+                    e.removeEventListener("onResize", Se),
+                    e.removeEventListener("afterRender", ce),
+                    e.removeEventListener("afterRebuild", ce),
+                    e.removeEventListener("onResetSliders", pe),
+                    Y && e.removeEventListener("onContinuosHorizontal", me),
+                    e.removeEventListener("onEndResetSliders", ve));
         }),
         (a.setOption = function (e, t) {
             "offset" === e ? ((m.parallaxOptions.percentage = t), (c = ne(t)), (o = oe(t))) : "type" === e && ((m.parallaxOptions.type = t), (f = t)), re();
@@ -334,8 +334,8 @@ window.fp_parallaxExtension = function () {
                 ((s ? ((t = o), v(w, t).length ? v(w, t) : [t]) : v(N, o)).forEach(function (e) {
                     j(e, "fp-bg-animate");
                 }),
-                (V || l) && (le(n), (V = !1)),
-                !W)
+                    (V || l) && (le(n), (V = !1)),
+                    !W)
             ) {
                 var i = te(F)[f].offsetNormal,
                     a = n,

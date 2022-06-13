@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/menu-eko.css" />
     <link rel="stylesheet" type="text/css" href="css/zeta-id.css" />
-    <link rel="stylesheet" type="text/css" href="css/proyects.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
     <link rel="stylesheet" type="text/css" href="css/zEko.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
@@ -130,29 +130,30 @@
                             <img src="img/logos/eko_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Sección</h2>
+                            <h2>Headphone</h2>
+                            <h2>Charging</h2>
+                            <h2>Low Bat</h2>
+                            <h2>Speaker</h2>
+                            <h2>Turntable</h2>
                         </div>
                     </div>
 
-                    <div id="proyectMenu" onmouseleave="togglePortfolioOff()">
+                    <div id="projectMenu" onmouseleave="togglePortfolioOff()">
                         <ul>
-                            <li><a href="#0" class="k-hover">
-                                    <p>Home</p><span><span></span></span>
-                                </a></li>
                             <li><a href="#1" class="k-hover">
-                                    <p>Sección 1</p><span><span></span></span>
+                                    <p>Headphone</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#2" class="k-hover">
-                                    <p>Sección 2</p><span><span></span></span>
+                                    <p>Charging</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#3" class="k-hover">
-                                    <p>Sección 3</p><span><span></span></span>
+                                    <p>Low Bat</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#4" class="k-hover">
-                                    <p>Sección 4</p><span><span></span></span>
+                                    <p>Speaker</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#5" class="k-hover">
-                                    <p>Sección 5</p><span><span></span></span>
+                                    <p>Turntable</p><span><span></span></span>
                                 </a></li>
                         </ul>
                     </div>
@@ -321,7 +322,7 @@
             document.querySelector("#logoMenu").classList.add("toggleOFF");
             document.querySelector("#introProject img").classList.add("toggleOFF");
             document.querySelector("#introProject p").classList.add("toggleOFF");
-            document.querySelector("#proyectMenu").classList.add("toggleOFF");
+            document.querySelector("#projectMenu").classList.add("toggleOFF");
             document.querySelector("#sideMenu").classList.add("toggleON");
             document.querySelector("#portfolio").classList.add("toggleVideos");
             document.querySelectorAll('video').forEach(video => video.pause());
@@ -332,7 +333,7 @@
             document.querySelector("#logoMenu").classList.remove("toggleOFF");
             document.querySelector("#introProject img").classList.remove("toggleOFF");
             document.querySelector("#introProject p").classList.remove("toggleOFF");
-            document.querySelector("#proyectMenu").classList.remove("toggleOFF");
+            document.querySelector("#projectMenu").classList.remove("toggleOFF");
             document.querySelector("#sideMenu").classList.remove("toggleON");
             document.querySelector("#portfolio").classList.remove("toggleVideos");
             document.querySelector("#zProject .section.active video").play();

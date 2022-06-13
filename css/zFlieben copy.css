@@ -192,45 +192,23 @@ body.fp-viewing-4 #projectVideos {
     transition-delay: 0s !important;
 }
 
-body.fp-viewing-5 #zProject,
 body.fp-viewing-6 #zProject,
 body.fp-viewing-7 #zProject,
 body.fp-viewing-8 #zProject,
 body.fp-viewing-9 #zProject,
-body.fp-viewing-10 #zProject {
+body.fp-viewing-10 #zProject,
+body.fp-viewing-11 #zProject {
     opacity: 1;
 }
 
-body.fp-viewing-5 #projectVideos,
 body.fp-viewing-6 #projectVideos,
 body.fp-viewing-7 #projectVideos,
 body.fp-viewing-8 #projectVideos,
 body.fp-viewing-9 #projectVideos,
-body.fp-viewing-10 #projectVideos {
+body.fp-viewing-10 #projectVideos,
+body.fp-viewing-11 #projectVideos {
     opacity: 0;
 }
-
-body.fp-viewing-5 #fliebenPlay,
-body.fp-viewing-5 #fliebenLoopCold {
-    filter: blur(25px);
-    transition: 200ms;
-}
-
-body.fp-viewing-4 #fliebenPlay,
-body.fp-viewing-4 #fliebenLoopCold {
-    filter: blur(0px);
-    transition: 200ms;
-}
-
-body.fp-viewing-4 #projectVideos {
-    transform: translateY(0);
-}
-
-body.fp-viewing-5 #projectVideos {
-    transform: translateY(-100vh);
-}
-
-
 
 
 #zProject video {
@@ -247,7 +225,7 @@ body.fp-viewing-5 #projectVideos {
     transition-delay: 1.5s;
 }
 
-#zProject #section5 video {
+#zProject #section6 video {
     left: -47vw;
     top: 62vh;
     min-height: 124vh;
@@ -363,33 +341,33 @@ body.fp-viewing-0 .loaded #mouse {
 
 
 
-body.fp-viewing-9 #section8 .logoEndCanvas,
-body.fp-viewing-10 #section8 .logoEndCanvas {
+body.fp-viewing-10 #section9 .logoEndCanvas,
+body.fp-viewing-11 #section9 .logoEndCanvas {
     height: calc(100vh - 350px) !important;
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-9 #section8 #logoEnd,
-body.fp-viewing-10 #section8 #logoEnd {
+body.fp-viewing-10 #section9 #logoEnd,
+body.fp-viewing-11 #section9 #logoEnd {
     transform: translate(0px, 350px);
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-8 #section8 .logoEndCanvas {
+body.fp-viewing-9 #section9 .logoEndCanvas {
     height: calc(100vh - 0px) !important;
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-8 #section8 #logoEnd {
+body.fp-viewing-9 #section9 #logoEnd {
     transform: translate(0px, 0px);
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-8 #mouse {
+body.fp-viewing-9 #mouse {
     position: absolute;
     bottom: -60px;
     opacity: 0;
@@ -399,32 +377,32 @@ body.fp-viewing-8 #mouse {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-10 #mouse {
+body.fp-viewing-11 #mouse {
     bottom: 30px;
     opacity: 0.25;
     filter: blur(0);
     transition-delay: 0s;
 }
 
-body.fp-viewing-10 #mouse {
+body.fp-viewing-11 #mouse {
     opacity: 0;
 }
 
-body.fp-viewing-7 #projectVideos,
-body.fp-viewing-7 #elementsProject,
 body.fp-viewing-8 #projectVideos,
 body.fp-viewing-8 #elementsProject,
 body.fp-viewing-9 #projectVideos,
-body.fp-viewing-9 #elementsProject {
+body.fp-viewing-9 #elementsProject,
+body.fp-viewing-10 #projectVideos,
+body.fp-viewing-10 #elementsProject {
     display: none;
 }
 
-body.fp-viewing-8 #sideMenu,
 body.fp-viewing-9 #sideMenu,
 body.fp-viewing-10 #sideMenu,
-body.fp-viewing-8 #sideMenu #logoMain,
+body.fp-viewing-11 #sideMenu,
 body.fp-viewing-9 #sideMenu #logoMain,
-body.fp-viewing-10 #sideMenu #logoMain {
+body.fp-viewing-10 #sideMenu #logoMain,
+body.fp-viewing-11 #sideMenu #logoMain {
     filter: blur(25px) !important;
     right: -120px !important;
     opacity: 0;
@@ -436,9 +414,9 @@ body.fp-viewing-1 #logoMenu {
 }
 
 body.fp-viewing-0 #logoMenu,
-body.fp-viewing-8 #logoMenu,
 body.fp-viewing-9 #logoMenu,
-body.fp-viewing-10 #logoMenu {
+body.fp-viewing-10 #logoMenu,
+body.fp-viewing-11 #logoMenu {
     filter: blur(25px);
     left: -120px;
     opacity: 0;
@@ -479,8 +457,8 @@ body.fp-viewing-10 #logoMenu {
     transition-delay: 0s;
 }
 
-body.fp-viewing-9 #zProject .next video,
-body.fp-viewing-10 #zProject .next video {
+body.fp-viewing-10 #zProject .next video,
+body.fp-viewing-11 #zProject .next video {
     top: 2px;
     opacity: 1;
     transform: scale(1);
@@ -489,8 +467,8 @@ body.fp-viewing-10 #zProject .next video {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-9 #zProject .next img,
-body.fp-viewing-10 #zProject .next img {
+body.fp-viewing-10 #zProject .next img,
+body.fp-viewing-11 #zProject .next img {
     top: 200px;
     opacity: 1;
     transform: scale(1);
@@ -513,9 +491,9 @@ body.fp-viewing-10 #zProject .next img {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-8 #zProject #logoEnd h3,
 body.fp-viewing-9 #zProject #logoEnd h3,
-body.fp-viewing-10 #zProject #logoEnd h3 {
+body.fp-viewing-10 #zProject #logoEnd h3,
+body.fp-viewing-11 #zProject #logoEnd h3 {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
@@ -532,25 +510,25 @@ body.fp-viewing-10 #zProject #logoEnd h3 {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-8 #zProject #logoEnd img,
 body.fp-viewing-9 #zProject #logoEnd img,
 body.fp-viewing-10 #zProject #logoEnd img,
-body.fp-viewing-9 #section8 .fp-tableCell {
+body.fp-viewing-11 #zProject #logoEnd img,
+body.fp-viewing-10 #section9 .fp-tableCell {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
     transition-delay: 0.35s;
 }
 
-body.fp-viewing-9 #zProject #mouse {
+body.fp-viewing-10 #zProject #mouse {
     opacity: 0;
     transition: all 0.5s ease-in-out;
     transition-delay: 0;
 }
 
-body.fp-viewing-10 #logoEnd,
-body.fp-viewing-10 #zProject .next,
-body.fp-viewing-10 #mouse {
+body.fp-viewing-11 #logoEnd,
+body.fp-viewing-11 #zProject .next,
+body.fp-viewing-11 #mouse {
     opacity: 0 !important;
     transition: all 0.5s ease-in-out !important;
 }
@@ -561,9 +539,10 @@ body.fp-viewing-1 #sectionProject h2:nth-child(1),
 body.fp-viewing-2 #sectionProject h2:nth-child(2),
 body.fp-viewing-3 #sectionProject h2:nth-child(2),
 body.fp-viewing-4 #sectionProject h2:nth-child(2),
-body.fp-viewing-5 #sectionProject h2:nth-child(3),
-body.fp-viewing-6 #sectionProject h2:nth-child(4),
-body.fp-viewing-7 #sectionProject h2:nth-child(5) {
+body.fp-viewing-5 #sectionProject h2:nth-child(2),
+body.fp-viewing-6 #sectionProject h2:nth-child(3),
+body.fp-viewing-7 #sectionProject h2:nth-child(4),
+body.fp-viewing-8 #sectionProject h2:nth-child(5) {
     transform: translateX(0%);
     clip-path: inset(0 0 0 0%);
     opacity: 1;
@@ -601,10 +580,6 @@ body.fp-viewing-7 #sectionProject h2:nth-child(5) {
     width: auto;
     padding: 0;
     transition: all 1.2s 0.7s ease-in-out;
-    opacity: 0;
-    filter: blur(25px);
-    transition-delay: 1s;
-    transition: all .5s ease-in-out;
 }
 
 .elementsCanvas [class*="element"].tooltip::before {
@@ -633,17 +608,6 @@ body.fp-viewing-7 #sectionProject h2:nth-child(5) {
     opacity: 1;
     bottom: 100%;
 }
-
-body.fp-viewing-1 .elementsCanvas .tooltip,
-body.fp-viewing-2 .elementsCanvas .tooltip,
-body.fp-viewing-3 .elementsCanvas .tooltip,
-body.fp-viewing-4 .elementsCanvas .tooltip {
-    opacity: 1;
-    filter: blur(0);
-    transition-delay: 3s;
-    transition: all .5s ease-in-out;
-}
-
 
 /*XXXX*/
 
@@ -674,23 +638,33 @@ body.fp-viewing-1 #elementsProject .elementsCanvas,
 body.fp-viewing-2 #elementsProject .elementsCanvas,
 body.fp-viewing-3 #elementsProject .elementsCanvas,
 body.fp-viewing-4 #elementsProject .elementsCanvas,
-body.fp-viewing-5 #elementsProject .elementsCanvas,
-body.fp-viewing-6 #elementsProject .elementsCanvas {
+body.fp-viewing-6 #elementsProject .elementsCanvas,
+body.fp-viewing-7 #elementsProject .elementsCanvas {
     visibility: visible;
 }
 
 body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
-body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
-body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
+body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"],
+body.fp-viewing-7 .elementsCanvas #elementsSection7 [class*="element"] {
     opacity: 1;
     filter: blur(0);
     transition: all 1.2s .7s ease-in-out;
 }
 
-body.fp-viewing-0 .elementsCanvas #elementsSection2,
 body.fp-viewing-1 .elementsCanvas #elementsSection2,
 body.fp-viewing-5 .elementsCanvas #elementsSection2 {
-    opacity: 1;
+    opacity: 0;
+    filter: blur(25px);
+    transition-delay: 0s;
+    transition: all .5s ease-in-out;
+}
+
+body.fp-viewing-0 .elementsCanvas #elementsSection2,
+body.fp-viewing-6 .elementsCanvas #elementsSection2 {
+    opacity: 0;
     filter: blur(25px);
     transition-delay: 0s;
     transition: all .1s ease-in-out;
@@ -702,7 +676,8 @@ body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"] .button-p
 body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
 body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"] .button-plus,
 body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"] .button-plus,
-body.fp-viewing-5 .elementsCanvas #elementssection5 [class*="element"] .button-plus {
+body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"] .button-plus,
+body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] .button-plus {
     animation-play-state: running;
 }
 
@@ -710,7 +685,7 @@ body.fp-viewing-5 .elementsCanvas #elementssection5 [class*="element"] .button-p
     position: absolute;
     right: 10%;
     bottom: 10%;
-    width: auto;
+    width: 30%;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -839,8 +814,8 @@ body.fp-viewing-4 .elementsCanvas #elementsSection2 .element7 {
     content: "El aire a temperatura ambiente ingresa por la toma frontal exterior";
 }
 
-.elementsCanvas #elementssection6 .element0,
-.elementsCanvas #elementssection5 .element0 {
+.elementsCanvas #elementsSection7 .element0,
+.elementsCanvas #elementsSection6 .element0 {
     right: unset;
     width: fit-content;
     bottom: 15vh;

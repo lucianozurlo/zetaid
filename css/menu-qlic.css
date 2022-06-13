@@ -53,43 +53,43 @@ body.fp-viewing-Intro #menu #sideMenu.toggleON ul {
 }
 
 
-/* proyectMenu */
-/* #menu #proyectMenu {
+/* projectMenu */
+/* #menu #projectMenu {
     background: rgba(250, 46, 0, 0);
 }
 
-#menu #proyectMenu:hover {
+#menu #projectMenu:hover {
     background: rgba(250, 46, 0, 0.05);
 } */
 
-#menu #proyectMenu ul {
+#menu #projectMenu ul {
     opacity: 0.7;
 }
 
-#menu #proyectMenu ul li a {
+#menu #projectMenu ul li a {
     opacity: 1;
 }
 
-#menu #proyectMenu ul li a p {
+#menu #projectMenu ul li a p {
     color: #fff;
 }
 
-#menu #proyectMenu ul li a:hover p {
+#menu #projectMenu ul li a:hover p {
     color: #fc3000 !important;
 }
 
-#menu #proyectMenu ul li a span span {
+#menu #projectMenu ul li a span span {
     background: #fc3000;
     border-color: #fc3000;
 }
 
-body.fp-viewing-AdjustablePower #menu #proyectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-Context #menu #proyectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-Working #menu #proyectMenu ul li:nth-child(3) a span span,
-body.fp-viewing-ExplodedView #menu #proyectMenu ul li:nth-child(4) a span span,
-body.fp-viewing-Pedernal #menu #proyectMenu ul li:nth-child(5) a span span,
-body.fp-viewing-PedernalAction #menu #proyectMenu ul li:nth-child(5) a span span,
-body.fp-viewing-Turntable #menu #proyectMenu ul li:nth-child(6) a span span {
+body.fp-viewing-AdjustablePower #menu #projectMenu ul li:nth-child(1) a span span,
+body.fp-viewing-Context #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-Working #menu #projectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-ExplodedView #menu #projectMenu ul li:nth-child(4) a span span,
+body.fp-viewing-Pedernal #menu #projectMenu ul li:nth-child(5) a span span,
+body.fp-viewing-PedernalAction #menu #projectMenu ul li:nth-child(5) a span span,
+body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(6) a span span {
     width: 10px;
     height: 10px;
     background: rgba(250, 46, 0, 0);
@@ -105,9 +105,9 @@ body.fp-viewing-Turntable #menu #proyectMenu ul li:nth-child(6) a span span {
 }
 
 
-body.fp-viewing-ZetaID #menu #proyectMenu,
-body.fp-viewing-NextProject #menu #proyectMenu,
-body.fp-viewing-NewProject #menu #proyectMenu,
+body.fp-viewing-ZetaID #menu #projectMenu,
+body.fp-viewing-NextProject #menu #projectMenu,
+body.fp-viewing-NewProject #menu #projectMenu,
 body.fp-viewing-ZetaID #langSwitch,
 body.fp-viewing-NextProject #langSwitch,
 body.fp-viewing-NewProject #langSwitch {

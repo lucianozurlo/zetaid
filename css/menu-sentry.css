@@ -53,47 +53,47 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
 }
 
 
-/* proyectMenu */
-/* #menu #proyectMenu {
+/* projectMenu */
+/* #menu #projectMenu {
     background: rgba(76, 216, 189, 0);
 }
-#menu #proyectMenu:hover {
+#menu #projectMenu:hover {
     background: rgba(76, 216, 189, 0.05);
 } */
-#menu #proyectMenu ul {
+#menu #projectMenu ul {
     opacity: 0.7;
 }
 
-#menu #proyectMenu ul li a {
+#menu #projectMenu ul li a {
     opacity: 1;
 }
 
-#menu #proyectMenu ul li a p {
+#menu #projectMenu ul li a p {
     color: #000;
 }
 
-#menu #proyectMenu ul li a:hover p {
+#menu #projectMenu ul li a:hover p {
     color: #4cd8bd !important;
 }
 
-#menu #proyectMenu ul li a span span {
+#menu #projectMenu ul li a span span {
     background: #4cd8bd;
     border-color: #4cd8bd;
 }
 
-body.fp-viewing-0 #menu #proyectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-1 #menu #proyectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-2 #menu #proyectMenu ul li:nth-child(3) a span span,
-body.fp-viewing-3 #menu #proyectMenu ul li:nth-child(4) a span span,
-body.fp-viewing-4 #menu #proyectMenu ul li:nth-child(5) a span span,
-body.fp-viewing-5 #menu #proyectMenu ul li:nth-child(6) a span span,
-body.fp-viewing-6 #menu #proyectMenu ul li:nth-child(7) a span span,
-body.fp-viewing-7 #menu #proyectMenu ul li:nth-child(8) a span span,
-body.fp-viewing-8 #menu #proyectMenu ul li:nth-child(9) a span span,
-body.fp-viewing-9 #menu #proyectMenu ul li:nth-child(10) a span span,
-body.fp-viewing-10 #menu #proyectMenu ul li:nth-child(11) a span span,
-body.fp-viewing-11 #menu #proyectMenu ul li:nth-child(12) a span span,
-body.fp-viewing-12 #menu #proyectMenu ul li:nth-child(13) a span span {
+body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a span span,
+body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-3 #menu #projectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-4 #menu #projectMenu ul li:nth-child(4) a span span,
+body.fp-viewing-5 #menu #projectMenu ul li:nth-child(5) a span span,
+body.fp-viewing-6 #menu #projectMenu ul li:nth-child(6) a span span,
+body.fp-viewing-7 #menu #projectMenu ul li:nth-child(6) a span span,
+body.fp-viewing-8 #menu #projectMenu ul li:nth-child(6) a span span,
+body.fp-viewing-9 #menu #projectMenu ul li:nth-child(6) a span span,
+body.fp-viewing-10 #menu #projectMenu ul li:nth-child(6) a span span,
+body.fp-viewing-11 #menu #projectMenu ul li:nth-child(7) a span span,
+body.fp-viewing-12 #menu #projectMenu ul li:nth-child(8) a span span,
+body.fp-viewing-13 #menu #projectMenu ul li:nth-child(9) a span span {
     width: 10px;
     height: 10px;
     background: rgba(76, 216, 189, 0);
@@ -110,9 +110,9 @@ body.fp-viewing-12 #menu #proyectMenu ul li:nth-child(13) a span span {
 }
 
 
-body.fp-viewing-15 #menu #proyectMenu,
-body.fp-viewing-16 #menu #proyectMenu,
-body.fp-viewing-17 #menu #proyectMenu,
+body.fp-viewing-15 #menu #projectMenu,
+body.fp-viewing-16 #menu #projectMenu,
+body.fp-viewing-17 #menu #projectMenu,
 body.fp-viewing-15 #langSwitch,
 body.fp-viewing-16 #langSwitch,
 body.fp-viewing-17 #langSwitch {

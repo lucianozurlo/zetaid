@@ -1,4 +1,4 @@
-#menu #proyectMenu {
+#menu #projectMenu {
   z-index: 2000;
   position: fixed;
   top: 0;
@@ -11,20 +11,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-#menu #proyectMenu:hover {
+#menu #projectMenu:hover {
   width: 400px;
   background: rgba(255, 255, 255, 0.4);
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
 
-#zContainer.loading #menu #proyectMenu,
-body.fp-viewing-0 #menu #proyectMenu {
+#zContainer.loading #menu #projectMenu,
+body.fp-viewing-0 #menu #projectMenu {
   opacity: 0;
   left: -80px;
 }
 
-body.fp-viewing-0 #menu #proyectMenu {
+body.fp-viewing-0 #menu #projectMenu {
   opacity: 0;
   filter: blur(25px);
   transition: all 500ms ease;
@@ -32,12 +32,12 @@ body.fp-viewing-0 #menu #proyectMenu {
   left: -120px;
 }
 
-body.fp-viewing-1 #menu #proyectMenu {
+body.fp-viewing-1 #menu #projectMenu {
   transition-delay: 1.8s;
 }
 
 
-#menu #proyectMenu ul {
+#menu #projectMenu ul {
   z-index: 2011;
   height: 100vh;
   left: 30px;
@@ -53,13 +53,13 @@ body.fp-viewing-1 #menu #proyectMenu {
   transition: right 0.3s ease;
 }
 
-#menu #proyectMenu:hover ul {
+#menu #projectMenu:hover ul {
   right: 150px;
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-#menu #proyectMenu ul li {
+#menu #projectMenu ul li {
   position: relative;
   display: block;
   height: 20px;
@@ -68,12 +68,12 @@ body.fp-viewing-1 #menu #proyectMenu {
   transition: margin 0.3s ease;
 }
 
-#menu #proyectMenu:hover ul li {
+#menu #projectMenu:hover ul li {
   margin: 5px 0;
   transition: margin 0.3s ease;
 }
 
-#menu #proyectMenu ul li a {
+#menu #projectMenu ul li a {
   display: flex;
   align-items: center;
   z-index: 1;
@@ -85,28 +85,28 @@ body.fp-viewing-1 #menu #proyectMenu {
   transition: all 0.5s ease;
 }
 
-#menu #proyectMenu ul li a:hover {
+#menu #projectMenu ul li a:hover {
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-#menu #proyectMenu ul li#liEKO,
-#menu #proyectMenu ul li#liSentry,
-#menu #proyectMenu ul li#liFlieBen,
-#menu #proyectMenu ul li#liMagma {
+#menu #projectMenu ul li#liEKO,
+#menu #projectMenu ul li#liSentry,
+#menu #projectMenu ul li#liFlieBen,
+#menu #projectMenu ul li#liMagma {
   margin: -16px 0;
   opacity: 0;
 }
 
-#menu #proyectMenu:hover ul li#liEKO,
-#menu #proyectMenu:hover ul li#liSentry,
-#menu #proyectMenu:hover ul li#liFlieBen,
-#menu #proyectMenu:hover ul li#liMagma {
+#menu #projectMenu:hover ul li#liEKO,
+#menu #projectMenu:hover ul li#liSentry,
+#menu #projectMenu:hover ul li#liFlieBen,
+#menu #projectMenu:hover ul li#liMagma {
   margin: -18px 0;
   opacity: 0;
 }
 
-#menu #proyectMenu ul li a p {
+#menu #projectMenu ul li a p {
   color: #000;
   width: 250px;
   margin-left: 0px;
@@ -119,28 +119,28 @@ body.fp-viewing-1 #menu #proyectMenu {
   text-align: left;
 }
 
-#menu #proyectMenu:hover ul li a p {
+#menu #projectMenu:hover ul li a p {
   margin-left: 35px;
   width: 100%;
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-#menu #proyectMenu:hover ul li a:hover p {
+#menu #projectMenu:hover ul li a:hover p {
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-#menu #proyectMenu ul li#liEKO a p,
-#menu #proyectMenu ul li#liSentry a p,
-#menu #proyectMenu ul li#liFlieBen a p,
-#menu #proyectMenu ul li#liMagma a p {
+#menu #projectMenu ul li#liEKO a p,
+#menu #projectMenu ul li#liSentry a p,
+#menu #projectMenu ul li#liFlieBen a p,
+#menu #projectMenu ul li#liMagma a p {
   padding-right: 15px;
   font-weight: 600;
   font-size: 14px;
 }
 
-#menu #proyectMenu ul li a span {
+#menu #projectMenu ul li a span {
   /*   top: 8px;
     right: 8px; */
   width: 4px;
@@ -151,7 +151,7 @@ body.fp-viewing-1 #menu #proyectMenu {
   transition: all 0.2s ease;
 }
 
-.md-show+#menu #proyectMenu,
-.md-show+#menu #proyectMenu:hover {
+.md-show+#menu #projectMenu,
+.md-show+#menu #projectMenu:hover {
   left: -100px;
 }

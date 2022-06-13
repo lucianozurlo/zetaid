@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/menu-sentry.css" />
     <link rel="stylesheet" type="text/css" href="css/zeta-id.css" />
-    <link rel="stylesheet" type="text/css" href="css/proyects.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
     <link rel="stylesheet" type="text/css" href="css/zSentry.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
@@ -122,62 +122,46 @@
                             <img src="img/logos/sentry_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Sección</h2>
+                            <h2>Interface</h2>
+                            <h2>Charging</h2>
+                            <h2>Speaker</h2>
+                            <h2>Lens</h2>
+                            <h2>Exploded view</h2>
+                            <h2>Ghost</h2>
+                            <h2>Strap</h2>
+                            <h2>Warning</h2>
+                            <h2>Turntable</h2>
                         </div>
                     </div>
 
-                    <div id="proyectMenu" onmouseleave="togglePortfolioOff()">
+                    <div id="projectMenu" onmouseleave="togglePortfolioOff()">
                         <ul>
-                            <li><a href="#0" class="k-hover">
-                                    <p>Home</p><span><span></span></span>
-                                </a></li>
                             <li><a href="#1" class="k-hover">
-                                    <p>Sección 1</p><span><span></span></span>
+                                    <p>Interface</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#2" class="k-hover">
-                                    <p>Sección 2</p><span><span></span></span>
+                                    <p>Charging</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#3" class="k-hover">
-                                    <p>Sección 3</p><span><span></span></span>
+                                    <p>Speaker</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#4" class="k-hover">
-                                    <p>Sección 4</p><span><span></span></span>
+                                    <p>Lens</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#5" class="k-hover">
-                                    <p>Sección 5</p><span><span></span></span>
+                                    <p>Exploded view</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#6" class="k-hover">
-                                    <p>Sección 6</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#7" class="k-hover">
-                                    <p>Sección 7</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#8" class="k-hover">
-                                    <p>Sección 8</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#9" class="k-hover">
-                                    <p>Sección 9</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#10" class="k-hover">
-                                    <p>Sección 10</p><span><span></span></span>
+                                    <p>Ghost</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#11" class="k-hover">
-                                    <p>Sección 11</p><span><span></span></span>
+                                    <p>Strap</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#12" class="k-hover">
-                                    <p>Sección 12</p><span><span></span></span>
+                                    <p>Warning</p><span><span></span></span>
                                 </a></li>
                             <li><a href="#13" class="k-hover">
-                                    <p>Sección 13</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#14" class="k-hover">
-                                    <p>Sección 14</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#15" class="k-hover">
-                                    <p>Sección 15</p><span><span></span></span>
-                                </a></li>
-                            <li><a href="#16" class="k-hover">
-                                    <p>Sección 16</p><span><span></span></span>
+                                    <p>Turntable</p><span><span></span></span>
                                 </a></li>
                         </ul>
                     </div>
@@ -397,7 +381,7 @@
             document.querySelector("#logoMenu").classList.add("toggleOFF");
             document.querySelector("#introProject img").classList.add("toggleOFF");
             document.querySelector("#introProject p").classList.add("toggleOFF");
-            document.querySelector("#proyectMenu").classList.add("toggleOFF");
+            document.querySelector("#projectMenu").classList.add("toggleOFF");
             document.querySelector("#sideMenu").classList.add("toggleON");
             document.querySelector("#portfolio").classList.add("toggleVideos");
             document.querySelectorAll('video').forEach(video => video.pause());
@@ -408,7 +392,7 @@
             document.querySelector("#logoMenu").classList.remove("toggleOFF");
             document.querySelector("#introProject img").classList.remove("toggleOFF");
             document.querySelector("#introProject p").classList.remove("toggleOFF");
-            document.querySelector("#proyectMenu").classList.remove("toggleOFF");
+            document.querySelector("#projectMenu").classList.remove("toggleOFF");
             document.querySelector("#sideMenu").classList.remove("toggleON");
             document.querySelector("#portfolio").classList.remove("toggleVideos");
             document.querySelector("#zProject .section.active video").play();
