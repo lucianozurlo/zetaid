@@ -95,10 +95,12 @@
 #menu #sideMenu ul li#liSentry,
 #menu #sideMenu ul li#liFlieBen,
 #menu #sideMenu ul li#liMagma,
+#menu #sideMenu ul li#liQlic,
 #menu #sideMenu.toggleON ul li#liEKO,
 #menu #sideMenu.toggleON ul li#liSentry,
 #menu #sideMenu.toggleON ul li#liFlieBen,
-#menu #sideMenu.toggleON ul li#liMagma {
+#menu #sideMenu.toggleON ul li#liMagma,
+#menu #sideMenu.toggleON ul li#liQlic {
     margin: -10px 0;
     opacity: 0;
 }
@@ -107,10 +109,12 @@
 #menu #sideMenu:hover ul li#liSentry,
 #menu #sideMenu:hover ul li#liFlieBen,
 #menu #sideMenu:hover ul li#liMagma,
+#menu #sideMenu:hover ul li#liQlic,
 #menu #sideMenu.toggleON ul li#liEKO,
 #menu #sideMenu.toggleON ul li#liSentry,
 #menu #sideMenu.toggleON ul li#liFlieBen,
-#menu #sideMenu.toggleON ul li#liMagma {
+#menu #sideMenu.toggleON ul li#liMagma,
+#menu #sideMenu.toggleON ul li#liQlic {
     margin: -10px 0;
     opacity: 0;
 }
@@ -146,10 +150,12 @@
 #menu #sideMenu ul li#liSentry a p,
 #menu #sideMenu ul li#liFlieBen a p,
 #menu #sideMenu ul li#liMagma a p,
+#menu #sideMenu ul li#liQlic a p,
 #menu #sideMenu.toggleON ul li#liEKO a p,
 #menu #sideMenu.toggleON ul li#liSentry a p,
 #menu #sideMenu.toggleON ul li#liFlieBen a p,
-#menu #sideMenu.toggleON ul li#liMagma a p {
+#menu #sideMenu.toggleON ul li#liMagma a p,
+#menu #sideMenu.toggleON ul li#liQlic a p {
     padding-left: 15px;
     font-weight: 600;
     font-size: 14px;

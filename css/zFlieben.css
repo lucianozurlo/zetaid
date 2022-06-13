@@ -634,17 +634,6 @@ body.fp-viewing-7 #sectionProject h2:nth-child(5) {
     bottom: 100%;
 }
 
-body.fp-viewing-1 .elementsCanvas .tooltip,
-body.fp-viewing-2 .elementsCanvas .tooltip,
-body.fp-viewing-3 .elementsCanvas .tooltip,
-body.fp-viewing-4 .elementsCanvas .tooltip {
-    opacity: 1;
-    filter: blur(0);
-    transition-delay: 3s;
-    transition: all .5s ease-in-out;
-}
-
-
 /*XXXX*/
 
 .elementsCanvas p {
@@ -670,6 +659,15 @@ body.fp-viewing-4 .elementsCanvas .tooltip {
     transition: all 1s ease-in-out;
 }
 
+body.fp-viewing-2 .elementsCanvas .tooltip,
+body.fp-viewing-3 .elementsCanvas .tooltip,
+body.fp-viewing-4 .elementsCanvas .tooltip {
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: 1s;
+    transition: all .5s ease-in-out;
+}
+
 body.fp-viewing-1 #elementsProject .elementsCanvas,
 body.fp-viewing-2 #elementsProject .elementsCanvas,
 body.fp-viewing-3 #elementsProject .elementsCanvas,
@@ -680,6 +678,9 @@ body.fp-viewing-6 #elementsProject .elementsCanvas {
 }
 
 body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"],
 body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
 body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
     opacity: 1;
@@ -687,10 +688,16 @@ body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
     transition: all 1.2s .7s ease-in-out;
 }
 
-body.fp-viewing-0 .elementsCanvas #elementsSection2,
+body.fp-viewing-1 .elementsCanvas #elementsSection2 {
+    opacity: 0;
+    filter: blur(25px);
+    transition-delay: 0s;
+    transition: all .5s ease-in-out;
+}
+
 body.fp-viewing-1 .elementsCanvas #elementsSection2,
 body.fp-viewing-5 .elementsCanvas #elementsSection2 {
-    opacity: 1;
+    opacity: 0;
     filter: blur(25px);
     transition-delay: 0s;
     transition: all .1s ease-in-out;
