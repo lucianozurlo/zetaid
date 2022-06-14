@@ -74,6 +74,12 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
     color: #fff;
 }
 
+body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a p,
+body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a p,
+body.fp-viewing-3 #menu #projectMenu ul li:nth-child(3) a p,
+body.fp-viewing-4 #menu #projectMenu ul li:nth-child(3) a p,
+body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a p,
+
 #menu #projectMenu ul li a:hover p {
     color: #ffab8d !important;
 }

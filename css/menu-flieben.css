@@ -14,7 +14,7 @@
     /* transition: opacity 0.5s 0.2s linear; */
 }
 
-body.fp-viewing-0 #menu #sideMenu ul {
+body.fp-viewing-Intro #menu #sideMenu ul {
     opacity: 0.15;
     left: 30px;
     transition: all 0.3s ease-in-out;
@@ -25,8 +25,8 @@ body.fp-viewing-0 #menu #sideMenu ul {
     transition: all 0.3s ease-in-out;
 }
 
-body.fp-viewing-0 #menu #sideMenu:hover ul,
-body.fp-viewing-0 #menu #sideMenu.toggleON ul {
+body.fp-viewing-Intro #menu #sideMenu:hover ul,
+body.fp-viewing-Intro #menu #sideMenu.toggleON ul {
     opacity: 1;
     left: 150px;
 }
@@ -70,6 +70,13 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
     color: #fff;
 }
 
+body.fp-viewing-PortableAirConditioner #menu #projectMenu ul li:nth-child(1) a p,
+body.fp-viewing-CompactDualSystem #menu #projectMenu ul li:nth-child(2) a p,
+body.fp-viewing-CompactDualSystemHeat #menu #projectMenu ul li:nth-child(2) a p,
+body.fp-viewing-CompactDualSystemCool #menu #projectMenu ul li:nth-child(2) a p,
+body.fp-viewing-TemperatureControl #menu #projectMenu ul li:nth-child(3) a p,
+body.fp-viewing-RemovableBattery #menu #projectMenu ul li:nth-child(4) a p,
+body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(5) a p,
 #menu #projectMenu ul li a:hover p {
     color: #5ae0ff !important;
 }
@@ -80,13 +87,13 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
 }
 
 
-body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-3 #menu #projectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-4 #menu #projectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a span span,
-body.fp-viewing-6 #menu #projectMenu ul li:nth-child(5) a span span,
-body.fp-viewing-7 #menu #projectMenu ul li:nth-child(5) a span span {
+body.fp-viewing-PortableAirConditioner #menu #projectMenu ul li:nth-child(1) a span span,
+body.fp-viewing-CompactDualSystem #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-CompactDualSystemHeat #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-CompactDualSystemCool #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-TemperatureControl #menu #projectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-RemovableBattery #menu #projectMenu ul li:nth-child(4) a span span,
+body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(5) a span span {
     width: 10px;
     height: 10px;
     background: rgba(90, 225, 255, 0);
@@ -103,12 +110,12 @@ body.fp-viewing-7 #menu #projectMenu ul li:nth-child(5) a span span {
 }
 
 
-body.fp-viewing-8 #menu #projectMenu,
-body.fp-viewing-9 #menu #projectMenu,
-body.fp-viewing-10 #menu #projectMenu,
-body.fp-viewing-8 #langSwitch,
-body.fp-viewing-9 #langSwitch,
-body.fp-viewing-10 #langSwitch {
+body.fp-viewing-ZetaID #menu #projectMenu,
+body.fp-viewing-NextProject #menu #projectMenu,
+body.fp-viewing-NewProject #menu #projectMenu,
+body.fp-viewing-ZetaID #langSwitch,
+body.fp-viewing-NextProject #langSwitch,
+body.fp-viewing-NewProject #langSwitch {
     opacity: 0;
     transform: translateX(-80px);
     transition: all 0.3s ease-in-out;

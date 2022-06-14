@@ -16,13 +16,13 @@ console.log(fliebenRev.currentTime);
 console.log(fliebenPlay.currentTime);
 
 new fullpage('#zProject', {
-    anchors: ['Intro', 'PortableAirConditioner', 'CompactDualSystem', 'CompactDualSystemHeat', 'CompactDualSystemCool', 'TemperatureControl', 'RemovableBattery', 'Turntable', '8', '9', '10'],
+    anchors: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
 
     afterLoad: () => {
         document.querySelectorAll('video').forEach(video => video.currentTime = 0);
         document.querySelectorAll('video').forEach(video => video.pause());
-        if (isNaN(document.querySelector("body.fp-viewing-Intro #section0 video"))) {
-            document.querySelector("body.fp-viewing-Intro #section0 video").play();
+        if (isNaN(document.querySelector("body.fp-viewing-0 #section0 video"))) {
+            document.querySelector("body.fp-viewing-0 #section0 video").play();
         }
         fullpage_api.setAllowScrolling(false);
         setTimeout(() => {
@@ -40,7 +40,7 @@ new fullpage('#zProject', {
     afterLoad: function (origin, destination, direction) {
         var loadedSection = this;
 
-        if (isNaN(document.querySelector('body.fp-viewing-Intro'))) {
+        if (isNaN(document.querySelector('body.fp-viewing-0'))) {
             fliebenPlay.currentTime = 0;
             fliebenRev.currentTime = 8.067;
             // fliebenRev.style.opacity = 0;
@@ -52,9 +52,9 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-PortableAirConditioner'))) {
-            // fliebenPlay.currentTime = 2.167;
-            // fliebenRev.currentTime = 5.933;
+        } else if (isNaN(document.querySelector('body.fp-viewing-1'))) {
+            fliebenPlay.currentTime = 2.167;
+            fliebenRev.currentTime = 5.933;
             //fliebenRev.style.opacity = 0;
             // fliebenLoopCold.style.opacity = 0;
             // fliebenLoopCold.pause();
@@ -64,7 +64,7 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-CompactDualSystem'))) {
+        } else if (isNaN(document.querySelector('body.fp-viewing-2'))) {
             fliebenPlay.currentTime = 3.165;
             fliebenRev.currentTime = 4.933;
             //fliebenRev.style.opacity = 0;
@@ -76,7 +76,7 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-CompactDualSystemHeat'))) {
+        } else if (isNaN(document.querySelector('body.fp-viewing-3'))) {
             fliebenPlay.currentTime = 4.433;
             fliebenRev.currentTime = 3.667;
             //fliebenRev.style.opacity = 0;
@@ -88,7 +88,7 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-CompactDualSystemCool'))) {
+        } else if (isNaN(document.querySelector('body.fp-viewing-4'))) {
             fliebenPlay.currentTime = 6.5;
             fliebenRev.currentTime = 1.6;
             //fliebenRev.style.opacity = 0;
@@ -124,14 +124,26 @@ new fullpage('#zProject', {
         if (origin.index == 1 && destination.index == 0) {
             fliebenRev.playbackRate = 1;
             fullpage_api.setScrollingSpeed(2500);
+            mouse.style.opacity = .05;
             rev1();
-        } else if (origin.index > 1 && destination.index == 0) {
+        } else if (origin.index == 2 && destination.index == 0) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3750);
+            fullpage_api.setScrollingSpeed(2500);
+            mouse.style.opacity = .05;
             rev1();
-        } else if (origin.index > 2 && destination.index == 0) {
+        } else if (origin.index == 3 && destination.index == 0) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5000);
+            fullpage_api.setScrollingSpeed(2500);
+            mouse.style.opacity = .05;
+            rev1();
+        } else if (origin.index == 4
+            || origin.index == 5
+            || origin.index == 6
+            || origin.index == 7
+            || origin.index == 8 && destination.index == 0) {
+            fliebenRev.playbackRate = 2.5;
+            fullpage_api.setScrollingSpeed(2500);
+            mouse.style.opacity = .05;
             rev1();
         }
 
@@ -140,14 +152,7 @@ new fullpage('#zProject', {
         if (origin.index == 0 && destination.index == 1) {
             fliebenPlay.playbackRate = 1;
             fullpage_api.setScrollingSpeed(2500);
-            play1();
-        } else if (origin.index < 0 && destination.index == 1) {
-            fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3750);
-            play1();
-        } else if (origin.index < 1 && destination.index == 1) {
-            fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5000);
+            mouse.style.opacity = .05;
             play1();
         }
 
@@ -155,30 +160,35 @@ new fullpage('#zProject', {
         if (origin.index == 2 && destination.index == 1) {
             fliebenRev.playbackRate = 1;
             fullpage_api.setScrollingSpeed(1200);
+            mouse.style.opacity = .05;
             rev2();
-        } else if (origin.index > 2 && destination.index == 1) {
+        } else if (origin.index == 3 && destination.index == 1) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(1800);
+            fullpage_api.setScrollingSpeed(1200);
+            mouse.style.opacity = .05;
             rev2();
-        } else if (origin.index > 3 && destination.index == 1) {
+        } else if (origin.index == 4
+            || origin.index == 5
+            || origin.index == 6
+            || origin.index == 7
+            || origin.index == 8 && destination.index == 1) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(12400);
+            fullpage_api.setScrollingSpeed(1200);
+            mouse.style.opacity = .05;
             rev2();
         }
 
         /*********** 2 *******/
         /*  1 >>>  */
-        if (origin.index <= 1 && destination.index == 2) {
+        if (origin.index == 1 && destination.index == 2) {
             fliebenPlay.playbackRate = 1;
             fullpage_api.setScrollingSpeed(1200);
+            mouse.style.opacity = .05;
             play2();
-        } else if (origin.index <= 1 && destination.index == 2) {
+        } else if (origin.index == 0 && destination.index == 2) {
             fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(1800);
-            play2();
-        } else if (origin.index <= 1 && destination.index == 2) {
-            fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(2400);
+            fullpage_api.setScrollingSpeed(1200);
+            mouse.style.opacity = .05;
             play2();
         }
 
@@ -186,14 +196,20 @@ new fullpage('#zProject', {
         if (origin.index == 3 && destination.index == 2) {
             fliebenRev.playbackRate = 1;
             fullpage_api.setScrollingSpeed(1600);
+            mouse.style.opacity = .05;
             rev3();
-        } else if (origin.index >= 3 && destination.index == 2) {
+        } else if (origin.index == 4 && destination.index == 2) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(2400);
+            fullpage_api.setScrollingSpeed(1600);
+            mouse.style.opacity = .05;
             rev3();
-        } else if (origin.index >= 3 && destination.index == 2) {
+        } else if (origin.index == 5
+            || origin.index == 6
+            || origin.index == 7
+            || origin.index == 8 && destination.index == 2) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(3200);
+            fullpage_api.setScrollingSpeed(1600);
+            mouse.style.opacity = .05;
             rev3();
         }
 
@@ -202,14 +218,17 @@ new fullpage('#zProject', {
         if (origin.index == 2 && destination.index == 3) {
             fliebenPlay.playbackRate = 1;
             fullpage_api.setScrollingSpeed(1600);
+            mouse.style.opacity = .05;
             play3();
-        } else if (origin.index <= 2 && destination.index == 3) {
+        } else if (origin.index == 1 && destination.index == 3) {
             fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(2400);
+            fullpage_api.setScrollingSpeed(1600);
+            mouse.style.opacity = .05;
             play3();
-        } else if (origin.index <= 2 && destination.index == 3) {
+        } else if (origin.index == 0 && destination.index == 3) {
             fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(3200);
+            fullpage_api.setScrollingSpeed(1600);
+            mouse.style.opacity = .05;
             play3();
         }
 
@@ -217,14 +236,15 @@ new fullpage('#zProject', {
         if (origin.index == 4 && destination.index == 3) {
             fliebenRev.playbackRate = 1;
             fullpage_api.setScrollingSpeed(2600);
+            mouse.style.opacity = .05;
             rev4();
-        } else if (origin.index >= 4 && destination.index == 3) {
+        } else if (origin.index == 5
+            || origin.index == 6
+            || origin.index == 7
+            || origin.index == 8 && destination.index == 3) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3900);
-            rev4();
-        } else if (origin.index >= 4 && destination.index == 3) {
-            fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5200);
+            fullpage_api.setScrollingSpeed(2600);
+            mouse.style.opacity = .05;
             rev4();
         }
 
@@ -233,19 +253,23 @@ new fullpage('#zProject', {
         if (origin.index == 3 && destination.index == 4) {
             fliebenPlay.playbackRate = 1;
             fullpage_api.setScrollingSpeed(2600);
+            mouse.style.opacity = .05;
             play4();
-        } else if (origin.index <= 3 && destination.index == 4) {
+        } else if (origin.index == 2 && destination.index == 4) {
             fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3900);
+            fullpage_api.setScrollingSpeed(2600);
+            mouse.style.opacity = .05;
             play4();
-        } else if (origin.index <= 3 && destination.index == 4) {
+        } else if (origin.index == 1
+            || origin.index == 0 && destination.index == 4) {
             fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5200);
+            fullpage_api.setScrollingSpeed(2600);
+            mouse.style.opacity = .05;
             play4();
         }
 
         /*  <<< 5  */
-        if (origin.index >= 5 && destination.index == 4) {
+        if (origin.index == 5 && destination.index == 4) {
             zProject.style.opacity = 1;
             fliebenPlay.style.opacity = 1;
             fliebenRev.style.opacity = 0;
@@ -364,7 +388,7 @@ new fullpage('#zProject', {
             fullpage_api.setAllowScrolling(false);
             setTimeout(() => {
                 console.log('1 sec delay')
-                window.location.href = 'magma.html';
+                window.location.href = 'flieben.html';
                 mouse.style.opacity = .25;
                 clearInterval(timer);
             }, 1000);

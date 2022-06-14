@@ -72,6 +72,19 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
     color: #000;
 }
 
+body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a p,
+body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a p,
+body.fp-viewing-3 #menu #projectMenu ul li:nth-child(3) a p,
+body.fp-viewing-4 #menu #projectMenu ul li:nth-child(4) a p,
+body.fp-viewing-5 #menu #projectMenu ul li:nth-child(5) a p,
+body.fp-viewing-6 #menu #projectMenu ul li:nth-child(6) a p,
+body.fp-viewing-7 #menu #projectMenu ul li:nth-child(6) a p,
+body.fp-viewing-8 #menu #projectMenu ul li:nth-child(6) a p,
+body.fp-viewing-9 #menu #projectMenu ul li:nth-child(6) a p,
+body.fp-viewing-10 #menu #projectMenu ul li:nth-child(6) a p,
+body.fp-viewing-11 #menu #projectMenu ul li:nth-child(7) a p,
+body.fp-viewing-12 #menu #projectMenu ul li:nth-child(8) a p,
+body.fp-viewing-13 #menu #projectMenu ul li:nth-child(9) a p,
 #menu #projectMenu ul li a:hover p {
     color: #4cd8bd !important;
 }

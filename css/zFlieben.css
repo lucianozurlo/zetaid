@@ -171,62 +171,90 @@ body#fliebenProject .button-plus:hover {
     transform: translate(50%, -50%);
 }
 
-body.fp-viewing-0 #projectVideos video {
+#shadow {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .80) 90%, rgba(0, 0, 0, 1) 100%);
+    position: fixed;
+    top: 50%;
+    right: calc(50% - 1px);
+    width: 177.78vh;
+    height: 56.25vw;
+    transform: translate(50%, -50%);
+    z-index: 1111;
+    opacity: 0;
+    transition: opacity .25s;
+    display: none;
+}
+
+body.fp-viewing-Intro #shadow {
+    display: revert;
+    opacity: 1;
+    transition-delay: 0s !important;
+
+}
+
+body.fp-viewing-PortableAirConditioner #shadow {
+    display: revert;
+    opacity: 0;
+    transition-delay: 1.5s !important;
+}
+
+
+/* body.fp-viewing-Intro #projectVideos video {
     right: 0%;
     transform: translate(0%, -50%);
     transition: right .75s, transform 1s;
     transition-delay: 0s;
-}
+} */
 
-body.fp-viewing-1 #projectVideos video {
+/* body.fp-viewing-PortableAirConditioner #projectVideos video {
     transition: right 0.6s, transform 0.6s;
     transition-delay: 1.5s;
-}
+} */
 
 #zProject {
     opacity: 0;
 }
 
-body.fp-viewing-4 #projectVideos {
+body.fp-viewing-CompactDualSystemCool #projectVideos {
     opacity: 1;
     transition-delay: 0s !important;
 }
 
-body.fp-viewing-5 #zProject,
-body.fp-viewing-6 #zProject,
-body.fp-viewing-7 #zProject,
-body.fp-viewing-8 #zProject,
-body.fp-viewing-9 #zProject,
-body.fp-viewing-10 #zProject {
+body.fp-viewing-TemperatureControl #zProject,
+body.fp-viewing-RemovableBattery #zProject,
+body.fp-viewing-Turntable #zProject,
+body.fp-viewing-ZetaID #zProject,
+body.fp-viewing-NextProject #zProject,
+body.fp-viewing-NewProject #zProject {
     opacity: 1;
 }
 
-body.fp-viewing-5 #projectVideos,
-body.fp-viewing-6 #projectVideos,
-body.fp-viewing-7 #projectVideos,
-body.fp-viewing-8 #projectVideos,
-body.fp-viewing-9 #projectVideos,
-body.fp-viewing-10 #projectVideos {
+body.fp-viewing-TemperatureControl #projectVideos,
+body.fp-viewing-RemovableBattery #projectVideos,
+body.fp-viewing-Turntable #projectVideos,
+body.fp-viewing-ZetaID #projectVideos,
+body.fp-viewing-NextProject #projectVideos,
+body.fp-viewing-NewProject #projectVideos {
     opacity: 0;
 }
 
-body.fp-viewing-5 #fliebenPlay,
-body.fp-viewing-5 #fliebenLoopCold {
+body.fp-viewing-TemperatureControl #fliebenPlay,
+body.fp-viewing-TemperatureControl #fliebenLoopCold {
     filter: blur(25px);
     transition: 200ms;
 }
 
-body.fp-viewing-4 #fliebenPlay,
-body.fp-viewing-4 #fliebenLoopCold {
+body.fp-viewing-CompactDualSystemCool #fliebenPlay,
+body.fp-viewing-CompactDualSystemCool #fliebenLoopCold {
     filter: blur(0px);
     transition: 200ms;
 }
 
-body.fp-viewing-4 #projectVideos {
+body.fp-viewing-CompactDualSystemCool #projectVideos {
     transform: translateY(0);
 }
 
-body.fp-viewing-5 #projectVideos {
+body.fp-viewing-TemperatureControl #projectVideos {
     transform: translateY(-100vh);
 }
 
@@ -279,7 +307,7 @@ body.fp-viewing-5 #projectVideos {
     transition: .5s;
 }
 
-body.fp-viewing-0 .loaded #introProject {
+body.fp-viewing-Intro .loaded #introProject {
     opacity: 1;
     filter: blur(0);
     z-index: 1;
@@ -287,7 +315,7 @@ body.fp-viewing-0 .loaded #introProject {
     transition: all 1.2s 0.5s ease-in-out;
 }
 
-body.fp-viewing-1 .loaded #introProject {
+body.fp-viewing-PortableAirConditioner .loaded #introProject {
     opacity: 0;
     filter: blur(50px);
     transition: all 0.75s ease-in-out;
@@ -322,7 +350,7 @@ body.fp-viewing-1 .loaded #introProject {
     font-size: 20px;
 }
 
-body.fp-viewing-0 #logoMenu {
+body.fp-viewing-Intro #logoMenu {
     opacity: 0;
     filter: blur(25px);
     transition: all 0.5s 0.75s ease-in-out;
@@ -352,7 +380,7 @@ body .loaded #mouse {
     transition-delay: 0s;
 }
 
-body.fp-viewing-0 .loaded #mouse {
+body.fp-viewing-Intro .loaded #mouse {
     transition-delay: 1.5s;
     opacity: 0.25;
 }
@@ -363,33 +391,33 @@ body.fp-viewing-0 .loaded #mouse {
 
 
 
-body.fp-viewing-9 #section8 .logoEndCanvas,
-body.fp-viewing-10 #section8 .logoEndCanvas {
+body.fp-viewing-NextProject #section8 .logoEndCanvas,
+body.fp-viewing-NewProject #section8 .logoEndCanvas {
     height: calc(100vh - 350px) !important;
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-9 #section8 #logoEnd,
-body.fp-viewing-10 #section8 #logoEnd {
+body.fp-viewing-NextProject #section8 #logoEnd,
+body.fp-viewing-NewProject #section8 #logoEnd {
     transform: translate(0px, 350px);
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-8 #section8 .logoEndCanvas {
+body.fp-viewing-ZetaID #section8 .logoEndCanvas {
     height: calc(100vh - 0px) !important;
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-8 #section8 #logoEnd {
+body.fp-viewing-ZetaID #section8 #logoEnd {
     transform: translate(0px, 0px);
     transition: all 1000ms ease-in-out;
     transition-delay: 10ms;
 }
 
-body.fp-viewing-8 #mouse {
+body.fp-viewing-ZetaID #mouse {
     position: absolute;
     bottom: -60px;
     opacity: 0;
@@ -399,46 +427,46 @@ body.fp-viewing-8 #mouse {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-10 #mouse {
+body.fp-viewing-NewProject #mouse {
     bottom: 30px;
     opacity: 0.25;
     filter: blur(0);
     transition-delay: 0s;
 }
 
-body.fp-viewing-10 #mouse {
+body.fp-viewing-NewProject #mouse {
     opacity: 0;
 }
 
-body.fp-viewing-7 #projectVideos,
-body.fp-viewing-7 #elementsProject,
-body.fp-viewing-8 #projectVideos,
-body.fp-viewing-8 #elementsProject,
-body.fp-viewing-9 #projectVideos,
-body.fp-viewing-9 #elementsProject {
+body.fp-viewing-Turntable #projectVideos,
+body.fp-viewing-Turntable #elementsProject,
+body.fp-viewing-ZetaID #projectVideos,
+body.fp-viewing-ZetaID #elementsProject,
+body.fp-viewing-NextProject #projectVideos,
+body.fp-viewing-NextProject #elementsProject {
     display: none;
 }
 
-body.fp-viewing-8 #sideMenu,
-body.fp-viewing-9 #sideMenu,
-body.fp-viewing-10 #sideMenu,
-body.fp-viewing-8 #sideMenu #logoMain,
-body.fp-viewing-9 #sideMenu #logoMain,
-body.fp-viewing-10 #sideMenu #logoMain {
+body.fp-viewing-ZetaID #sideMenu,
+body.fp-viewing-NextProject #sideMenu,
+body.fp-viewing-NewProject #sideMenu,
+body.fp-viewing-ZetaID #sideMenu #logoMain,
+body.fp-viewing-NextProject #sideMenu #logoMain,
+body.fp-viewing-NewProject #sideMenu #logoMain {
     filter: blur(25px) !important;
     right: -120px !important;
     opacity: 0;
     transition: all 500ms ease-in-out !important;
 }
 
-body.fp-viewing-1 #logoMenu {
+body.fp-viewing-PortableAirConditioner #logoMenu {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-0 #logoMenu,
-body.fp-viewing-8 #logoMenu,
-body.fp-viewing-9 #logoMenu,
-body.fp-viewing-10 #logoMenu {
+body.fp-viewing-Intro #logoMenu,
+body.fp-viewing-ZetaID #logoMenu,
+body.fp-viewing-NextProject #logoMenu,
+body.fp-viewing-NewProject #logoMenu {
     filter: blur(25px);
     left: -120px;
     opacity: 0;
@@ -479,8 +507,8 @@ body.fp-viewing-10 #logoMenu {
     transition-delay: 0s;
 }
 
-body.fp-viewing-9 #zProject .next video,
-body.fp-viewing-10 #zProject .next video {
+body.fp-viewing-NextProject #zProject .next video,
+body.fp-viewing-NewProject #zProject .next video {
     top: 2px;
     opacity: 1;
     transform: scale(1);
@@ -489,8 +517,8 @@ body.fp-viewing-10 #zProject .next video {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-9 #zProject .next img,
-body.fp-viewing-10 #zProject .next img {
+body.fp-viewing-NextProject #zProject .next img,
+body.fp-viewing-NewProject #zProject .next img {
     top: 200px;
     opacity: 1;
     transform: scale(1);
@@ -513,9 +541,9 @@ body.fp-viewing-10 #zProject .next img {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-8 #zProject #logoEnd h3,
-body.fp-viewing-9 #zProject #logoEnd h3,
-body.fp-viewing-10 #zProject #logoEnd h3 {
+body.fp-viewing-ZetaID #zProject #logoEnd h3,
+body.fp-viewing-NextProject #zProject #logoEnd h3,
+body.fp-viewing-NewProject #zProject #logoEnd h3 {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
@@ -532,38 +560,38 @@ body.fp-viewing-10 #zProject #logoEnd h3 {
     transition: all 0.4s ease-in-out;
 }
 
-body.fp-viewing-8 #zProject #logoEnd img,
-body.fp-viewing-9 #zProject #logoEnd img,
-body.fp-viewing-10 #zProject #logoEnd img,
-body.fp-viewing-9 #section8 .fp-tableCell {
+body.fp-viewing-ZetaID #zProject #logoEnd img,
+body.fp-viewing-NextProject #zProject #logoEnd img,
+body.fp-viewing-NewProject #zProject #logoEnd img,
+body.fp-viewing-NextProject #section8 .fp-tableCell {
     opacity: 1;
     filter: blur(0px);
     transition: all 1.5s ease-in-out;
     transition-delay: 0.35s;
 }
 
-body.fp-viewing-9 #zProject #mouse {
+body.fp-viewing-NextProject #zProject #mouse {
     opacity: 0;
     transition: all 0.5s ease-in-out;
     transition-delay: 0;
 }
 
-body.fp-viewing-10 #logoEnd,
-body.fp-viewing-10 #zProject .next,
-body.fp-viewing-10 #mouse {
+body.fp-viewing-NewProject #logoEnd,
+body.fp-viewing-NewProject #zProject .next,
+body.fp-viewing-NewProject #mouse {
     opacity: 0 !important;
     transition: all 0.5s ease-in-out !important;
 }
 
 
 
-body.fp-viewing-1 #sectionProject h2:nth-child(1),
-body.fp-viewing-2 #sectionProject h2:nth-child(2),
-body.fp-viewing-3 #sectionProject h2:nth-child(2),
-body.fp-viewing-4 #sectionProject h2:nth-child(2),
-body.fp-viewing-5 #sectionProject h2:nth-child(3),
-body.fp-viewing-6 #sectionProject h2:nth-child(4),
-body.fp-viewing-7 #sectionProject h2:nth-child(5) {
+body.fp-viewing-PortableAirConditioner #sectionProject h2:nth-child(1),
+body.fp-viewing-CompactDualSystem #sectionProject h2:nth-child(2),
+body.fp-viewing-CompactDualSystemHeat #sectionProject h2:nth-child(2),
+body.fp-viewing-CompactDualSystemCool #sectionProject h2:nth-child(2),
+body.fp-viewing-TemperatureControl #sectionProject h2:nth-child(3),
+body.fp-viewing-RemovableBattery #sectionProject h2:nth-child(4),
+body.fp-viewing-Turntable #sectionProject h2:nth-child(5) {
     transform: translateX(0%);
     clip-path: inset(0 0 0 0%);
     opacity: 1;
@@ -638,19 +666,19 @@ body.fp-viewing-7 #sectionProject h2:nth-child(5) {
 
 
 
-body.fp-viewing-0 .elementsCanvas .tooltip,
-body.fp-viewing-1 .elementsCanvas .tooltip,
-body.fp-viewing-5 .elementsCanvas .tooltip,
-body.fp-viewing-6 .elementsCanvas .tooltip {
+body.fp-viewing-Intro .elementsCanvas .tooltip,
+body.fp-viewing-PortableAirConditioner .elementsCanvas .tooltip,
+body.fp-viewing-TemperatureControl .elementsCanvas .tooltip,
+body.fp-viewing-RemovableBattery .elementsCanvas .tooltip {
     opacity: 0;
     filter: blur(25px);
     transition-delay: 0s !important;
     transition: all .1s ease-in-out;
 }
 
-body.fp-viewing-2 .elementsCanvas .tooltip,
-body.fp-viewing-3 .elementsCanvas .tooltip,
-body.fp-viewing-4 .elementsCanvas .tooltip {
+body.fp-viewing-CompactDualSystem .elementsCanvas .tooltip,
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas .tooltip,
+body.fp-viewing-CompactDualSystemCool .elementsCanvas .tooltip {
     opacity: 1;
     filter: blur(0);
     transition-delay: 3s;
@@ -729,45 +757,45 @@ body.fp-viewing-4 .elementsCanvas .tooltip {
 
 
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(2),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(2),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(2) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(2),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(2),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(2) {
     transition-delay: 0.2s;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(3),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(3),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(3) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(3),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(3),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(3) {
     transition-delay: 0.4s;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(4),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(4),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(4) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(4),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(4),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(4) {
     transition-delay: 0.6s;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(5),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(5),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(5) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(5),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(5),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(5) {
     transition-delay: 0.8s;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(6),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(6),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(6) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(6),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(6),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(6) {
     transition-delay: 1s;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(7),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(7),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(7) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(7),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(7),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(7) {
     transition-delay: 1.2s;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 .tooltip:nth-child(8),
-body.fp-viewing-3 .elementsCanvas #elementsSection2 .tooltip:nth-child(8),
-body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(8) {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 .tooltip:nth-child(8),
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 .tooltip:nth-child(8),
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 .tooltip:nth-child(8) {
     transition-delay: 1.4s;
 }
 
@@ -803,29 +831,29 @@ body.fp-viewing-4 .elementsCanvas #elementsSection2 .tooltip:nth-child(8) {
 }
 
 
-body.fp-viewing-1 .elementsCanvas #elementsSection1,
-body.fp-viewing-2 .elementsCanvas #elementsSection2,
-body.fp-viewing-3 .elementsCanvas #elementsSection2,
-body.fp-viewing-4 .elementsCanvas #elementsSection2,
-body.fp-viewing-5 .elementsCanvas #elementsSection5,
-body.fp-viewing-6 .elementsCanvas #elementsSection6 {
+body.fp-viewing-PortableAirConditioner .elementsCanvas #elementsSection1,
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2,
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2,
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2,
+body.fp-viewing-TemperatureControl .elementsCanvas #elementsSection5,
+body.fp-viewing-RemovableBattery .elementsCanvas #elementsSection6 {
     visibility: visible;
 }
 
-body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
-body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
-body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"],
-body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"],
-body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
-body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
+body.fp-viewing-PortableAirConditioner .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-TemperatureControl .elementsCanvas #elementsSection5 [class*="element"],
+body.fp-viewing-RemovableBattery .elementsCanvas #elementsSection6 [class*="element"] {
     opacity: 1;
     filter: blur(0);
     transition: all 1.2s .7s ease-in-out;
 }
 
-body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
-body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
-body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"] .button-plus {
+body.fp-viewing-CompactDualSystem .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
+body.fp-viewing-CompactDualSystemHeat .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
+body.fp-viewing-CompactDualSystemCool .elementsCanvas #elementsSection2 [class*="element"] .button-plus {
     animation-play-state: running;
 }
 
