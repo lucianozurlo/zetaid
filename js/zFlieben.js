@@ -16,7 +16,7 @@ console.log(fliebenRev.currentTime);
 console.log(fliebenPlay.currentTime);
 
 new fullpage('#zProject', {
-    anchors: ['Intro', 'PortableAirConditioner', 'CompactDualSystem', 'CompactDualSystemHeat', 'CompactDualSystemCool', 'TemperatureControl', 'RemovableBattery', 'Turntable', '8', '9', '10'],
+    anchors: ['Intro', 'PortableAirConditioner', 'CompactDualSystem', 'CompactDualSystemHeat', 'CompactDualSystemCool', 'TemperatureControl', 'RemovableBattery', 'Turntable', 'ZetaID', 'NextProject', 'NewProject'],
 
     afterLoad: () => {
         document.querySelectorAll('video').forEach(video => video.currentTime = 0);
@@ -127,11 +127,11 @@ new fullpage('#zProject', {
             rev1();
         } else if (origin.index > 1 && destination.index == 0) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3750);
+            fullpage_api.setScrollingSpeed(1667);
             rev1();
         } else if (origin.index > 2 && destination.index == 0) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5000);
+            fullpage_api.setScrollingSpeed(1250);
             rev1();
         }
 
@@ -141,13 +141,9 @@ new fullpage('#zProject', {
             fliebenPlay.playbackRate = 1;
             fullpage_api.setScrollingSpeed(2500);
             play1();
-        } else if (origin.index < 0 && destination.index == 1) {
-            fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3750);
-            play1();
         } else if (origin.index < 1 && destination.index == 1) {
             fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5000);
+            fullpage_api.setScrollingSpeed(1250);
             play1();
         }
 
@@ -158,11 +154,11 @@ new fullpage('#zProject', {
             rev2();
         } else if (origin.index > 2 && destination.index == 1) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(1800);
+            fullpage_api.setScrollingSpeed(800);
             rev2();
         } else if (origin.index > 3 && destination.index == 1) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(12400);
+            fullpage_api.setScrollingSpeed(600);
             rev2();
         }
 
@@ -174,11 +170,7 @@ new fullpage('#zProject', {
             play2();
         } else if (origin.index <= 1 && destination.index == 2) {
             fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(1800);
-            play2();
-        } else if (origin.index <= 1 && destination.index == 2) {
-            fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(2400);
+            fullpage_api.setScrollingSpeed(800);
             play2();
         }
 
@@ -189,11 +181,11 @@ new fullpage('#zProject', {
             rev3();
         } else if (origin.index >= 3 && destination.index == 2) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(2400);
+            fullpage_api.setScrollingSpeed(1067);
             rev3();
-        } else if (origin.index >= 3 && destination.index == 2) {
+        } else if (origin.index >= 4 && destination.index == 2) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(3200);
+            fullpage_api.setScrollingSpeed(800);
             rev3();
         }
 
@@ -205,11 +197,11 @@ new fullpage('#zProject', {
             play3();
         } else if (origin.index <= 2 && destination.index == 3) {
             fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(2400);
+            fullpage_api.setScrollingSpeed(1067);
             play3();
-        } else if (origin.index <= 2 && destination.index == 3) {
+        } else if (origin.index <= 1 && destination.index == 3) {
             fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(3200);
+            fullpage_api.setScrollingSpeed(800);
             play3();
         }
 
@@ -220,11 +212,11 @@ new fullpage('#zProject', {
             rev4();
         } else if (origin.index >= 4 && destination.index == 3) {
             fliebenRev.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3900);
+            fullpage_api.setScrollingSpeed(1733);
             rev4();
-        } else if (origin.index >= 4 && destination.index == 3) {
+        } else if (origin.index >= 5 && destination.index == 3) {
             fliebenRev.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5200);
+            fullpage_api.setScrollingSpeed(1300);
             rev4();
         }
 
@@ -236,16 +228,26 @@ new fullpage('#zProject', {
             play4();
         } else if (origin.index <= 3 && destination.index == 4) {
             fliebenPlay.playbackRate = 1.5;
-            fullpage_api.setScrollingSpeed(3900);
+            fullpage_api.setScrollingSpeed(1733);
             play4();
         } else if (origin.index <= 3 && destination.index == 4) {
             fliebenPlay.playbackRate = 2;
-            fullpage_api.setScrollingSpeed(5200);
+            fullpage_api.setScrollingSpeed(1300);
             play4();
         }
 
         /*  <<< 5  */
-        if (origin.index >= 5 && destination.index == 4) {
+        if (origin.index == 5 && destination.index == 4) {
+            zProject.style.opacity = 1;
+            fliebenPlay.style.opacity = 1;
+            fliebenRev.style.opacity = 0;
+            fliebenPlay.pause();
+            fliebenLoopCold.style.opacity = 1;
+            fliebenLoopCold.play();
+            projectVideos.style.transform = "translateY(0vh)";
+            projectVideos.style.transitionDuration = "700ms";
+        } else if (origin.index >= 5 && destination.index == 4) {
+            fullpage_api.setScrollingSpeed(350);
             zProject.style.opacity = 1;
             fliebenPlay.style.opacity = 1;
             fliebenRev.style.opacity = 0;

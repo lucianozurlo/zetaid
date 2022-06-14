@@ -239,23 +239,43 @@ body.fp-viewing-NewProject #projectVideos {
 }
 
 body.fp-viewing-TemperatureControl #fliebenPlay,
-body.fp-viewing-TemperatureControl #fliebenLoopCold {
+body.fp-viewing-TemperatureControl #fliebenLoopCold,
+body.fp-viewing-RemovableBattery #fliebenPlay,
+body.fp-viewing-RemovableBattery #fliebenLoopCold,
+body.fp-viewing-Turntable #fliebenPlay,
+body.fp-viewing-Turntable #fliebenLoopCold {
     filter: blur(25px);
     transition: 200ms;
 }
 
+body.fp-viewing-Intro #fliebenPlay,
+body.fp-viewing-Intro #fliebenLoopCold,
+body.fp-viewing-PortableAirConditioner #fliebenPlay,
+body.fp-viewing-PortableAirConditioner #fliebenLoopCold,
+body.fp-viewing-CompactDualSystem #fliebenPlay,
+body.fp-viewing-CompactDualSystem #fliebenLoopCold,
+body.fp-viewing-CompactDualSystemHeat #fliebenPlay,
+body.fp-viewing-CompactDualSystemHeat #fliebenLoopCold,
 body.fp-viewing-CompactDualSystemCool #fliebenPlay,
 body.fp-viewing-CompactDualSystemCool #fliebenLoopCold {
     filter: blur(0px);
     transition: 200ms;
 }
 
+body.fp-viewing-Intro #projectVideos,
+body.fp-viewing-PortableAirConditioner #projectVideos,
+body.fp-viewing-CompactDualSystem #projectVideos,
+body.fp-viewing-CompactDualSystemHeat #projectVideos,
 body.fp-viewing-CompactDualSystemCool #projectVideos {
-    transform: translateY(0);
+    transform: translateY(0) !important;
+    transition: 700ms;
 }
 
-body.fp-viewing-TemperatureControl #projectVideos {
-    transform: translateY(-100vh);
+body.fp-viewing-TemperatureControl #projectVideos,
+body.fp-viewing-RemovableBattery #projectVideos,
+body.fp-viewing-Turntable #projectVideos {
+    transform: translateY(-100vh) !important;
+    transition: 700ms;
 }
 
 

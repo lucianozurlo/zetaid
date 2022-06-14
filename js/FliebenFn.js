@@ -124,8 +124,8 @@ function rev1() {
     fliebenRev.style.opacity = 1;
     fliebenPlay.style.opacity = 0;
     fliebenRev.play();
-    projectVideos.style.transform = "translateY(0vh)";
-    projectVideos.style.transitionDuration = "700ms";
+    // projectVideos.style.transform = "translateY(0vh)";
+    // projectVideos.style.transitionDuration = "700ms";
 
     let timer = setInterval(function () {
         if (fliebenRev.currentTime >= 8.067) {
@@ -151,8 +151,8 @@ function rev2() {
     fliebenRev.style.opacity = 1;
     fliebenPlay.style.opacity = 0;
     fliebenRev.play();
-    projectVideos.style.transform = "translateY(0vh)";
-    projectVideos.style.transitionDuration = "700ms";
+    // projectVideos.style.transform = "translateY(0vh)";
+    // projectVideos.style.transitionDuration = "700ms";
 
     let timer = setInterval(function () {
         if (fliebenRev.currentTime >= 5.933) {
@@ -178,8 +178,8 @@ function rev3() {
     fliebenRev.style.opacity = 1;
     fliebenPlay.style.opacity = 0;
     fliebenRev.play();
-    projectVideos.style.transform = "translateY(0vh)";
-    projectVideos.style.transitionDuration = "700ms";
+    // projectVideos.style.transform = "translateY(0vh)";
+    // projectVideos.style.transitionDuration = "700ms";
 
     let timer = setInterval(function () {
         if (fliebenRev.currentTime >= 4.933) {
@@ -205,8 +205,8 @@ function rev4() {
     fliebenRev.style.opacity = 1;
     fliebenPlay.style.opacity = 0;
     fliebenRev.play();
-    projectVideos.style.transform = "translateY(0vh)";
-    projectVideos.style.transitionDuration = "700ms";
+    // projectVideos.style.transform = "translateY(0vh)";
+    // projectVideos.style.transitionDuration = "700ms";
 
     let timer = setInterval(function () {
         if (fliebenRev.currentTime >= 3.667) {
