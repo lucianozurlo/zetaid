@@ -2,13 +2,19 @@
     stroke: #4cd8bd;
 }
 
-body {
+.fp-bg {
+    color: #000;
     background: #fff;
 }
 
-.fp-bg {
-    color: #000;
+#section14 .fp-bg,
+#section15 .fp-bg,
+#section16 .fp-bg,
+body.fp-viewing-NextProject,
+body.fp-viewing-NewProject {
+    background: #000;
 }
+
 
 .bg-black {
     background: #000 !important;
