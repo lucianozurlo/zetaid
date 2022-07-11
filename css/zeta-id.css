@@ -99,7 +99,6 @@ p {
     left: 28px;
     z-index: 999999999999999999999;
     transition: all .3s ease-in-out;
-    display: none;
 }
 
 body .loading #langSwitch {
@@ -163,7 +162,7 @@ body .loaded #langSwitch {
 }
 
 #langSwitch .knobs:before {
-    content: 'ES';
+    content: 'EN';
     position: absolute;
     top: 1px;
     left: 1px;
@@ -181,7 +180,7 @@ body .loaded #langSwitch {
 }
 
 #langSwitch .check:checked+.knobs:before {
-    content: 'EN';
+    content: 'ES';
     left: 17px;
 }
 

@@ -95,38 +95,38 @@
                             <a href="eko.html" class="portfolioEKO k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/eko_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/eko/eko-home.mp4" type="video/mp4">
+                                    <source src="projects/eko/ekoPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="sentry.html" class="portfolioSentry k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/sentry_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/sentry/sentry-home.mp4" type="video/mp4">
+                                    <source src="projects/sentry/sentryPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="flieben.html" class="portfolioFlieben k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/flieben_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/flieben/flieben-home.mp4" type="video/mp4">
+                                    <source src="projects/flieben/fliebenPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="magma.html" class="portfolioMagma k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/magma_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/magma/magma-home.mp4" type="video/mp4">
+                                    <source src="projects/magma/magmaPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="#" class="portfolioQlic active" onclick="togglePortfolioOff()">
                                 <img src="img/logos/qlic_logo_color.svg" style="width: 70%;">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/qlic/qlic-home.mp4" type="video/mp4">
+                                    <source src="projects/qlic/qlicPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                         </div>
                     </div>
 
                     <div id="logoMenu" onmouseover="cursorOn()" onmouseleave="cursorOff()">
-                        <a href="#0" class="k-hover">
+                        <a href="#Intro" class="k-hover">
                             <img src="img/logos/qlic_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
@@ -201,15 +201,15 @@
                 <div id="section0" class="section">
                     <div class="fp-bg">
                         <div class="layer"></div>
-                        <video id="qlic-home" loop="" muted="" playsinline="" data-autoplay="" style="
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay style="
                         object-fit: cover; width: 100%; height: 100%;">
-                            <source src="projects/qlic/qlic-home.mp4" type="video/mp4">
+                            <source src="projects/qlic/qlicIntro.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div id="section1" class="section">
                     <div class="fp-bg">
-                        <video loop="" muted="" playsinline="" data-autoplay="">
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay>
                             <source src="projects/qlic/qlic-01.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -221,7 +221,7 @@
                 </div>
                 <div id="section3" class="section">
                     <div class="fp-bg">
-                        <video loop="" muted="" playsinline="" data-autoplay="" style="
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay style="
                         object-fit: cover; width: 100%; height: 100%;">
                             <source src="projects/qlic/qlic-03.mp4" type="video/mp4">
                         </video>
@@ -240,15 +240,15 @@
                 </div>
                 <div id="section6" class="section">
                     <div class="fp-bg">
-                        <video loop muted="" playsinline="" data-autoplay="" autoplay loop>
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay>
                             <source src="projects/qlic/qlic-06.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
                 <div id="section7" class="section">
                     <div class="fp-bg">
-                        <video loop muted="" playsinline="" data-autoplay="" autoplay loop>
-                            <source src="projects/qlic/qlic-07-360.mp4" type="video/mp4" />
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay>
+                            <source src="projects/qlic/qlicTurntable.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -272,7 +272,7 @@
                 <div id="section9" class="section fp-auto-height">
                     <div style="height: 350px">
                         <div class="next">
-                            <video id="ekoNext" muted="" playsinline="" data-autoplay="">
+                            <video id="ekoNext" loop muted="" playsinline="" data-autoplay="" autoplay>
                                 <source src="projects/eko/ekoNext.mp4" type="video/mp4" />
                             </video>
                             <img src="img/logos/eko_logo_color.svg" />
@@ -333,6 +333,7 @@
             document.querySelector("#sideMenu").classList.add("toggleON");
             document.querySelector("#portfolio").classList.add("toggleVideos");
             document.querySelectorAll('video').forEach(video => video.pause());
+            document.querySelectorAll('#portfolio video').forEach(video => video.play());
         };
         const togglePortfolioOff = () => {
             document.querySelector("#zProject").classList.remove("toggleOFF");
@@ -344,6 +345,7 @@
             document.querySelector("#sideMenu").classList.remove("toggleON");
             document.querySelector("#portfolio").classList.remove("toggleVideos");
             document.querySelector("#zProject .section.active video").play();
+            document.querySelectorAll('#portfolio video').forEach(video => video.pause());
         };
         const cursorOn = () => {
             document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(1) translate(-50%, -50%)";

@@ -14,7 +14,7 @@
     /* transition: opacity 0.5s 0.2s linear; */
 }
 
-body.fp-viewing-0 #menu #sideMenu ul {
+body.fp-viewing-Intro #menu #sideMenu ul {
     opacity: 0.15;
     left: 30px;
     transition: all 0.3s ease-in-out;
@@ -25,8 +25,8 @@ body.fp-viewing-0 #menu #sideMenu ul {
     transition: all 0.3s ease-in-out;
 }
 
-body.fp-viewing-0 #menu #sideMenu:hover ul,
-body.fp-viewing-0 #menu #sideMenu.toggleON ul {
+body.fp-viewing-Intro #menu #sideMenu:hover ul,
+body.fp-viewing-Intro #menu #sideMenu.toggleON ul {
     opacity: 1;
     left: 150px;
 }
@@ -74,14 +74,13 @@ body.fp-viewing-0 #menu #sideMenu.toggleON ul {
     color: #fff;
 }
 
-body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a p,
-body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a p,
-body.fp-viewing-3 #menu #projectMenu ul li:nth-child(3) a p,
-body.fp-viewing-4 #menu #projectMenu ul li:nth-child(3) a p,
-body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a p,
-
+body.fp-viewing-Concept #menu #projectMenu:hover ul li:nth-child(1) a p,
+body.fp-viewing-Studio #menu #projectMenu:hover ul li:nth-child(2) a p,
+body.fp-viewing-Living #menu #projectMenu:hover ul li:nth-child(3) a p,
+body.fp-viewing-Turntable #menu #projectMenu:hover ul li:nth-child(4) a p,
 #menu #projectMenu ul li a:hover p {
     color: #ffab8d !important;
+    opacity: 1;
 }
 
 #menu #projectMenu ul li a span span {
@@ -89,11 +88,10 @@ body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a p,
     border-color: #ffab8d;
 }
 
-body.fp-viewing-1 #menu #projectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-2 #menu #projectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-3 #menu #projectMenu ul li:nth-child(3) a span span,
-body.fp-viewing-4 #menu #projectMenu ul li:nth-child(3) a span span,
-body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a span span {
+body.fp-viewing-Concept #menu #projectMenu ul li:nth-child(1) a span span,
+body.fp-viewing-Studio #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-Living #menu #projectMenu ul li:nth-child(3) a span span,
+body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(4) a span span {
     width: 10px;
     height: 10px;
     background: rgba(255, 171, 141, 0);
@@ -109,7 +107,7 @@ body.fp-viewing-5 #menu #projectMenu ul li:nth-child(4) a span span {
 }
 
 
-body.fp-viewing-6 #menu #projectMenu,
+/* body.fp-viewing-6 #menu #projectMenu,
 body.fp-viewing-7 #menu #projectMenu,
 body.fp-viewing-8 #menu #projectMenu,
 body.fp-viewing-6 #langSwitch,
@@ -118,4 +116,4 @@ body.fp-viewing-8 #langSwitch {
     opacity: 0;
     transform: translateX(-80px);
     transition: all 0.3s ease-in-out;
-}
+} */

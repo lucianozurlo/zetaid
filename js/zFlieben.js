@@ -16,7 +16,7 @@ console.log(fliebenRev.currentTime);
 console.log(fliebenPlay.currentTime);
 
 new fullpage('#zProject', {
-    anchors: ['Intro', 'PortableAirConditioner', 'CompactDualSystem', 'CompactDualSystemHeat', 'CompactDualSystemCool', 'TemperatureControl', 'RemovableBattery', 'Turntable', 'ZetaID', 'NextProject', 'NewProject'],
+    anchors: ['Intro', 'PortableAirConditioner', 'DualSystem', 'DualSystemHeat', 'DualSystemCool', 'TemperatureControl', 'RemovableBattery', 'Transportable', 'HeatExtractor', 'RearOutlet', 'AirOutlet', 'Turntable', 'ZetaID', 'NextProject', 'NewProject'],
 
     afterLoad: () => {
         document.querySelectorAll('video').forEach(video => video.currentTime = 0);
@@ -64,7 +64,7 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-CompactDualSystem'))) {
+        } else if (isNaN(document.querySelector('body.fp-viewing-DualSystem'))) {
             fliebenPlay.currentTime = 3.165;
             fliebenRev.currentTime = 4.933;
             //fliebenRev.style.opacity = 0;
@@ -76,7 +76,7 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-CompactDualSystemHeat'))) {
+        } else if (isNaN(document.querySelector('body.fp-viewing-DualSystemHeat'))) {
             fliebenPlay.currentTime = 4.433;
             fliebenRev.currentTime = 3.667;
             //fliebenRev.style.opacity = 0;
@@ -88,7 +88,7 @@ new fullpage('#zProject', {
             // fliebenLoopColdRev.pause();
             // fliebenLoopHotRev.style.opacity = 0;
             // fliebenLoopHotRev.pause();
-        } else if (isNaN(document.querySelector('body.fp-viewing-CompactDualSystemCool'))) {
+        } else if (isNaN(document.querySelector('body.fp-viewing-DualSystemCool'))) {
             fliebenPlay.currentTime = 6.5;
             fliebenRev.currentTime = 1.6;
             //fliebenRev.style.opacity = 0;
@@ -352,16 +352,60 @@ new fullpage('#zProject', {
             fullpage_api.setScrollingSpeed(700);
         }
 
+        /*********** 8 *******/
+        /*  7 >>>  */
+        if (origin.index == 8 && destination.index == 9) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*  <<< 9  */
+        if (origin.index == 10 && destination.index == 9) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*********** 8 *******/
+        /*  7 >>>  */
+        if (origin.index == 9 && destination.index == 10) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*  <<< 9  */
+        if (origin.index == 11 && destination.index == 10) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*********** 8 *******/
+        /*  7 >>>  */
+        if (origin.index == 10 && destination.index == 11) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*  <<< 9  */
+        if (origin.index == 12 && destination.index == 11) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*********** 8 *******/
+        /*  7 >>>  */
+        if (origin.index == 11 && destination.index == 12) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
+        /*  <<< 9  */
+        if (origin.index == 13 && destination.index == 12) {
+            fullpage_api.setScrollingSpeed(700);
+        }
+
         /*********** 9 *******/
         /*  8 >>>  */
-        if (origin.index == 8 && destination.index == 9) {
+        if (origin.index == 12 && destination.index == 13) {
             fullpage_api.setScrollingSpeed(700);
             magmaNext.currentTime = 0;
         }
 
         /*********** 10 *******/
         /*  9 >>>  */
-        if (origin.index == 9 && destination.index == 10) {
+        if (origin.index == 13 && destination.index == 14) {
             fullpage_api.setScrollingSpeed(100000000);
             fullpage_api.setAllowScrolling(false);
             setTimeout(() => {

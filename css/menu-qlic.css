@@ -74,16 +74,16 @@ body.fp-viewing-Intro #menu #sideMenu.toggleON ul {
     color: #fff;
 }
 
-body.fp-viewing-AdjustablePower #menu #projectMenu ul li:nth-child(1) a p,
-body.fp-viewing-Context #menu #projectMenu ul li:nth-child(2) a p,
-body.fp-viewing-Working #menu #projectMenu ul li:nth-child(3) a p,
-body.fp-viewing-ExplodedView #menu #projectMenu ul li:nth-child(4) a p,
-body.fp-viewing-Pedernal #menu #projectMenu ul li:nth-child(5) a p,
-body.fp-viewing-PedernalAction #menu #projectMenu ul li:nth-child(5) a p,
-body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(6) a p,
-
+body.fp-viewing-AdjustablePower #menu #projectMenu:hover ul li:nth-child(1) a p,
+body.fp-viewing-Context #menu #projectMenu:hover ul li:nth-child(2) a p,
+body.fp-viewing-Working #menu #projectMenu:hover ul li:nth-child(3) a p,
+body.fp-viewing-ExplodedView #menu #projectMenu:hover ul li:nth-child(4) a p,
+body.fp-viewing-Pedernal #menu #projectMenu:hover ul li:nth-child(5) a p,
+body.fp-viewing-PedernalAction #menu #projectMenu:hover ul li:nth-child(5) a p,
+body.fp-viewing-Turntable #menu #projectMenu:hover ul li:nth-child(6) a p,
 #menu #projectMenu ul li a:hover p {
     color: #fc3000 !important;
+    opacity: 1;
 }
 
 #menu #projectMenu ul li a span span {
@@ -113,7 +113,7 @@ body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(6) a span span {
 }
 
 
-body.fp-viewing-ZetaID #menu #projectMenu,
+/* body.fp-viewing-ZetaID #menu #projectMenu,
 body.fp-viewing-NextProject #menu #projectMenu,
 body.fp-viewing-NewProject #menu #projectMenu,
 body.fp-viewing-ZetaID #langSwitch,
@@ -122,4 +122,4 @@ body.fp-viewing-NewProject #langSwitch {
     opacity: 0;
     transform: translateX(-80px);
     transition: all 0.3s ease-in-out;
-}
+} */

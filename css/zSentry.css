@@ -172,7 +172,7 @@ body#sentryProject .button-plus:hover {
     width: 100vw;
     bottom: 10vh;
     opacity: 1;
-    z-index: 1;
+    z-index: 10;
     opacity: 0;
     filter: blur(25px);
     transition: all 1.2s ease-in-out;
@@ -190,14 +190,14 @@ body#sentryProject .button-plus:hover {
     font-weight: 600;
 } */
 
-body.fp-viewing-0 .loaded #introProject {
+body.fp-viewing-Intro .loaded #introProject {
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
     transition: all 1.2s 0.5s ease-in-out;
 }
 
-body.fp-viewing-1 .loaded #introProject {
+body.fp-viewing-Interface .loaded #introProject {
     opacity: 0;
     filter: blur(50px);
     transition: all 0.75s ease-in-out;
@@ -205,274 +205,27 @@ body.fp-viewing-1 .loaded #introProject {
     bottom: 15vh;
 }
 
-#logoMenu {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10000;
-    opacity: 1;
-    filter: blur(0);
-    display: flex;
-    transition: all 1.2s ease-in-out;
-}
+/**/
 
-#logoMenu img {
-    margin: 10px;
-    height: 20px;
-}
-
-/* #sectionProject {
-    margin: 11px 0 0 15px;
-    opacity: .35;
-    font-weight: 300;
-}
-
-#sectionProject h2 {
-    color: #000;
-    font-size: 20px;
-} */
-
-body.fp-viewing-0 #logoMenu {
-    opacity: 0;
-    filter: blur(25px);
-    transition: all 0.5s 0.75s ease-in-out;
-    z-index: 1;
-    transform: scale(1.2);
-}
-
-
-
-/* #section6 .fp-bg,
-#section7 .fp-bg,
-#section8 .fp-bg,
-#section9 .fp-bg,
-#section10 .fp-bg {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(230, 230, 230, 1) 100%);
-} */
-
-body.fp-viewing-15 #section14 .logoEndCanvas,
-body.fp-viewing-16 #section14 .logoEndCanvas {
-    height: calc(100vh - 350px) !important;
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
-}
-
-body.fp-viewing-15 #section14 #logoEnd,
-body.fp-viewing-16 #section14 #logoEnd {
-    transform: translate(0px, 350px);
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
-}
-
-body.fp-viewing-14 #section14 .logoEndCanvas {
-    height: calc(100vh - 0px) !important;
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
-}
-
-body.fp-viewing-14 #section14 #logoEnd {
-    transform: translate(0px, 0px);
-    transition: all 1000ms ease-in-out;
-    transition-delay: 10ms;
-}
-
-body.fp-viewing-14 #mouse {
-    position: absolute;
-    bottom: -60px;
-    opacity: 0;
-    filter: blur(5px);
-    z-index: 1;
-    transition-delay: 0.2s;
-    transition: all 0.5s ease-in-out;
-}
-
-body.fp-viewing-16 #mouse {
-    bottom: 30px;
-    opacity: 0.25;
-    filter: blur(0);
-    transition-delay: 0s;
-}
-
-body.fp-viewing-16 #mouse {
-    opacity: 0;
-}
-
-body.fp-viewing-14 #sideMenu,
-body.fp-viewing-15 #sideMenu,
-body.fp-viewing-16 #sideMenu,
-body.fp-viewing-14 #sideMenu #logoMain,
-body.fp-viewing-15 #sideMenu #logoMain,
-body.fp-viewing-16 #sideMenu #logoMain {
-    filter: blur(25px) !important;
-    right: -120px !important;
-    opacity: 0;
-    transition: all 500ms ease-in-out !important;
-}
-
-body.fp-viewing-1 #logoMenu {
-    transition-delay: .2s;
-}
-
-body.fp-viewing-0 #logoMenu,
-body.fp-viewing-14 #logoMenu,
-body.fp-viewing-15 #logoMenu,
-body.fp-viewing-16 #logoMenu {
-    filter: blur(25px);
-    left: -120px;
-    opacity: 0;
-    transition: all 500ms ease-in-out;
-}
-
-#zProject .next {
-    height: 165px;
-    width: 165px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: block;
-}
-
-#zProject .next video {
-    position: absolute;
-    margin-left: -83px;
-    top: 52px;
-    height: 165px;
-    width: 165px;
-    right: unset;
-    opacity: 0;
-    transform: scale(0.8);
-    box-shadow: 0px 0px 0px #5ae0ff;
-    border-radius: 50%;
-    transition: all 1s ease-in-out;
-    transition-delay: 0s;
-}
-
-#zProject .next img {
-    position: absolute;
-    margin-left: -60px;
-    width: 120px;
-    top: 250px;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 1s ease-in-out;
-    transition-delay: 0s;
-}
-
-body.fp-viewing-15 #zProject .next video,
-body.fp-viewing-16 #zProject .next video {
-    top: 2px;
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: 0px 2px 4px #5ae0ff;
-    transition: all 1.5s ease-in-out;
-    transition-delay: 0.2s;
-}
-
-body.fp-viewing-15 #zProject .next img,
-body.fp-viewing-16 #zProject .next img {
-    top: 200px;
-    opacity: 1;
-    transform: scale(1);
-    transition: all 1s ease-in-out;
-    transition-delay: 0.5s;
-}
-
-#logoEnd {
-    width: 100vw;
-    transition: 1700ms;
-}
-
-#logoEnd h3 {
-    color: white;
-    font-size: 17px;
-    font-weight: 700;
-    padding-bottom: 30px;
-    opacity: 0;
-    filter: blur(25px);
-    transition: all 0.4s ease-in-out;
-}
-
-body.fp-viewing-14 #zProject #logoEnd h3,
-body.fp-viewing-15 #zProject #logoEnd h3,
-body.fp-viewing-16 #zProject #logoEnd h3 {
-    opacity: 1;
-    filter: blur(0px);
-    transition: all 1.5s ease-in-out;
-    transition-delay: 0.1s;
-}
-
-body.fp-viewing-14 #mouse,
-body.fp-viewing-15 #mouse,
-body.fp-viewing-16 #mouse {
-    opacity: .2;
-}
-
-body.fp-viewing-14 #mouse .light,
-body.fp-viewing-15 #mouse .light,
-body.fp-viewing-16 #mouse .light {
-    display: unset;
-}
-
-body.fp-viewing-14 #mouse .dark,
-body.fp-viewing-15 #mouse .dark,
-body.fp-viewing-16 #mouse .dark {
-    display: none;
-}
-
-
-#logoEnd img {
-    color: white;
-    font-size: 23px;
-    font-weight: 700;
-    padding-bottom: 30px;
-    opacity: 0;
-    filter: blur(25px);
-    transition: all 0.4s ease-in-out;
-}
-
-body.fp-viewing-14 #zProject #logoEnd img,
-body.fp-viewing-15 #zProject #logoEnd img,
-body.fp-viewing-16 #zProject #logoEnd img,
-body.fp-viewing-15 #section14 .fp-tableCell {
-    opacity: 1;
-    filter: blur(0px);
-    transition: all 1.5s ease-in-out;
-    transition-delay: 0.35s;
-}
-
-body.fp-viewing-15 #zProject #mouse {
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    transition-delay: 0;
-}
-
-body.fp-viewing-16 #logoEnd,
-body.fp-viewing-16 #zProject .next,
-body.fp-viewing-16 #mouse {
-    opacity: 0 !important;
-    transition: all 0.5s ease-in-out !important;
-}
-
-
-/*****/
 
 #introProject p {
     margin: 3px 0 22px;
 }
 
 
-body.fp-viewing-1 #sectionProject h2:nth-child(1),
-body.fp-viewing-2 #sectionProject h2:nth-child(2),
-body.fp-viewing-3 #sectionProject h2:nth-child(3),
-body.fp-viewing-4 #sectionProject h2:nth-child(4),
-body.fp-viewing-5 #sectionProject h2:nth-child(5),
-body.fp-viewing-6 #sectionProject h2:nth-child(6),
-body.fp-viewing-7 #sectionProject h2:nth-child(6),
-body.fp-viewing-8 #sectionProject h2:nth-child(6),
-body.fp-viewing-9 #sectionProject h2:nth-child(6),
-body.fp-viewing-10 #sectionProject h2:nth-child(6),
-body.fp-viewing-11 #sectionProject h2:nth-child(7),
-body.fp-viewing-12 #sectionProject h2:nth-child(8),
-body.fp-viewing-13 #sectionProject h2:nth-child(9) {
+body.fp-viewing-Interface #sectionProject h2:nth-child(1),
+body.fp-viewing-Charging #sectionProject h2:nth-child(2),
+body.fp-viewing-Speaker #sectionProject h2:nth-child(3),
+body.fp-viewing-Lens #sectionProject h2:nth-child(4),
+body.fp-viewing-ExplodedView #sectionProject h2:nth-child(5),
+body.fp-viewing-Ghost0 #sectionProject h2:nth-child(6),
+body.fp-viewing-Ghost1 #sectionProject h2:nth-child(6),
+body.fp-viewing-Ghost2 #sectionProject h2:nth-child(6),
+body.fp-viewing-Ghost3 #sectionProject h2:nth-child(6),
+body.fp-viewing-Ghost4 #sectionProject h2:nth-child(6),
+body.fp-viewing-Strap #sectionProject h2:nth-child(7),
+body.fp-viewing-Warning #sectionProject h2:nth-child(8),
+body.fp-viewing-Turntable #sectionProject h2:nth-child(9) {
     transform: translateX(0%);
     clip-path: inset(0 0 0 0%);
     opacity: 1;
@@ -527,17 +280,19 @@ body.fp-viewing-13 #sectionProject h2:nth-child(9) {
     transition: all 1s ease-in-out;
 }
 
-body.fp-viewing-1 #elementsProject .elementsCanvas,
-body.fp-viewing-2 #elementsProject .elementsCanvas,
-body.fp-viewing-3 #elementsProject .elementsCanvas,
-body.fp-viewing-4 #elementsProject .elementsCanvas {
+body.fp-viewing-Interface #elementsProject .elementsCanvas,
+body.fp-viewing-Charging #elementsProject .elementsCanvas,
+body.fp-viewing-Speaker #elementsProject .elementsCanvas,
+body.fp-viewing-Lens #elementsProject .elementsCanvas,
+body.fp-viewing-Strap #elementsProject .elementsCanvas {
     visibility: visible;
 }
 
-body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
-body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
-body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"],
-body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"] {
+body.fp-viewing-Interface .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-Charging .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-Speaker .elementsCanvas #elementsSection3 [class*="element"],
+body.fp-viewing-Lens .elementsCanvas #elementsSection4 [class*="element"],
+body.fp-viewing-Strap .elementsCanvas #elementsSection5 [class*="element"] {
     opacity: 1;
     filter: blur(0);
     transition: all 1.2s .7s ease-in-out;
@@ -581,10 +336,23 @@ body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"] {
     width: 30%;
 }
 
+.elementsCanvas #elementsSection5 [class*="element"] {
+    left: 18%;
+    top: 20%;
+}
+
 #logoMenu img {
     margin-top: 14px;
 }
 
 #sectionProject h2 {
     color: #000
+}
+
+#mouse .light {
+    display: none;
+}
+
+#mouse .dark {
+    display: unset;
 }

@@ -1,13 +1,13 @@
 const sentryNext = document.querySelector('#sentryNext');
 
 new fullpage('#zProject', {
-    anchors: ['0', '1', '2', '3', '4', '5', '6', '7', '8'],
+    anchors: ['Intro', 'Headphone', 'Headphone2', 'Charging', 'LowBat', 'Speaker', 'Sketch', 'Turntable', 'ZetaID', 'NextProject', 'NewProject'],
 
     afterLoad: () => {
         document.querySelectorAll('video').forEach(video => video.currentTime = 0);
         document.querySelectorAll('video').forEach(video => video.pause());
-        if (isNaN(document.querySelector("body.fp-viewing-0 #section0 video"))) {
-            document.querySelector("body.fp-viewing-0 #section0 video").play();
+        if (isNaN(document.querySelector("body.fp-viewing-Intro #section0 video"))) {
+            document.querySelector("body.fp-viewing-Intro #section0 video").play();
         }
         fullpage_api.setAllowScrolling(false);
         setTimeout(() => {
@@ -17,16 +17,16 @@ new fullpage('#zProject', {
 
     onLeave: function (origin, destination) {
         let leavingSection = this;
-        /*********** 7 *******/
-        /*  6 >>>  */
-        if (origin.index <= 6 && destination.index == 7) {
+        /*********** 8 *******/
+        /*  7 >>>  */
+        if (origin.index <= 8 && destination.index == 9) {
             fullpage_api.setScrollingSpeed(700);
             sentryNext.currentTime = 0;
         }
 
-        /*********** 8 *******/
-        /*  7 >>>  */
-        if (origin.index <= 7 && destination.index == 8) {
+        /*********** 9 *******/
+        /*  8 >>>  */
+        if (origin.index <= 9 && destination.index == 10) {
             fullpage_api.setScrollingSpeed(100000000);
             fullpage_api.setAllowScrolling(false);
             setTimeout(() => {

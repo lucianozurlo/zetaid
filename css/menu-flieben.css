@@ -70,15 +70,20 @@ body.fp-viewing-Intro #menu #sideMenu.toggleON ul {
     color: #fff;
 }
 
-body.fp-viewing-PortableAirConditioner #menu #projectMenu ul li:nth-child(1) a p,
-body.fp-viewing-CompactDualSystem #menu #projectMenu ul li:nth-child(2) a p,
-body.fp-viewing-CompactDualSystemHeat #menu #projectMenu ul li:nth-child(2) a p,
-body.fp-viewing-CompactDualSystemCool #menu #projectMenu ul li:nth-child(2) a p,
-body.fp-viewing-TemperatureControl #menu #projectMenu ul li:nth-child(3) a p,
-body.fp-viewing-RemovableBattery #menu #projectMenu ul li:nth-child(4) a p,
-body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(5) a p,
+body.fp-viewing-PortableAirConditioner #menu #projectMenu:hover ul li:nth-child(1) a p,
+body.fp-viewing-DualSystem #menu #projectMenu:hover ul li:nth-child(2) a p,
+body.fp-viewing-DualSystemHeat #menu #projectMenu:hover ul li:nth-child(2) a p,
+body.fp-viewing-DualSystemCool #menu #projectMenu:hover ul li:nth-child(2) a p,
+body.fp-viewing-TemperatureControl #menu #projectMenu:hover ul li:nth-child(3) a p,
+body.fp-viewing-RemovableBattery #menu #projectMenu:hover ul li:nth-child(4) a p,
+body.fp-viewing-Transportable #menu #projectMenu:hover ul li:nth-child(5) a p,
+body.fp-viewing-HeatExtractor #menu #projectMenu:hover ul li:nth-child(6) a p,
+body.fp-viewing-RearOutlet #menu #projectMenu:hover ul li:nth-child(7) a p,
+body.fp-viewing-AirOutlet #menu #projectMenu:hover ul li:nth-child(8) a p,
+body.fp-viewing-Turntable #menu #projectMenu:hover ul li:nth-child(9) a p,
 #menu #projectMenu ul li a:hover p {
     color: #5ae0ff !important;
+    opacity: 1;
 }
 
 #menu #projectMenu ul li a span span {
@@ -88,12 +93,16 @@ body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(5) a p,
 
 
 body.fp-viewing-PortableAirConditioner #menu #projectMenu ul li:nth-child(1) a span span,
-body.fp-viewing-CompactDualSystem #menu #projectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-CompactDualSystemHeat #menu #projectMenu ul li:nth-child(2) a span span,
-body.fp-viewing-CompactDualSystemCool #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-DualSystem #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-DualSystemHeat #menu #projectMenu ul li:nth-child(2) a span span,
+body.fp-viewing-DualSystemCool #menu #projectMenu ul li:nth-child(2) a span span,
 body.fp-viewing-TemperatureControl #menu #projectMenu ul li:nth-child(3) a span span,
 body.fp-viewing-RemovableBattery #menu #projectMenu ul li:nth-child(4) a span span,
-body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(5) a span span {
+body.fp-viewing-Transportable #menu #projectMenu ul li:nth-child(5) a span span,
+body.fp-viewing-HeatExtractor #menu #projectMenu ul li:nth-child(6) a span span,
+body.fp-viewing-RearOutlet #menu #projectMenu ul li:nth-child(7) a span span,
+body.fp-viewing-AirOutlet #menu #projectMenu ul li:nth-child(8) a span span,
+body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(9) a span span {
     width: 10px;
     height: 10px;
     background: rgba(90, 225, 255, 0);
@@ -107,16 +116,4 @@ body.fp-viewing-Turntable #menu #projectMenu ul li:nth-child(5) a span span {
 
 #langSwitch:hover .checkLayer {
     background-color: rgba(90, 225, 255, 1) !important;
-}
-
-
-body.fp-viewing-ZetaID #menu #projectMenu,
-body.fp-viewing-NextProject #menu #projectMenu,
-body.fp-viewing-NewProject #menu #projectMenu,
-body.fp-viewing-ZetaID #langSwitch,
-body.fp-viewing-NextProject #langSwitch,
-body.fp-viewing-NewProject #langSwitch {
-    opacity: 0;
-    transform: translateX(-80px);
-    transition: all 0.3s ease-in-out;
 }

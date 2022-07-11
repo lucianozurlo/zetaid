@@ -95,31 +95,31 @@
                             <a href="#" class="portfolioEKO active" onclick="togglePortfolioOff()">
                                 <img src="img/logos/eko_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/eko/eko-home.mp4" type="video/mp4">
+                                    <source src="projects/eko/ekoPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="sentry.html" class="portfolioSentry k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/sentry_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/sentry/sentry-home.mp4" type="video/mp4">
+                                    <source src="projects/sentry/sentryPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="flieben.html" class="portfolioFlieben k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/flieben_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/flieben/flieben-home.mp4" type="video/mp4">
+                                    <source src="projects/flieben/fliebenPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="magma.html" class="portfolioMagma k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/magma_logo_color.svg">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/magma/magma-home.mp4" type="video/mp4">
+                                    <source src="projects/magma/magmaPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                             <a href="qlic.html" class="portfolioQlic k-hover" onclick="togglePortfolioOff()">
                                 <img src="img/logos/qlic_logo_color.svg" style="width: 70%;">
                                 <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
-                                    <source src="projects/qlic/qlic-home.mp4" type="video/mp4">
+                                    <source src="projects/qlic/qlicPortfolio.mp4" type="video/mp4">
                                 </video>
                             </a>
                         </div>
@@ -134,25 +134,29 @@
                             <h2>Charging</h2>
                             <h2>Low Bat</h2>
                             <h2>Speaker</h2>
+                            <h2>Sketch</h2>
                             <h2>Turntable</h2>
                         </div>
                     </div>
 
                     <div id="projectMenu" onmouseleave="togglePortfolioOff()">
                         <ul>
-                            <li><a href="#1" class="k-hover">
+                            <li><a href="#Headphone" class="k-hover">
                                     <p>Headphone</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#2" class="k-hover">
+                            <li><a href="#Charging" class="k-hover">
                                     <p>Charging</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#3" class="k-hover">
+                            <li><a href="#LowBat" class="k-hover">
                                     <p>Low Bat</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#4" class="k-hover">
+                            <li><a href="#Speaker" class="k-hover">
                                     <p>Speaker</p><span><span></span></span>
                                 </a></li>
-                            <li><a href="#5" class="k-hover">
+                            <li><a href="#Sketch" class="k-hover">
+                                    <p>Sketch</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Turntable" class="k-hover">
                                     <p>Turntable</p><span><span></span></span>
                                 </a></li>
                         </ul>
@@ -198,8 +202,8 @@
             <div id="zProject">
                 <div id="section0" class="section">
                     <div class="fp-bg">
-                        <video loop muted="" playsinline="" data-autoplay="" loop>
-                            <source src="projects/eko/eko-00-home.mp4" type="video/mp4" />
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay>
+                            <source src="projects/eko/ekoIntro.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -225,7 +229,7 @@
                 </div>
                 <div id="section5" class="section">
                     <div class="fp-bg">
-                        <video id="section4Video" loop muted="" playsinline="" data-autoplay="" autoplay loop>
+                        <video id="section4Video" loop muted="" playsinline="" data-autoplay="" autoplay>
                             <source src="projects/eko/eko-05.mp4" type="video/mp4" />
                             <script>
                                 var section4Video = document.querySelector('#section4Video');
@@ -240,12 +244,17 @@
                 </div>
                 <div id="section6" class="section">
                     <div class="fp-bg">
-                        <video loop muted="" playsinline="" data-autoplay="" autoplay loop>
-                            <source src="projects/eko/eko-06-360.mp4" type="video/mp4" />
-                        </video>
+                        <img src="projects/eko/eko-06.jpg">
                     </div>
                 </div>
                 <div id="section7" class="section">
+                    <div class="fp-bg">
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay>
+                            <source src="projects/eko/ekoTurntable.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div id="section8" class="section">
                     <div class="fp-bg" style="height: 0px;">
                         <div class="logoEndCanvas" style="
                             height: 100vh;
@@ -262,17 +271,17 @@
                         </div>
                     </div>
                 </div>
-                <div id="section8" class="section fp-auto-height">
+                <div id="section9" class="section fp-auto-height bg-black">
                     <div style="height: 350px">
                         <div class="next">
-                            <video id="sentryNext" muted="" playsinline="" data-autoplay="">
+                            <video id="sentryNext" loop muted="" playsinline="" data-autoplay="" autoplay>
                                 <source src="projects/sentry/sentryNext.mp4" type="video/mp4" />
                             </video>
                             <img src="img/logos/sentry_logo_color.svg" />
                         </div>
                     </div>
                 </div>
-                <div id="section8" class="section fp-last"></div>
+                <div id="section10" class="section fp-last"></div>
             </div>
         </div>
     </div>
@@ -326,6 +335,7 @@
             document.querySelector("#sideMenu").classList.add("toggleON");
             document.querySelector("#portfolio").classList.add("toggleVideos");
             document.querySelectorAll('video').forEach(video => video.pause());
+            document.querySelectorAll('#portfolio video').forEach(video => video.play());
         };
         const togglePortfolioOff = () => {
             document.querySelector("#zProject").classList.remove("toggleOFF");
@@ -337,6 +347,7 @@
             document.querySelector("#sideMenu").classList.remove("toggleON");
             document.querySelector("#portfolio").classList.remove("toggleVideos");
             document.querySelector("#zProject .section.active video").play();
+            document.querySelectorAll('#portfolio video').forEach(video => video.pause());
         };
     </script>
 

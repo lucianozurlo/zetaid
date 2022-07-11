@@ -35,10 +35,9 @@
     width: 24px;
 }
 
-/* 
-#mouse .light {
+#mouse .dark {
     display: none;
-} */
+}
 
 body .loaded #mouse {
     bottom: 30px;
@@ -47,7 +46,251 @@ body .loaded #mouse {
     transition-delay: 0s;
 }
 
-body.fp-viewing-0 .loaded #mouse {
+body.fp-viewing-Intro .loaded #mouse {
     transition-delay: 1.5s;
     opacity: 0.25;
 }
+
+body.fp-viewing-ZetaID #menu #projectMenu,
+body.fp-viewing-NextProject #menu #projectMenu,
+body.fp-viewing-NewProject #menu #projectMenu,
+body.fp-viewing-ZetaID #langSwitch,
+body.fp-viewing-NextProject #langSwitch,
+body.fp-viewing-NewProject #langSwitch {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*****/
+
+#logoMenu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+    opacity: 1;
+    filter: blur(0);
+    display: flex;
+    transition: all 1.2s ease-in-out;
+}
+
+#logoMenu img {
+    margin: 10px;
+    height: 20px;
+}
+
+body.fp-viewing-Intro #logoMenu {
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.5s 0.75s ease-in-out;
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+body.fp-viewing-NextProject .logoEndCanvas,
+body.fp-viewing-NewProject .logoEndCanvas {
+    height: calc(100vh - 350px) !important;
+    transition: all .7s ease-in-out;
+}
+
+body.fp-viewing-NextProject #logoEnd,
+body.fp-viewing-NewProject #logoEnd {
+    transform: translate(0px, 350px);
+    transition: all .7s ease-in-out;
+}
+
+body.fp-viewing-ZetaID .logoEndCanvas {
+    height: calc(100vh - 0px) !important;
+    transition: all .7s ease-in-out;
+}
+
+body.fp-viewing-ZetaID #logoEnd {
+    transform: translate(0px, 0px);
+    transition: all .7s ease-in-out;
+}
+
+body.fp-viewing-ZetaID #mouse {
+    position: absolute;
+    bottom: -60px;
+    opacity: 0;
+    filter: blur(5px);
+    z-index: 1;
+    transition-delay: 0.2s;
+    transition: all 0.5s ease-in-out;
+}
+
+body.fp-viewing-NewProject #mouse {
+    bottom: 30px;
+    opacity: 0.25;
+    filter: blur(0);
+    transition-delay: 0s;
+}
+
+body.fp-viewing-NewProject #mouse {
+    opacity: 0;
+}
+
+body.fp-viewing-ZetaID #projectVideos,
+body.fp-viewing-ZetaID #elementsProject,
+body.fp-viewing-NextProject #projectVideos,
+body.fp-viewing-NextProject #elementsProject,
+body.fp-viewing-NewProject #elementsProject,
+body.fp-viewing-NewProject #elementsProject {
+    display: none;
+}
+
+body.fp-viewing-ZetaID #sideMenu,
+body.fp-viewing-NextProject #sideMenu,
+body.fp-viewing-NewProject #sideMenu,
+body.fp-viewing-ZetaID #sideMenu #logoMain,
+body.fp-viewing-NextProject #sideMenu #logoMain,
+body.fp-viewing-NewProject #sideMenu #logoMain {
+    filter: blur(25px) !important;
+    right: -120px !important;
+    opacity: 0;
+    transition: all 500ms ease-in-out !important;
+}
+
+body.fp-viewing-Intro #logoMenu {
+    transition-delay: .2s;
+}
+
+body.fp-viewing-Intro #logoMenu,
+body.fp-viewing-ZetaID #logoMenu,
+body.fp-viewing-NextProject #logoMenu,
+body.fp-viewing-NewProject #logoMenu {
+    filter: blur(25px);
+    left: -120px;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+#zProject .next {
+    display: flex;
+    justify-content: center;
+    height: 165px;
+    width: 165px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#zProject .next video {
+    position: absolute;
+    top: 52px;
+    height: 165px;
+    width: 165px;
+    right: unset;
+    opacity: 0;
+    transform: scale(0.8);
+    /* box-shadow: 0px 0px 0px #9a71ff; */
+    /* border-radius: 50%; */
+    transition: all 1s ease-in-out;
+    transition-delay: 0s;
+}
+
+#zProject .next img {
+    position: absolute;
+    height: 25px;
+    top: 250px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease-in-out;
+    transition-delay: 0s;
+}
+
+body.fp-viewing-NextProject #zProject .next video,
+body.fp-viewing-NewProject #zProject .next video {
+    top: 2px;
+    opacity: 1;
+    transform: scale(1);
+    /* box-shadow: 0px 2px 4px #9a71ff; */
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+body.fp-viewing-NextProject #zProject .next img,
+body.fp-viewing-NewProject #zProject .next img {
+    top: 200px;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+#logoEnd {
+    width: 100vw;
+    transition: 1700ms;
+}
+
+#logoEnd h3 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.4s ease-in-out;
+}
+
+body.fp-viewing-ZetaID #zProject #logoEnd h3,
+body.fp-viewing-NextProject #zProject #logoEnd h3,
+body.fp-viewing-NewProject #zProject #logoEnd h3 {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+body.fp-viewing-ZetaID #mouse,
+body.fp-viewing-NextProject #mouse,
+body.fp-viewing-NewProject #mouse {
+    opacity: .2;
+}
+
+body.fp-viewing-ZetaID #mouse .light,
+body.fp-viewing-NextProject #mouse .light,
+body.fp-viewing-NewProject #mouse .light {
+    display: unset;
+}
+
+body.fp-viewing-ZetaID #mouse .dark,
+body.fp-viewing-NextProject #mouse .dark,
+body.fp-viewing-NewProject #mouse .dark {
+    display: none;
+}
+
+
+#logoEnd img {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.4s ease-in-out;
+}
+
+body.fp-viewing-ZetaID #zProject #logoEnd img,
+body.fp-viewing-NextProject #zProject #logoEnd img,
+body.fp-viewing-NextProject #zProject .fp-tableCell {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.35s;
+}
+
+body.fp-viewing-NewProject #zProject #logoEnd img,
+body.fp-viewing-NewProject #zProject .logoEndCanvas,
+body.fp-viewing-NewProject #zProject .next,
+body.fp-viewing-NewProject #zProject .fp-tableCell,
+body.fp-viewing-NewProject #mouse {
+    opacity: 0;
+    filter: blur(25px);
+    transition: all .5s ease-in-out;
+    transition-delay: 0;
+}
+
+
+/****/

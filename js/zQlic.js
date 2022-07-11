@@ -1,4 +1,4 @@
-const sentryNext = document.querySelector('#sentryNext');
+const ekoNext = document.querySelector('#ekoNext');
 
 new fullpage('#zProject', {
     anchors: ['Intro', 'AdjustablePower', 'Context', 'Working', 'ExplodedView', 'Pedernal', 'PedernalAction', 'Turntable', 'ZetaID', 'NextProject', 'NewProject'],
@@ -28,19 +28,19 @@ new fullpage('#zProject', {
 
         /*********** NextProject *******/
         /*  ZetaID >>>  */
-        if (origin.index <= 'ZetaID' && destination.index == 'NextProject') {
+        if (origin.index <= 7 && destination.index == 8) {
             fullpage_api.setScrollingSpeed(700);
-            fliebenNext.currentTime = 0;
+            ekoNext.currentTime = 0;
         }
 
         /*********** NewProject *******/
         /*  NextProject >>>  */
-        if (origin.index <= 'NextProject' && destination.index == 'NewProject') {
+        if (origin.index <= 9 && destination.index == 10) {
             fullpage_api.setScrollingSpeed(100000000);
             fullpage_api.setAllowScrolling(false);
             setTimeout(() => {
                 console.log('1 sec delay')
-                window.location.href = 'flieben.html';
+                window.location.href = 'eko.html';
                 mouse.style.opacity = .25;
                 clearInterval(timer);
             }, 1000);
