@@ -54,8 +54,7 @@
                                 <img id="headerLogo-white" src="img/logos/ZETA_ID_iso_white.svg" />
                             </a>
                         </div>
-
-                        <ul>
+                        <ul class="lang" lang="en">
                             <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
                                     <p>Home</p><span><span></span></span>
                                 </a></li>
@@ -72,7 +71,27 @@
                                     <p>Our Team</p><span><span></span></span>
                                 </a></li>
                             <li><a href="index.html#ContactUs" class="k-hover">
-                                    <p>Contact Us</p><span><span></span></span>
+                                    <p>Contactate</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
+                            <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurValues" class="k-hover">
+                                    <p>Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurProcess" class="k-hover">
+                                    <p>Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurTeam" class="k-hover">
+                                    <p>Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#ContactUs" class="k-hover">
+                                    <p>Contactate</p><span><span></span></span>
                                 </a></li>
                         </ul>
 
@@ -118,24 +137,66 @@
                     </div>
 
                     <div id="logoMenu">
-                        <a href="#0" class="k-hover">
+                        <a href="#Intro" class="k-hover">
                             <img src="img/logos/sentry_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Interface</h2>
-                            <h2>Charging</h2>
-                            <h2>Speaker</h2>
-                            <h2>Lens</h2>
-                            <h2>Exploded view</h2>
-                            <h2>Ghost</h2>
-                            <h2>Strap</h2>
-                            <h2>Warning</h2>
-                            <h2>Turntable</h2>
+                            <div class="lang" lang="en">
+                                <h2>Interface</h2>
+                                <h2>Charging</h2>
+                                <h2>Speaker</h2>
+                                <h2>Lens</h2>
+                                <h2>Exploded view</h2>
+                                <h2>Ghost</h2>
+                                <h2>Strap</h2>
+                                <h2>Warning</h2>
+                                <h2>Turntable</h2>
+                            </div>
+                            <div class="lang" lang="es">
+                                <h2>Interface</h2>
+                                <h2>Charging</h2>
+                                <h2>Speaker</h2>
+                                <h2>Lens</h2>
+                                <h2>Exploded view</h2>
+                                <h2>Ghost</h2>
+                                <h2>Strap</h2>
+                                <h2>Warning</h2>
+                                <h2>Turntable</h2>
+                            </div>
                         </div>
                     </div>
 
                     <div id="projectMenu" onmouseleave="togglePortfolioOff()">
-                        <ul>
+                        <ul class="lang" lang="en">
+                            <li><a href="#Interface" class="k-hover">
+                                    <p>Interface</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Charging" class="k-hover">
+                                    <p>Charging</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Speaker" class="k-hover">
+                                    <p>Speaker</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Lens" class="k-hover">
+                                    <p>Lens</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#ExplodedView" class="k-hover">
+                                    <p>Exploded view</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Ghost" class="k-hover">
+                                    <p>Ghost</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Strap" class="k-hover">
+                                    <p>Strap</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Warning" class="k-hover">
+                                    <p>Warning</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Turntable" class="k-hover">
+                                    <p>Turntable</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
                             <li><a href="#Interface" class="k-hover">
                                     <p>Interface</p><span><span></span></span>
                                 </a></li>
@@ -169,7 +230,10 @@
 
                 <div id="introProject">
                     <img src="img/logos/sentry_logo_color.svg" />
-                    <p class="light">Mide y trackea la temperatura en personas</p>
+                    <div class="langContent">
+                        <p lang="en" class="light">Mide y trackea la temperatura en personas</p>
+                        <p lang="es" class="light">Mide y trackea la temperatura en personas</p>
+                    </div>
                 </div>
 
                 <div id="mouse" onmouseover="cursorOn()" onmouseleave="cursorOff()">
@@ -180,7 +244,7 @@
                 </div>
 
                 <div id="langSwitch" class="switch r k-hover">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" id="langCheck" class="check" onclick="langSwitch()">
                     <div class="knobs"></div>
                     <div class="checkLayer"></div>
                 </div>
@@ -188,30 +252,48 @@
                 <div id="elementsProject">
                     <div class="elementsCanvas">
                         <div id="elementsSection1">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>Recoge diariamente datos e información de cada paciente. La trazabilidad de la
+                                    información permite alertar al usuario si existen anomalías en algún paciente</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>Recoge diariamente datos e información de cada paciente. La trazabilidad de la
                                     información permite alertar al usuario si existen anomalías en algún paciente</p>
                             </div>
                         </div>
                         <div id="elementsSection2">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>La base de carga es magnética y a su vez funciona como un hub que sincroniza y
+                                    actualiza la base de datos de cada paciente en tiempo real</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>La base de carga es magnética y a su vez funciona como un hub que sincroniza y
                                     actualiza la base de datos de cada paciente en tiempo real</p>
                             </div>
                         </div>
                         <div id="elementsSection3">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>Parlantes incorporados para reforzar la comunicación</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>Parlantes incorporados para reforzar la comunicación</p>
                             </div>
                         </div>
                         <div id="elementsSection4">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>Cuenta con una cámara de reconocimiento facial y sensor infrarojo para medir la
+                                    temperatura</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>Cuenta con una cámara de reconocimiento facial y sensor infrarojo para medir la
                                     temperatura</p>
                             </div>
                         </div>
                         <div id="elementsSection5">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>Correa de agarre autoajustable</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>Correa de agarre autoajustable</p>
                             </div>
                         </div>
@@ -404,6 +486,18 @@
             document.querySelector("#zProject .section.active video").play();
             document.querySelectorAll('#portfolio video').forEach(video => video.pause());
         };
+    </script>
+
+    <script>
+        function langSwitch() {
+            var checkBox = document.getElementById("langCheck");
+            var body = document.querySelector('body')
+            if (checkBox.checked == true) {
+                body.classList.add("es");
+            } else {
+                body.classList.remove("es");
+            }
+        }
     </script>
 
     <script src="js/mouse.js"></script>

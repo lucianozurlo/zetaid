@@ -98,6 +98,10 @@ body.fp-viewing-ContactUs #mouse .light {
     transition: all 2s ease-in-out;
 }
 
+.homeSection p {
+    margin: 7px 0 30px;
+}
+
 [id*="section"] .fp-tableCell>div>.intro {
     opacity: 0;
     transition: all 0.85s ease-in-out;
@@ -163,6 +167,7 @@ body.fp-viewing-ContactUs #mouse .light {
 }
 
 .layer a.homeSection .button {
+    margin-top: 30px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 400;
@@ -339,6 +344,7 @@ body.fp-viewing-ContactUs #mouse .light {
     font-size: 20vh;
     letter-spacing: -3px;
     font-weight: 900;
+    opacity: 1;
 }
 
 #section1 #wedo span p:nth-child(2) {

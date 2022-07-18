@@ -203,6 +203,133 @@ body .loaded #langSwitch.dark {
     opacity: 0.25;
 }
 
+#zHome .langTitle {
+    margin-bottom: 25px;
+    height: 60px;
+}
+
+#zHome .langTitle h5 {
+    margin: 20px 0 0 0;
+}
+
+#zHome [id*="section"] .langContent,
+#introProject .langContent,
+.homeSection .langContent {
+    height: 40px;
+    margin: 25px 0 5px;
+}
+
+#zHome [id*="section"] .langContent p,
+#zHome [id*="section"] .langTitle .text-small,
+#zHome [id*="section"] .langTitle h5,
+#zHome [id*="section"] .stepProcess,
+#introProject .langContent p,
+.homeSection .langContent p {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#zHome [class*="section"] [class*="col-"] {
+    padding: 0;
+}
+
+.plr-15 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+#zHome [class*="section"] .langContent {
+    margin: 0 0 14px;
+}
+
+#zHome [class*="section"] .langContent p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#zHome [id*="-home"] .langContent {
+    margin: 15px 0;
+}
+
+#zHome #sentry-home .langContent {
+    margin: 0 0 15px;
+}
+
+#zHome [id*="-home"] .langContent p {
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+#zHome #section9 .langContent {
+    position: absolute;
+}
+
+#zHome #section9 .langContent p {
+    position: relative;
+    width: 475px;
+}
+
+#project-contact-form .langContent {
+    position: absolute;
+    width: 1140px;
+}
+
+
+p:lang(es),
+.copete:lang(es),
+h5:lang(es),
+#elementsProject .elementsCanvas [id*="elementsSection"] [class*="element"]:lang(es),
+.lang:lang(es),
+.stepProcess:lang(es),
+#project-contact-form .langContent:lang(es),
+body.es p:lang(en),
+body.es .copete:lang(en),
+body.es h5:lang(en),
+body.es #elementsProject .elementsCanvas [id*="elementsSection"] [class*="element"]:lang(en),
+body.es .lang:lang(en),
+body.es .stepProcess:lang(en),
+body.es #project-contact-form .langContent:lang(en) {
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+#menu #sideMenu ul.lang:lang(en),
+body.es #menu #sideMenu ul.lang:lang(es),
+#projectMenu .lang:lang(en),
+body.es #projectMenu .lang:lang(es) {
+    display: flex;
+}
+
+#menu #sideMenu ul.lang:lang(es),
+body.es #menu #sideMenu ul.lang:lang(en),
+#projectMenu .lang:lang(es),
+body.es #projectMenu .lang:lang(en) {
+    display: none;
+}
+
+p:lang(en),
+.copete:lang(en),
+h5:lang(en),
+#elementsProject .elementsCanvas [id*="elementsSection"] [class*="element"]:lang(en),
+.lang:lang(en),
+.stepProcess:lang(en),
+#project-contact-form .langContent:lang(en),
+body.es p:lang(es),
+body.es .copete:lang(es),
+body.es h5:lang(es),
+body.es #elementsProject .elementsCanvas [id*="elementsSection"] [class*="element"]:lang(es),
+body.es .lang:lang(es),
+body.es .stepProcess:lang(es),
+body.es #project-contact-form .langContent:lang(es) {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+
+
 /* IntroProject */
 body.fp-viewing-0 .loaded #introProject {
     z-index: 10;
@@ -228,10 +355,14 @@ body.fp-viewing-0 .loaded #introProject {
 }
 
 
+
+
+
+
 /****/
 .layer .homeSection p,
 #introProject p {
-    margin: 25px 0 5px;
+    /* margin: 25px 0 5px; */
     font-size: 26px;
     font-weight: 200;
     text-align: center;
@@ -241,10 +372,4 @@ body.fp-viewing-0 .loaded #introProject {
 .layer .homeSection p.light,
 #introProject p.light {
     color: rgba(100, 100, 100, 0.75);
-}
-
-/*** elementsProject **/
-#elementsProject,
-#elementsProject .elementsCanvas {
-    visibility: hidden;
 }

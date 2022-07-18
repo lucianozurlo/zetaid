@@ -48,7 +48,6 @@
      color: #757575;
  }
 
- #section7 p,
  #section8 p,
  #section9 p {
      margin: 0 0 14px;
@@ -324,6 +323,7 @@
  }
 
  .separator-line-horrizontal-medium-light2 {
+     margin-top: 85px;
      width: 40%;
      height: 1px;
  }

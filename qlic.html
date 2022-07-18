@@ -62,8 +62,7 @@
                                 <img id="headerLogo-white" src="img/logos/ZETA_ID_iso_white.svg" />
                             </a>
                         </div>
-
-                        <ul>
+                        <ul class="lang" lang="en">
                             <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
                                     <p>Home</p><span><span></span></span>
                                 </a></li>
@@ -80,7 +79,27 @@
                                     <p>Our Team</p><span><span></span></span>
                                 </a></li>
                             <li><a href="index.html#ContactUs" class="k-hover">
-                                    <p>Contact Us</p><span><span></span></span>
+                                    <p>Contactate</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
+                            <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurValues" class="k-hover">
+                                    <p>Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurProcess" class="k-hover">
+                                    <p>Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurTeam" class="k-hover">
+                                    <p>Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#ContactUs" class="k-hover">
+                                    <p>Contactate</p><span><span></span></span>
                                 </a></li>
                         </ul>
 
@@ -130,17 +149,47 @@
                             <img src="img/logos/qlic_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Adjustable Power</h2>
-                            <h2>Context</h2>
-                            <h2>Working</h2>
-                            <h2>Exploded View</h2>
-                            <h2>Pedernal</h2>
-                            <h2>Turntable</h2>
+                            <div class="lang" lang="en">
+                                <h2>Adjustable Power</h2>
+                                <h2>Context</h2>
+                                <h2>Working</h2>
+                                <h2>Exploded View</h2>
+                                <h2>Pedernal</h2>
+                                <h2>Turntable</h2>
+                            </div>
+                            <div class="lang" lang="es">
+                                <h2>Adjustable Power</h2>
+                                <h2>Context</h2>
+                                <h2>Working</h2>
+                                <h2>Exploded View</h2>
+                                <h2>Pedernal</h2>
+                                <h2>Turntable</h2>
+                            </div>
                         </div>
                     </div>
 
                     <div id="projectMenu" onmouseleave="cursorOff(), togglePortfolioOff()" onmouseover="cursorOn()">
-                        <ul>
+                        <ul class="lang" lang="en">
+                            <li><a href="#AdjustablePower" class="k-hover">
+                                    <p>Adjustable Power</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Context" class="k-hover">
+                                    <p>Context</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Working" class="k-hover">
+                                    <p>Working</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#ExplodedView" class="k-hover">
+                                    <p>Exploded View</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Pedernal" class="k-hover">
+                                    <p>Pedernal</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Turntable" class="k-hover">
+                                    <p>Turntable</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
                             <li><a href="#AdjustablePower" class="k-hover">
                                     <p>Adjustable Power</p><span><span></span></span>
                                 </a></li>
@@ -165,7 +214,10 @@
 
                 <div id="introProject">
                     <img src="img/logos/qlic_logo_color.svg" />
-                    <p>Camping lighter</p>
+                    <div class="langContent">
+                        <p lang="en">Camping lighter</p>
+                        <p lang="es">Camping lighter</p>
+                    </div>
                 </div>
 
                 <div id="mouse" onmouseover="cursorOn()" onmouseleave="cursorOff()">
@@ -175,8 +227,8 @@
                     </a>
                 </div>
 
-                <div id="langSwitch" class="switch r k-hover" onmouseover="cursorOn()" onmouseleave="cursorOff()">
-                    <input type="checkbox" class="check">
+                <div id="langSwitch" class="switch r dark k-hover" onmouseover="cursorOn()" onmouseleave="cursorOff()">
+                    <input type="checkbox" id="langCheck" class="check" onclick="langSwitch()">
                     <div class="knobs"></div>
                     <div class="checkLayer"></div>
                 </div>
@@ -184,12 +236,18 @@
                 <div id="elementsProject">
                     <div class="elementsCanvas">
                         <div id="elementsSection1">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>Potencia ajustable</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>Potencia ajustable</p>
                             </div>
                         </div>
                         <div id="elementsSection5">
-                            <div class="element0">
+                            <div class="element" lang="en">
+                                <p>Anilla y pedernal integrados</p>
+                            </div>
+                            <div class="element" lang="es">
                                 <p>Anilla y pedernal integrados</p>
                             </div>
                         </div>
@@ -374,6 +432,18 @@
             document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1").style.transform = "scale(1) translate(-50%, -50%)";
             document.querySelector("body.fp-viewing-ExplodedView div[class*='kursor'].kursor--1+.kursorChild").style.transform = "scale(1)translate(-50%, -50%)";
 
+        }
+    </script>
+
+    <script>
+        function langSwitch() {
+            var checkBox = document.getElementById("langCheck");
+            var body = document.querySelector('body')
+            if (checkBox.checked == true) {
+                body.classList.add("es");
+            } else {
+                body.classList.remove("es");
+            }
         }
     </script>
 </body>

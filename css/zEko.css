@@ -305,6 +305,7 @@ body.fp-viewing-Turntable #sectionProject h2:nth-child(6) {
 }
 
 .elementsCanvas [id*="elementsSection"] {
+    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -320,9 +321,10 @@ body.fp-viewing-Turntable #sectionProject h2:nth-child(6) {
     transition: all 1s ease-in-out;
 }
 
-body.fp-viewing-Headphone #elementsProject .elementsCanvas,
-body.fp-viewing-Charging #elementsProject .elementsCanvas {
-    visibility: visible;
+body.fp-viewing-Headphone #elementsProject .elementsCanvas #elementsSection1,
+body.fp-viewing-Charging #elementsProject .elementsCanvas #elementsSection2 {
+    opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 body.fp-viewing-Headphone .elementsCanvas #elementsSection1 [class*="element"],
@@ -358,7 +360,7 @@ body.fp-viewing-Charging .elementsCanvas #elementsSection2 [class*="element"] {
     bottom: 120px;
 }
 
-.elementsCanvas #elementsSection2 .element0 {
+.elementsCanvas #elementsSection2 .element {
     top: unset;
     bottom: 28vh;
     transform: translateX(-26vw);

@@ -63,8 +63,7 @@
                                 <img id="headerLogo-white" src="img/logos/ZETA_ID_iso_white.svg" />
                             </a>
                         </div>
-
-                        <ul>
+                        <ul class="lang" lang="en">
                             <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
                                     <p>Home</p><span><span></span></span>
                                 </a></li>
@@ -81,7 +80,27 @@
                                     <p>Our Team</p><span><span></span></span>
                                 </a></li>
                             <li><a href="index.html#ContactUs" class="k-hover">
-                                    <p>Contact Us</p><span><span></span></span>
+                                    <p>Contactate</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
+                            <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurValues" class="k-hover">
+                                    <p>Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurProcess" class="k-hover">
+                                    <p>Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurTeam" class="k-hover">
+                                    <p>Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#ContactUs" class="k-hover">
+                                    <p>Contactate</p><span><span></span></span>
                                 </a></li>
                         </ul>
 
@@ -131,20 +150,63 @@
                             <img src="img/logos/flieben_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Portable air conditioner</h2>
-                            <h2>Dual system</h2>
-                            <h2>Temperature control</h2>
-                            <h2>Removable battery</h2>
-                            <h2>Transportable</h2>
-                            <h2>Heat extractor</h2>
-                            <h2>Rear outlet</h2>
-                            <h2>Air outlet</h2>
-                            <h2>Turntable</h2>
+                            <div class="lang" lang="en">
+                                <h2>Portable air conditioner</h2>
+                                <h2>Dual system</h2>
+                                <h2>Temperature control</h2>
+                                <h2>Removable battery</h2>
+                                <h2>Transportable</h2>
+                                <h2>Heat extractor</h2>
+                                <h2>Rear outlet</h2>
+                                <h2>Air outlet</h2>
+                                <h2>Turntable</h2>
+                            </div>
+                            <div class="lang" lang="es">
+                                <h2>Portable air conditioner</h2>
+                                <h2>Dual system</h2>
+                                <h2>Temperature control</h2>
+                                <h2>Removable battery</h2>
+                                <h2>Transportable</h2>
+                                <h2>Heat extractor</h2>
+                                <h2>Rear outlet</h2>
+                                <h2>Air outlet</h2>
+                                <h2>Turntable</h2>
+                            </div>
+
                         </div>
                     </div>
 
                     <div id="projectMenu" onmouseleave="togglePortfolioOff()">
-                        <ul>
+                        <ul class="lang" lang="en">
+                            <li><a href="#PortableAirConditioner" class="k-hover">
+                                    <p>Portable air conditioner</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#DualSystem" class="k-hover">
+                                    <p>Dual system</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#TemperatureControl" class="k-hover">
+                                    <p>Temperature control</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#RemovableBattery" class="k-hover">
+                                    <p>Removable battery</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Transportable" class="k-hover">
+                                    <p>Transportable</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#HeatExtractor" class="k-hover">
+                                    <p>Heat extractor</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#RearOutlet" class="k-hover">
+                                    <p>Rear outlet</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#AirOutlet" class="k-hover">
+                                    <p>Air outlet</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Turntable" class="k-hover">
+                                    <p>Turntable</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
                             <li><a href="#PortableAirConditioner" class="k-hover">
                                     <p>Portable air conditioner</p><span><span></span></span>
                                 </a></li>
@@ -200,7 +262,10 @@
 
                 <div id="introProject">
                     <img src="img/logos/flieben_logo_color.svg" />
-                    <p>Climatizador de ambientes transportable</p>
+                    <div class="langContent">
+                        <p lang="en">Transportable</p>
+                        <p lang="es">Climatizador de ambientes transportable</p>
+                    </div>
                 </div>
 
                 <div id="mouse" onmouseover="cursorOn()" onmouseleave="cursorOff()">
@@ -211,53 +276,70 @@
                 </div>
 
                 <div id="langSwitch" class="switch r dark k-hover">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" id="langCheck" class="check" onclick="langSwitch()">
                     <div class="knobs"></div>
                     <div class="checkLayer"></div>
                 </div>
 
+
                 <div id="elementsProject">
                     <div class="elementsCanvas">
                         <div id="elementsSection1">
-                            <div class="element0">
-                                <p>Compacto, liviano y portatil.<br />Funciona sin conexion directa a una red eléctrica.
-                                </p>
+                            <div class="element" lang="en">
+                                <p lang="en">Compacto, liviano y portatil.<br />Funciona sin conexion directa a una red
+                                    eléctrica.</p>
+                            </div>
+                            <div class="element" lang="es">
+                                <p lang="es">ES, liviano y portatil.<br />Funciona sin conexion directa a una red
+                                    eléctrica.</p>
                             </div>
                         </div>
                         <div id="elementsSection2">
-                            <div class="element0">
-                                <p>Doble sistema de refrigeración.<br />Mayor rendimiento energético.</p>
+                            <div class="element" lang="en">
+                                <p lang="en">Doble sistema de refrigeración.<br />Mayor rendimiento energético.</p>
                             </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            <div class="element" lang="es">
+                                <p lang="es">Doble sistema de refrigeración.<br />Mayor rendimiento energético.</p>
                             </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            <div class="tooltipsContent">
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="tooltip">
+                                    <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                                </div>
                             </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
-                            </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
-                            </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
-                            </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
-                            </div>
-                            <div class="tooltip">
-                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
-                            </div>
+
                         </div>
                         <div id="elementsSection5">
-                            <div class="element0">
-                                <p>Termostato y potencia ajustable</p>
+                            <div class="element" lang="en">
+                                <p lang="en">Termostato y potencia ajustable</p>
+                            </div>
+                            <div class="element" lang="es">
+                                <p lang="es">Termostato y potencia ajustable</p>
                             </div>
                         </div>
                         <div id="elementsSection6">
-                            <div class="element0">
-                                <p>Batería extraible</p>
+                            <div class="element" lang="en">
+                                <p lang="en">Batería extraible</p>
+                            </div>
+                            <div class="element" lang="es">
+                                <p lang="es">Batería extraible</p>
                             </div>
                         </div>
                     </div>
@@ -441,6 +523,18 @@
             document.querySelector("#zProject .section.active video").play();
             document.querySelectorAll('#portfolio video').forEach(video => video.pause());
         };
+    </script>
+
+    <script>
+        function langSwitch() {
+            var checkBox = document.getElementById("langCheck");
+            var body = document.querySelector('body')
+            if (checkBox.checked == true) {
+                body.classList.add("es");
+            } else {
+                body.classList.remove("es");
+            }
+        }
     </script>
 
     <script src="js/mouse.js"></script>

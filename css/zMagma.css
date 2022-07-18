@@ -275,7 +275,7 @@ body.fp-viewing-Living .elementsCanvas #elementsSection3 [class*="element"] {
     margin-bottom: 5px;
 }
 
-.elementsCanvas #elementsSection1 .element0 {
+.elementsCanvas #elementsSection1 .element {
     left: 10%;
     bottom: calc(50vh - 70px);
     top: unset;

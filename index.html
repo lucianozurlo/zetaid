@@ -28,7 +28,6 @@
       </script>
     <![endif]-->
 
-    <style></style>
 </head>
 
 <body>
@@ -55,8 +54,7 @@
                                 <img id="headerLogo-white" src="img/logos/ZETA_ID_iso_white.svg" />
                             </a>
                         </div>
-
-                        <ul>
+                        <ul class="lang" lang="en">
                             <li><a href="#WeDoIndustrialDesign" class="k-hover">
                                     <p>Home</p><span><span></span></span>
                                 </a></li>
@@ -89,6 +87,41 @@
                                 </a></li>
                             <li><a href="#ContactUs" class="k-hover">
                                     <p>Contact Us</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
+                            <li><a href="#WeDoIndustrialDesign" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li id="liEKO"><a href="#EKO" class="k-hover">
+                                    <p>EKO</p><span><span></span></span>
+                                </a></li>
+                            <li id="liSentry"><a href="#Sentry" class="k-hover">
+                                    <p>Sentry</p><span><span></span></span>
+                                </a></li>
+                            <li id="liFlieBen"><a href="#FlieBen" class="k-hover">
+                                    <p>FlieBen</p><span><span></span></span>
+                                </a></li>
+                            <li id="liMagma"><a href="#Magma" class="k-hover">
+                                    <p>Magma</p><span><span></span></span>
+                                </a></li>
+                            <li id="liQlic"><a href="#Qlic" class="k-hover">
+                                    <p>Qlic</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurValues" class="k-hover">
+                                    <p>Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurProcess" class="k-hover">
+                                    <p>Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurTeam" class="k-hover">
+                                    <p>Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#ContactUs" class="k-hover">
+                                    <p>Contactate</p><span><span></span></span>
                                 </a></li>
                         </ul>
 
@@ -142,7 +175,7 @@
                 </div>
 
                 <div id="langSwitch" class="switch r k-hover">
-                    <input type="checkbox" class="check">
+                    <input type="checkbox" id="langCheck" class="check" onclick="langSwitch()">
                     <div class="knobs"></div>
                     <div class="checkLayer"></div>
                 </div>
@@ -171,7 +204,10 @@
                         <div id="eko-home" class="layer">
                             <a href="eko.html" class="homeSection k-hover">
                                 <img src="img/logos/eko_logo_color.svg">
-                                <p>Headphone and speaker charging dock</p>
+                                <div class="langContent">
+                                    <p lang="en">Headphone and speaker charging dock</p>
+                                    <p lang="es">Headphone and speaker charging dock</p>
+                                </div>
                                 <div class="button"><i class="fas fa-plus"></i></div>
                             </a>
                         </div>
@@ -186,7 +222,10 @@
                         <div id="sentry-home" class="layer">
                             <a href="sentry.html" class="homeSection k-hover">
                                 <img src="img/logos/sentry_logo_color.svg">
-                                <p class="light" style="margin-top: 3px">Mide y trackea la temperatura en personas</p>
+                                <div class="langContent">
+                                    <p lang="en" class="light">Mide y trackea la temperatura en personas</p>
+                                    <p lang="es" class="light">Mide y trackea la temperatura en personas</p>
+                                </div>
                                 <div class="button"><i class="fas fa-plus"></i></div>
                             </a>
                         </div>
@@ -201,7 +240,11 @@
                         <div id="flieben-home" class="layer">
                             <a href="flieben.html" class="homeSection k-hover">
                                 <img src="img/logos/flieben_logo_color.svg">
-                                <p>Climatizador de ambientes transportable</p>
+                                <div class="langContent">
+                                    <p lang="en">Climatizador de ambientes transportable</p>
+                                    <p lang="es">Climatizador de ambientes transportable</p>
+                                </div>
+
                                 <div class="button"><i class="fas fa-plus"></i></div>
                             </a>
                         </div>
@@ -216,7 +259,10 @@
                         <div id="magma-home" class="layer">
                             <a href="magma.html" class="homeSection k-hover">
                                 <img src="img/logos/magma_logo_color.svg">
-                                <p>Wireless ambient lighting</p>
+                                <div class="langContent">
+                                    <p lang="en">Wireless ambient lighting</p>
+                                    <p lang="es">Wireless ambient lighting</p>
+                                </div>
                                 <div class="button"><i class="fas fa-plus"></i></div>
                             </a>
                         </div>
@@ -231,7 +277,10 @@
                         <div id="qlic-home" class="layer">
                             <a href="qlic.html" class="homeSection k-hover">
                                 <img src="img/logos/qlic_logo_color.svg" style="width: 16vw;">
-                                <p>Camping lighter</p>
+                                <div class="langContent">
+                                    <p lang="en">Camping lighter</p>
+                                    <p lang="es">Camping lighter</p>
+                                </div>
                                 <div class="button"><i class="fas fa-plus"></i></div>
                             </a>
                         </div>
@@ -246,12 +295,20 @@
                         <section>
                             <div class="container-fluid title">
                                 <div class="row">
-                                    <div class="col-12 text-center">
-                                        <div class="text-small text-medium-gray alt-font text-uppercase">
+                                    <div class="col-12 text-center langTitle">
+                                        <div lang="en"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
                                             About Us
                                         </div>
-                                        <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">
+                                        <div lang="es"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
+                                            EEAbout Us
+                                        </div>
+                                        <h5 lang="en" class="alt-font text-extra-dark-gray font-weight-600 mb-0">
                                             Our Values
+                                        </h5>
+                                        <h5 lang="es" class="alt-font text-extra-dark-gray font-weight-600 mb-0">
+                                            EEOur Values
                                         </h5>
                                         <span
                                             class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px"></span>
@@ -265,23 +322,32 @@
                                             <div class="col-6 col-md-2 text-center feature-box-9 sm-height-200px">
                                                 <img src="img/values/value1.svg"
                                                     style="width: 130px; position: inherit">
-                                                <p class="alt-font text-medium text-extra-dark-gray">
-                                                    Aesthetic
-                                                </p>
+                                                <div class="langContent">
+                                                    <p lang="en" class="alt-font text-medium text-extra-dark-gray">
+                                                        Aesthetic</p>
+                                                    <p lang="es" class="alt-font text-medium text-extra-dark-gray">
+                                                        WWWAesthetic</p>
+                                                </div>
                                             </div>
                                             <div class="col-6 col-md-2 text-center feature-box-9 sm-height-200px">
                                                 <img src="img/values/value2.svg"
                                                     style="width: 130px; position: inherit">
-                                                <p class="alt-font text-medium text-extra-dark-gray">
-                                                    Responsable
-                                                </p>
+                                                <div class="langContent">
+                                                    <p lang="en" class="alt-font text-medium text-extra-dark-gray">
+                                                        Responsable</p>
+                                                    <p lang="es" class="alt-font text-medium text-extra-dark-gray">
+                                                        Responsable</p>
+                                                </div>
                                             </div>
                                             <div class="col-6 col-md-2 text-center feature-box-9 sm-height-200px">
                                                 <img src="img/values/value3.svg"
                                                     style="width: 130px; position: inherit">
-                                                <p class="alt-font text-medium text-extra-dark-gray">
-                                                    Simple
-                                                </p>
+                                                <div class="langContent">
+                                                    <p lang="en" class="alt-font text-medium text-extra-dark-gray">
+                                                        Simple</p>
+                                                    <p lang="es" class="alt-font text-medium text-extra-dark-gray">
+                                                        Simple</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -290,23 +356,32 @@
                                             <div class="col-6 col-md-2 text-center feature-box-9 sm-height-200px">
                                                 <img src="img/values/value4.svg"
                                                     style="width: 130px; position: inherit">
-                                                <p class="alt-font text-medium text-extra-dark-gray">
-                                                    Functional
-                                                </p>
+                                                <div class="langContent">
+                                                    <p lang="en" class="alt-font text-medium text-extra-dark-gray">
+                                                        Functional</p>
+                                                    <p lang="es" class="alt-font text-medium text-extra-dark-gray">
+                                                        Functional</p>
+                                                </div>
                                             </div>
                                             <div class="col-6 col-md-2 text-center feature-box-9 sm-height-200px">
                                                 <img src="img/values/value5.svg"
                                                     style="width: 130px; position: inherit">
-                                                <p class="alt-font text-medium text-extra-dark-gray">
-                                                    Innovative
-                                                </p>
+                                                <div class="langContent">
+                                                    <p lang="en" class="alt-font text-medium text-extra-dark-gray">
+                                                        Innovative</p>
+                                                    <p lang="es" class="alt-font text-medium text-extra-dark-gray">
+                                                        Innovative</p>
+                                                </div>
                                             </div>
                                             <div class="col-6 col-md-2 text-center feature-box-9 sm-height-200px">
                                                 <img src="img/values/value6.svg"
                                                     style="width: 130px; position: inherit">
-                                                <p class="alt-font text-medium text-extra-dark-gray">
-                                                    Modern
-                                                </p>
+                                                <div class="langContent">
+                                                    <p lang="en" class="alt-font text-medium text-extra-dark-gray">
+                                                        Modern</p>
+                                                    <p lang="es" class="alt-font text-medium text-extra-dark-gray">
+                                                        Modern</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -321,12 +396,20 @@
                         <section>
                             <div class="container-fluid title">
                                 <div class="row">
-                                    <div class="col-12 text-center">
-                                        <div class="text-small text-medium-gray alt-font text-uppercase">
+                                    <div class="col-12 text-center langTitle">
+                                        <div lang="en"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
                                             About Us
                                         </div>
-                                        <h5 class="alt-font text-white font-weight-600 mb-0">
+                                        <div lang="es"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
+                                            EEAbout Us
+                                        </div>
+                                        <h5 lang="en" class="alt-font text-white font-weight-600 mb-0">
                                             Our Process
+                                        </h5>
+                                        <h5 lang="es" class="alt-font text-white font-weight-600 mb-0">
+                                            EEOur Process
                                         </h5>
                                         <span
                                             class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px"></span>
@@ -340,9 +423,9 @@
                                     width: calc(100vw - 300px);
                                     margin: 0 150px;
                                     ">
-                                    <div class="col-12 col-xl-3 col-md-6 last-paragraph-no-margin lg-margin-30px-bottomLeft lg-no-border-right"
-                                        style="padding: 0">
-                                        <div class="padding-40px-lr sm-padding-15px-lr">
+                                    <div
+                                        class="col-12 col-xl-3 col-md-6 last-paragraph-no-margin lg-margin-30px-bottomLeft lg-no-border-right langTitle">
+                                        <div lang="en" class="stepProcess padding-40px-lr sm-padding-15px-lr">
                                             <h3
                                                 class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
                                                 1
@@ -358,6 +441,26 @@
                                             </p>
                                             <p>
                                                 Once the approach is established, we propose different
+                                                strategies that help us to outline an action plan and
+                                                respond to the needs of the clients.
+                                            </p>
+                                        </div>
+                                        <div lang="es" class="stepProcess padding-40px-lr sm-padding-15px-lr">
+                                            <h3
+                                                class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
+                                                11
+                                            </h3>
+                                            <span
+                                                class="text-white-2 text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">aaThe
+                                                Approach</span>
+                                            <p>
+                                                111Prior to any new project, we consider that one of the
+                                                most important aspects is to be clear about the
+                                                problem to be solved, that is why we make sure to
+                                                listen and ask.
+                                            </p>
+                                            <p>
+                                                111Once the approach is established, we propose different
                                                 strategies that help us to outline an action plan and
                                                 respond to the needs of the clients.
                                             </p>
@@ -379,9 +482,9 @@
                                             Sorry, your browser does not support inline SVG.
                                         </svg>
                                     </div>
-                                    <div class="col-12 col-xl-3 col-md-6 last-paragraph-no-margin lg-margin-30px-bottomLeft lg-no-border-right"
-                                        style="padding: 0">
-                                        <div class="padding-40px-lr sm-padding-15px-lr">
+                                    <div
+                                        class="col-12 col-xl-3 col-md-6 last-paragraph-no-margin lg-margin-30px-bottomLeft lg-no-border-right">
+                                        <div lang="en" class="stepProcess padding-40px-lr sm-padding-15px-lr">
                                             <h3
                                                 class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
                                                 2
@@ -407,6 +510,32 @@
                                                 identity.
                                             </p>
                                         </div>
+                                        <div lang="es" class="stepProcess padding-40px-lr sm-padding-15px-lr">
+                                            <h3
+                                                class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
+                                                22
+                                            </h3>
+                                            <span
+                                                class="text-white-2 text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">22The
+                                                22Idea</span>
+                                            <p>
+                                                22Conceptualization is the instance that allows us to
+                                                move freely as and express ourselves as designers.
+                                            </p>
+                                            <p>
+                                                22As a first step, we carry out a market research, niche
+                                                references, technology and trends.
+                                            </p>
+                                            <p>
+                                                22The results and conclusions obtained allow us to
+                                                understand, explore, create, and combine different
+                                                resources to begin to visualize ideas and concepts
+                                                that solve the need raised. We seek that each concept
+                                                is strongly influenced by a modern and fresh language,
+                                                endowed with a strong and unique formal and functional
+                                                identity.
+                                            </p>
+                                        </div>
                                     </div>
                                     <div>
                                         <svg viewBox="0 0 30 200" style="
@@ -424,9 +553,9 @@
                                             Sorry, your browser does not support inline SVG.
                                         </svg>
                                     </div>
-                                    <div class="col-12 col-xl-3 col-md-6 last-paragraph-no-margin md-margin-30px-bottomLeft lg-no-border-right"
-                                        style="padding: 0">
-                                        <div class="padding-40px-lr sm-padding-15px-lr">
+                                    <div
+                                        class="col-12 col-xl-3 col-md-6 last-paragraph-no-margin md-margin-30px-bottomLeft lg-no-border-right">
+                                        <div lang="en" class="stepProcess padding-40px-lr sm-padding-15px-lr">
                                             <h3
                                                 class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
                                                 3
@@ -442,6 +571,27 @@
                                             </p>
                                             <p>
                                                 Thanks to 3d modeling tools and product visualization
+                                                methods, we can create prototypes that allow us to
+                                                analyze and validate ergonomic and functional aspects
+                                                and study the different surface finishes.
+                                            </p>
+                                        </div>
+                                        <div lang="es" class="stepProcess padding-40px-lr sm-padding-15px-lr">
+                                            <h3
+                                                class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
+                                                33
+                                            </h3>
+                                            <span
+                                                class="text-white-2 text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">33Madurate</span>
+                                            <p>
+                                                33It is here where we refute and redesign the concept
+                                                that best solves the problem. We constantly iterate
+                                                until we find the optimal solution that represents the
+                                                best compromise between technical aspects, productive
+                                                technology and product design.
+                                            </p>
+                                            <p>
+                                                33Thanks to 3d modeling tools and product visualization
                                                 methods, we can create prototypes that allow us to
                                                 analyze and validate ergonomic and functional aspects
                                                 and study the different surface finishes.
@@ -464,9 +614,8 @@
                                             Sorry, your browser does not support inline SVG.
                                         </svg>
                                     </div>
-                                    <div class="col-12 col-xl-3 col-md-6 last-paragraph-no-marginLeft"
-                                        style="padding: 0">
-                                        <div class="padding-40px-lr sm-padding-15px-lr">
+                                    <div class="col-12 col-xl-3 col-md-6 last-paragraph-no-marginLeft">
+                                        <div lang="en" class="stepProcess padding-40px-lr sm-padding-15px-lr">
                                             <h3
                                                 class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
                                                 4
@@ -475,6 +624,21 @@
                                                 class="text-white-2 text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">Product</span>
                                             <p>
                                                 After the Engineering and development stage where the
+                                                proposal is tested and fully validated, we provide the
+                                                client with all the technical material and a follow-up
+                                                to start and control the production.
+                                            </p>
+                                        </div>
+
+                                        <div lang="es" class="stepProcess padding-40px-lr sm-padding-15px-lr">
+                                            <h3
+                                                class="font-weight-300 letter-spacing-minus-2 text-deep-pink alt-font margin-10px-bottom">
+                                                444
+                                            </h3>
+                                            <span
+                                                class="text-white-2 text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">44Product</span>
+                                            <p>
+                                                44After the Engineering and development stage where the
                                                 proposal is tested and fully validated, we provide the
                                                 client with all the technical material and a follow-up
                                                 to start and control the production.
@@ -492,12 +656,20 @@
                         <section>
                             <div class="container-fluid title">
                                 <div class="row">
-                                    <div class="col-12 text-center">
-                                        <div class="text-small text-medium-gray alt-font text-uppercase">
+                                    <div class="col-12 text-center langTitle">
+                                        <div lang="en"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
                                             About Us
                                         </div>
-                                        <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">
+                                        <div lang="es"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
+                                            EEAbout Us
+                                        </div>
+                                        <h5 lang="en" class="alt-font text-extra-dark-gray font-weight-600 mb-0">
                                             Our Team
+                                        </h5>
+                                        <h5 lang="es" class="alt-font text-extra-dark-gray font-weight-600 mb-0">
+                                            EEOur Team
                                         </h5>
                                         <span
                                             class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px"></span>
@@ -507,47 +679,97 @@
                             <div class="container content">
                                 <div class="row left">
                                     <!-- start column -->
-                                    <div class="col-12 col-lg-6 md-margin-15px-bottom">
+                                    <div class="col-12 col-lg-6 md-margin-15px-bottom plr-15">
                                         <div class="bg-white padding-40px-all sm-padding-30px-all last-paragraph-no-margin"
-                                            style="border-radius: 5px">
+                                            style="border-radius: 5px; height: 400px;">
                                             <span
                                                 class="text-deep-pink text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">Seishu</span>
-                                            <p>
-                                                Diseñador Industrial Graduado en la UBA. En su carrera profesional
-                                                trabajo en diferentes estudios de diseño Industrial. En cada uno de
-                                                ellos fue adquiriendo diferentes herramientas como ser modelado 3D,
-                                                sketching, prototipado, pensamiento de diseño y Diseño centrado en el
-                                                usuario. Posee experiencia en diseño de producto, packaging, diseño
-                                                gráfico, desarrollo e ingeniaría de producto y visualización de
-                                                producto.
-                                            </p>
-                                            <p>
-                                                Por otro lado, cuenta con dos años de experiencia como docente de la
-                                                Universidad de Arquitectura y Diseño de la ciudad de Buenos Aires.
-                                            </p>
+                                            <div lang="en" class="langContent">
+                                                <p>
+                                                    Diseñador Industrial Graduado en la UBA. En su carrera profesional
+                                                    trabajo en diferentes estudios de diseño Industrial. En cada uno de
+                                                    ellos fue adquiriendo diferentes herramientas como ser modelado 3D,
+                                                    sketching, prototipado, pensamiento de diseño y Diseño centrado en
+                                                    el usuario. Posee experiencia en diseño de producto, packaging,
+                                                    diseño gráfico, desarrollo e ingeniaría de producto y visualización
+                                                    de producto.
+                                                </p>
+                                                <p>
+                                                    Por otro lado, cuenta con dos años de experiencia como docente de la
+                                                    Universidad de Arquitectura y Diseño de la ciudad de Buenos Aires.
+                                                </p>
+                                            </div>
+                                            <div lang="es" class="langContent">
+                                                <p>
+                                                    asdfasdfDiseñador Industrial Graduado en la UBA. En su carrera
+                                                    profesional
+                                                    trabajo en diferentes estudios de diseño Industrial. En cada uno
+                                                    de
+                                                    ellos fue adquiriendo diferentes herramientas como ser modelado
+                                                    3D,
+                                                    sketching, prototipado, pensamiento de diseño y Diseño centrado
+                                                    en
+                                                    el
+                                                    usuario. Posee experiencia en diseño de producto, packaging,
+                                                    diseño
+                                                    gráfico, desarrollo e ingeniaría de producto y visualización de
+                                                    producto.
+                                                </p>
+                                                <p>
+                                                    sadfasdfPor otro lado, cuenta con dos años de experiencia como
+                                                    docente
+                                                    de la
+                                                    Universidad de Arquitectura y Diseño de la ciudad de Buenos
+                                                    Aires.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- end column -->
                                     <!-- start column -->
-                                    <div class="col-12 col-lg-6 md-margin-15px-bottom">
+                                    <div class="col-12 col-lg-6 md-margin-15px-bottom plr-15">
                                         <div class="bg-white padding-40px-all last-paragraph-no-margin"
-                                            style="border-radius: 5px">
+                                            style="border-radius: 5px; height: 400px">
                                             <span
                                                 class="text-deep-pink text-uppercase alt-font text-extra-large font-weight-700 margin-20px-bottom d-block">Maxi</span>
-                                            <p>
-                                                Diseñador Industrial graduado en la UBA. Se desempeñó profesionalmente
-                                                en varios estudios de Diseño Industrial trabajando en más de 100
-                                                proyectos de diseño.
-                                            </p>
-                                            <p>
-                                                A lo largo de su trayectoria profesional, ha desarrollado experiencia en
-                                                las diferentes áreas del Diseño Industrial como desarrollador de
-                                                productos. Conceptualización y sketching, modelado 3D, desarrollo e
-                                                ingeniería de producto para la fabricación, documentación técnica y
-                                                gestión de proveedores. A su vez se ha involucrado en áreas como diseño
-                                                gráfico, packaging, diseño de interiores, proyectista y diseño de
-                                                comercios/industrias.
-                                            </p>
+                                            <div lang="en" class="langContent">
+                                                <p>
+                                                    Diseñador Industrial graduado en la UBA. Se desempeñó
+                                                    profesionalmente en varios estudios de Diseño Industrial trabajando
+                                                    en más de 100 proyectos de diseño.
+                                                </p>
+                                                <p>
+                                                    A lo largo de su trayectoria profesional, ha desarrollado
+                                                    experiencia en las diferentes áreas del Diseño Industrial como
+                                                    desarrollador de productos. Conceptualización y sketching, modelado
+                                                    3D, desarrollo e ingeniería de producto para la fabricación,
+                                                    documentación técnica y gestión de proveedores. A su vez se ha
+                                                    involucrado en áreas como diseño gráfico, packaging, diseño de
+                                                    interiores, proyectista y diseño de comercios/industrias.
+                                                </p>
+                                            </div>
+                                            <div lang="es" class="langContent">
+                                                <p>
+                                                    aaaaDiseñador Industrial graduado en la UBA. Se desempeñó
+                                                    profesionalmente
+                                                    en varios estudios de Diseño Industrial trabajando en más de 100
+                                                    proyectos de diseño.
+                                                </p>
+                                                <p>
+                                                    bbbbbA lo largo de su trayectoria profesional, ha desarrollado
+                                                    experiencia en
+                                                    las diferentes áreas del Diseño Industrial como desarrollador de
+                                                    productos. Conceptualización y sketching, modelado 3D,
+                                                    desarrollo e
+                                                    ingeniería de producto para la fabricación, documentación
+                                                    técnica y
+                                                    gestión de proveedores. A su vez se ha involucrado en áreas como
+                                                    diseño
+                                                    gráfico, packaging, diseño de interiores, proyectista y diseño
+                                                    de
+                                                    comercios/industrias.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- end column -->
@@ -571,12 +793,20 @@
                         <section>
                             <div class="container-fluid title">
                                 <div class="row">
-                                    <div class="col-12 text-center">
-                                        <div class="text-small text-medium-gray alt-font text-uppercase">
+                                    <div class="col-12 text-center langTitle">
+                                        <div lang="en"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
                                             Contact Us
                                         </div>
-                                        <h5 class="alt-font text-white-2 font-weight-600 mb-0">
+                                        <div lang="es"
+                                            class="copete text-small text-medium-gray alt-font text-uppercase">
+                                            Contactate
+                                        </div>
+                                        <h5 lang="en" class="alt-font text-white-2 font-weight-600 mb-0">
                                             Fill out the form & we'll be in touch soon!
+                                        </h5>
+                                        <h5 lang="es" class="alt-font text-white-2 font-weight-600 mb-0">
+                                            ¡Completá el formulario y nos pondremos en contacto pronto!
                                         </h5>
                                         <span
                                             class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px"></span>
@@ -585,29 +815,57 @@
                             </div>
                             <div class="container content">
                                 <form id="project-contact-form" action="javascript:void(0)" method="post">
-                                    <div class="row" style="flex: 0 0 50%; max-width: 50% !important;">
-                                        <div class="padding-8px-lr" style="width: 100%">
-                                            <input type="text" name="name" id="name" placeholder="Name *"
-                                                class="bg-transparent border-color-medium-dark-gray medium-input"
-                                                style="color:#fff; text-align: left;">
-                                        </div>
-                                        <div class="padding-8px-lr" style="width: 100%">
-                                            <input type="text" name="email" id="email" placeholder="E-mail *"
-                                                class="bg-transparent border-color-medium-dark-gray medium-input"
-                                                style="color:#fff; text-align: left;">
-                                        </div>
-                                        <div class="padding-8px-lr" style="width: 100%">
-                                            <textarea name="comment" id="comment" placeholder="Message" rows="6"
-                                                class="bg-transparent border-color-medium-dark-gray medium-textarea"
-                                                style="color:#fff; text-align: left;"></textarea>
-                                        </div>
-                                        <div class="text-center" style="width: 100%">
-                                            <button id="project-contact-us-button" type="submit"
-                                                class="btn btn-deep-pink btn-rounded btn-large">
-                                                Send message
-                                            </button>
+                                    <div lang="en" class="langContent">
+                                        <div class="row" style="flex: 0 0 50%; max-width: 50% !important;">
+                                            <div class="padding-8px-lr" style="width: 100%">
+                                                <input type="text" name="name" id="name" placeholder="Name *"
+                                                    class="bg-transparent border-color-medium-dark-gray medium-input"
+                                                    style="color:#fff; text-align: left;">
+                                            </div>
+                                            <div class="padding-8px-lr" style="width: 100%">
+                                                <input type="text" name="email" id="email" placeholder="E-mail *"
+                                                    class="bg-transparent border-color-medium-dark-gray medium-input"
+                                                    style="color:#fff; text-align: left;">
+                                            </div>
+                                            <div class="padding-8px-lr" style="width: 100%">
+                                                <textarea name="comment" id="comment" placeholder="Message" rows="6"
+                                                    class="bg-transparent border-color-medium-dark-gray medium-textarea"
+                                                    style="color:#fff; text-align: left;"></textarea>
+                                            </div>
+                                            <div class="text-center" style="width: 100%">
+                                                <button id="project-contact-us-button" type="submit"
+                                                    class="btn btn-deep-pink btn-rounded btn-large">
+                                                    <span>Send message</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div lang="es" class="langContent">
+                                        <div class="row" style="flex: 0 0 50%; max-width: 50% !important;">
+                                            <div class="padding-8px-lr" style="width: 100%">
+                                                <input type="text" name="name" id="name" placeholder="Nombre *"
+                                                    class="bg-transparent border-color-medium-dark-gray medium-input"
+                                                    style="color:#fff; text-align: left;">
+                                            </div>
+                                            <div class="padding-8px-lr" style="width: 100%">
+                                                <input type="text" name="email" id="email" placeholder="E-mail *"
+                                                    class="bg-transparent border-color-medium-dark-gray medium-input"
+                                                    style="color:#fff; text-align: left;">
+                                            </div>
+                                            <div class="padding-8px-lr" style="width: 100%">
+                                                <textarea name="comment" id="comment" placeholder="Mensaje" rows="6"
+                                                    class="bg-transparent border-color-medium-dark-gray medium-textarea"
+                                                    style="color:#fff; text-align: left;"></textarea>
+                                            </div>
+                                            <div class="text-center" style="width: 100%">
+                                                <button id="project-contact-us-button" type="submit"
+                                                    class="btn btn-deep-pink btn-rounded btn-large">
+                                                    <span>Enviar</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </form>
                             </div>
                         </section>
@@ -689,6 +947,18 @@
             document.querySelectorAll('#portfolio video').forEach(video => video.pause());
 
         };
+    </script>
+
+    <script>
+        function langSwitch() {
+            var checkBox = document.getElementById("langCheck");
+            var body = document.querySelector('body')
+            if (checkBox.checked == true) {
+                body.classList.add("es");
+            } else {
+                body.classList.remove("es");
+            }
+        }
     </script>
     <script src="js/mouse.js"></script>
 </body>

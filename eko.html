@@ -62,8 +62,7 @@
                                 <img id="headerLogo-white" src="img/logos/ZETA_ID_iso_white.svg" />
                             </a>
                         </div>
-
-                        <ul>
+                        <ul class="lang" lang="en">
                             <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
                                     <p>Home</p><span><span></span></span>
                                 </a></li>
@@ -80,7 +79,27 @@
                                     <p>Our Team</p><span><span></span></span>
                                 </a></li>
                             <li><a href="index.html#ContactUs" class="k-hover">
-                                    <p>Contact Us</p><span><span></span></span>
+                                    <p>Contactate</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                        <ul class="lang" lang="es">
+                            <li><a href="index.html#WeDoIndustrialDesign" class="k-hover">
+                                    <p>2Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>2Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurValues" class="k-hover">
+                                    <p>2Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurProcess" class="k-hover">
+                                    <p>2Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#OurTeam" class="k-hover">
+                                    <p>2Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="index.html#ContactUs" class="k-hover">
+                                    <p>Contactate</p><span><span></span></span>
                                 </a></li>
                         </ul>
 
@@ -126,21 +145,31 @@
                     </div>
 
                     <div id="logoMenu">
-                        <a href="#0" class="k-hover">
+                        <a href="#Intro" class="k-hover">
                             <img src="img/logos/eko_logo_color.svg" />
                         </a>
                         <div id="sectionProject">
-                            <h2>Headphone</h2>
-                            <h2>Charging</h2>
-                            <h2>Low Bat</h2>
-                            <h2>Speaker</h2>
-                            <h2>Sketch</h2>
-                            <h2>Turntable</h2>
+                            <div class="lang" lang="en">
+                                <h2>Headphone</h2>
+                                <h2>Charging</h2>
+                                <h2>Low Bat</h2>
+                                <h2>Speaker</h2>
+                                <h2>Sketch</h2>
+                                <h2>Turntable</h2>
+                            </div>
+                            <div class="lang" lang="es">
+                                <h2>2Headphone</h2>
+                                <h2>2Charging</h2>
+                                <h2>2Low Bat</h2>
+                                <h2>2Speaker</h2>
+                                <h2>2Sketch</h2>
+                                <h2>Turntable</h2>
+                            </div>
                         </div>
                     </div>
 
                     <div id="projectMenu" onmouseleave="togglePortfolioOff()">
-                        <ul>
+                        <ul class="lang" lang="en">
                             <li><a href="#Headphone" class="k-hover">
                                     <p>Headphone</p><span><span></span></span>
                                 </a></li>
@@ -160,12 +189,35 @@
                                     <p>Turntable</p><span><span></span></span>
                                 </a></li>
                         </ul>
+                        <ul class="lang" lang="es">
+                            <li><a href="#Headphone" class="k-hover">
+                                    <p>2Headphone</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Charging" class="k-hover">
+                                    <p>2Charging</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#LowBat" class="k-hover">
+                                    <p>2Low Bat</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Speaker" class="k-hover">
+                                    <p>2Speaker</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Sketch" class="k-hover">
+                                    <p>2Sketch</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#Turntable" class="k-hover">
+                                    <p>2Turntable</p><span><span></span></span>
+                                </a></li>
+                        </ul>
                     </div>
                 </div>
 
                 <div id="introProject">
                     <img src="img/logos/eko_logo_color.svg" />
-                    <p>Headphone and speaker charging dock</p>
+                    <div class="langContent">
+                        <p lang="en">Headphone and speaker charging dock</p>
+                        <p lang="es">EEHeadphone and speaker charging dock</p>
+                    </div>
                 </div>
 
                 <div id="mouse">
@@ -175,8 +227,8 @@
                     </a>
                 </div>
 
-                <div id="langSwitch" class="switch r k-hover">
-                    <input type="checkbox" class="check">
+                <div id="langSwitch" class="switch r dark k-hover">
+                    <input type="checkbox" id="langCheck" class="check" onclick="langSwitch()">
                     <div class="knobs"></div>
                     <div class="checkLayer"></div>
                 </div>
@@ -184,13 +236,19 @@
                 <div id="elementsProject">
                     <div class="elementsCanvas">
                         <div id="elementsSection1">
-                            <div class="element0">
-                                <p>Inner padded fabric</p>
+                            <div class="element" lang="en">
+                                <p lang="en">Inner padded fabric</p>
+                            </div>
+                            <div class="element" lang="es">
+                                <p lang="es">Inner padded fabric</p>
                             </div>
                         </div>
                         <div id="elementsSection2">
-                            <div class="element0">
-                                <p>Charging pins</p>
+                            <div class="element" lang="en">
+                                <p lang="en">Charging pins</p>
+                            </div>
+                            <div class="element" lang="es">
+                                <p lang="es">Charging pins</p>
                             </div>
                         </div>
                     </div>
@@ -349,6 +407,18 @@
             document.querySelector("#zProject .section.active video").play();
             document.querySelectorAll('#portfolio video').forEach(video => video.pause());
         };
+    </script>
+
+    <script>
+        function langSwitch() {
+            var checkBox = document.getElementById("langCheck");
+            var body = document.querySelector('body')
+            if (checkBox.checked == true) {
+                body.classList.add("es");
+            } else {
+                body.classList.remove("es");
+            }
+        }
     </script>
 
     <script src="js/mouse.js"></script>
